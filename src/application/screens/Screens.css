@@ -1,0 +1,14 @@
+.Img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.Baixe-app {
+    padding: 40px;
+}
+
+.Baixe-app-font {
+    font-size: 30px;
+}
