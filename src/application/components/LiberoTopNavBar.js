@@ -1,5 +1,5 @@
 import React from 'react';
-import './NavBar.css'
+import '../../App.css'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react'
 
@@ -22,7 +22,7 @@ class LiberoTopNavBar extends React.PureComponent {
         return (
             this.state.seguros.map((l, i) => {
                 return (
-                    <NavDropdown.Item href={`#seguros/${l}`}>{l}</NavDropdown.Item>
+                    <NavDropdown.Item key={i} href={`#seguros/${l}`}>{l}</NavDropdown.Item>
                 )
             })
         )
@@ -31,11 +31,11 @@ class LiberoTopNavBar extends React.PureComponent {
 
     render() {
         return (
-            <Navbar className="App-bar" fixed="top" collapseOnSelect expand="lg" variant="dark">
-                <img href="#home" width={150} src={require('../images/libero-logo.png')} />
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar style={{ flex: 1, padding: 0 }} className="App-bar" fixed="top" expand="lg" variant="dark">
+                <img alt='logo' href="#home" logo="top" src={require('../images/libero-header.jpg')} />
+                <Navbar.Toggle style={{ margin: 8 }} aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="Header-links">
+                    <Nav style={{ margin: 8 }} className="Header-links">
                         <Nav.Link href="#inicio"><Icon name="home" />PAGINA INICIAL</Nav.Link>
                         <Nav.Link href="#sobre"><Icon name="question circle" />QUEM SOMOS</Nav.Link>
                         <NavDropdown title="SEGUROS" id="collasible-nav-dropdown">

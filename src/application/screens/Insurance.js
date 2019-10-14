@@ -1,6 +1,6 @@
 import React from 'react';
 import './Screens.css'
-import { Divider } from 'semantic-ui-react'
+import 'semantic-ui-css/semantic.min.css'
 
 class Insurance extends React.PureComponent {
 
@@ -11,8 +11,7 @@ class Insurance extends React.PureComponent {
 
     render() {
         return (
-            <div id="baixeapp" className="Baixe-app" >
-                <Divider />
+            <div  >
                 <text className="Baixe-app-font" >Consulte nossos serviços:</text>
                 <br /><br />
                 <div className="Img" >

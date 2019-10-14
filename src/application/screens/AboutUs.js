@@ -2,7 +2,7 @@ import React from 'react';
 import './Screens.css'
 import 'semantic-ui-css/semantic.min.css'
 
-class AboutApp extends React.PureComponent {
+class AboutUs extends React.PureComponent {
 
     state = {
 
@@ -11,11 +11,11 @@ class AboutApp extends React.PureComponent {
 
     render() {
         return (
-            <div  >
-                <text className="Baixe-app-font" >Conheça nosso aplicativo:</text>
+            <div className="About-Us" >
+                <text className="Baixe-app-font" >Quem somos:</text>
                 <br /><br />
                 <div className="Img" >
-                    <img width={800} src={require('../images/libero-capa.png')} />
+                    <img image="aboutUs" src={require('../images/libero-porta.png')} />
                 </div>
 
             </div>
@@ -24,4 +24,4 @@ class AboutApp extends React.PureComponent {
     }
 }
 
-export default AboutApp;
+export default AboutUs;
