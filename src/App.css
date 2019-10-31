@@ -18,10 +18,9 @@ html, body, #root {
 
 .App-content {
   flex: 1;
-  margin-bottom: 14vh;
-  margin-top: 20vh;
-  width: 100vw;
-  padding: 1vw;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  width: 100%;
 }
 
 .App-bar {
@@ -35,11 +34,16 @@ html, body, #root {
 }
 
 .Bottom-bar {
+  background-color: #182a4e;
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: fixed;
   display: flex;
-  flex: 1;
   width: 100vw;
+  height: 15vh;
   bottom: 0;
+  left: 0;
+  right: 0;
+  float: right;
   overflow: auto;
 }
 
@@ -71,7 +75,7 @@ html, body, #root {
 }
 
 .Responsive-Text {
-  font-size: calc(7px + .5vw);
+  font-size: 25px;
 }
 
 [link=bottom] {
@@ -87,32 +91,86 @@ html, body, #root {
   flex-direction: column
 }
 
+.About-App {
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+
 .Insurance {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Insurance-component {
+  width: 100%;
+  background-color: "red";
+}
+
+.Insurance-categorie {
+  align-items: center;
+  display: flex;
+  flex: 1;
   justify-content: space-around;
 }
 
-.Insurance-block {
-  display: block;
-}
-
 .LiberoSecurityCard {
+  margin: 10px;
   display: flex;
-  padding: 3%;
   flex-direction: column;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  height: 120px;
-  width: 120px;
+  height: 160px;
+  width: 160px;
   background-color: #182a4e;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
+.LiberoSecurityCard p {
+  font-size: 80%;
+  text-align: center;
+  font-weight: bold;
+}
+
 .LiberoSecurityCard:hover {
   background-color: #fff;
   color: #182a4e;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Intro-font-component {
+  width: 100vw;
+}
+
+@media(max-width:700px) {
+  .Insurance-categorie {
+    display: flex;
+    flex-direction: column;
+  }
+  .Insurance {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .LiberoSecurityCard {
+    height: 80px;
+    width: 80px;
+  }
+  .LiberoSecurityCard p {
+    font-size: 48%;
+    text-align: center;
+  }
+  .Bottom-bar {
+    background-color: #fff;
+  }
+  .Responsive-Text {
+    color: #182a4e;
+    font-size: 4vw;
+  }
 }

@@ -15,7 +15,7 @@ class LiberoSecurityCard extends React.PureComponent {
         return (
             <div className="LiberoSecurityCard" >
                 <Icon name={iconName} size='big' />
-                <p className="Responsive-Text" >{security}</p>
+                <p>{security}</p>
             </div>
         );
     }

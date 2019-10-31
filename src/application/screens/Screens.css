@@ -1,8 +1,10 @@
 .Img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%
+    width: 100vw;
+    max-width: 700px;
+}
+
+.Img img {
+    width: 100%
 }
 
 .Baixe-app {
@@ -11,4 +13,19 @@
 
 .Baixe-app-font {
     font-size: 30px;
+}
+
+.Intro-font {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vw;
+    color: #3b414d;
+}
+
+@media(max-width:950px) {
+    .Intro-font {
+        font-weight: bold;
+        font-size: 7vw;
+        color: #3b414d;
+    }
 }
