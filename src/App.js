@@ -7,6 +7,7 @@ import AboutApp from './application/screens/AboutApp'
 import Insurance from './application/screens/Insurance'
 
 import { Divider } from 'semantic-ui-react'
+import SocialMedia from './application/components/SocialMedia';
 
 
 
@@ -16,7 +17,9 @@ function App() {
       <LiberoTopNavBar />
       <div style={{ flex: 1 }} className="App-content" >
         <Insurance />
-        <Divider />
+        <SocialMedia/>
+        <AboutApp />
+        <AboutApp />
         <AboutApp />
       </div>
       <LiberoBottomBar />

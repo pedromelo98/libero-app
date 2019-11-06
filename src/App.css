@@ -37,7 +37,7 @@ html, body, #root {
   background-color: #182a4e;
   box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: fixed;
-  display: flex;
+  display: none;
   width: 100vw;
   height: 15vh;
   bottom: 0;
@@ -106,6 +106,7 @@ html, body, #root {
 }
 
 .Insurance-component {
+  display: none;
   width: 100%;
   background-color: "red";
 }
@@ -148,6 +149,38 @@ html, body, #root {
   width: 100vw;
 }
 
+.Social-media {
+  color: #fff;
+  position: fixed;
+  right: 0;
+  bottom: 30%;
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.Icon-component:hover {
+  color: #182a4e;
+  background-color: #fff;
+}
+
+
+.Icon-component {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #182a4e;
+  border-radius: 50px;
+  align-items: center;
+  padding: 8px 2px 8px 8px;
+  justify-content: center;
+}
+
+.Icon-text {
+  display: none;
+}
+
 @media(max-width:700px) {
   .Insurance-categorie {
     display: flex;
@@ -167,10 +200,14 @@ html, body, #root {
     text-align: center;
   }
   .Bottom-bar {
+    display: flex;
     background-color: #fff;
   }
   .Responsive-Text {
     color: #182a4e;
     font-size: 4vw;
+  }
+  .Insurance-component{
+    display: block;
   }
 }
