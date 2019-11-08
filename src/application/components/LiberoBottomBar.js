@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css'
-import { Button, Icon } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
 
 class LiberoBottomBar extends React.PureComponent {
 
