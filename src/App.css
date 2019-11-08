@@ -152,33 +152,40 @@ html, body, #root {
 .Social-media {
   color: #fff;
   position: fixed;
-  right: 0;
+  left: 10px;
   bottom: 30%;
   display: flex;
-  height: 250px;
+  height: 100px;
   flex-direction: column;
   justify-content: space-around;
-  
+  width: 150px;
+}
+
+.Icon-component {
+  float: right;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  color: #182a4e;
+  border-radius: 50px;
+  align-items: center;
+  padding: 8px 8px 8px 12px;
+  overflow: hidden;
+  width: 45px;
+  transition: 0.3s;
+  border: 5px groove #182a4e;
 }
 
 .Icon-component:hover {
-  color: #182a4e;
-  background-color: #fff;
-}
-
-
-.Icon-component {
-  display: flex;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
   background-color: #182a4e;
-  border-radius: 50px;
-  align-items: center;
-  padding: 8px 2px 8px 8px;
-  justify-content: center;
+  width: 150px;
 }
 
 .Icon-text {
-  display: none;
+  font-size: 16px;
+  padding-left: 16px;
+  font-weight: bold;
 }
 
 @media(max-width:700px) {

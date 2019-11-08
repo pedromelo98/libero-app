@@ -8,18 +8,14 @@ class SocialMedia extends React.PureComponent {
         return (
             <div className="Social-media" >
                 <div className="Icon-component" >
-                    <p className='Icon-text' >facebook</p>
                     <Icon size='big' name="facebook f" />
+                    <p className='Icon-text' >facebook</p>
                 </div>
-                <div className="Icon-component" >
+                <div style={{paddingLeft: 5}} className="Icon-component" >
                     <Icon size='big' name="instagram" />
+                    <p className='Icon-text' >Instagram</p>
                 </div>
-                <div className="Icon-component" >
-                    <Icon size='big' name="google play" />
-                </div>
-                <div className="Icon-component" >
-                    <Icon size='big' name="app store ios" />
-                </div>
+                
             </div>
 
         );
