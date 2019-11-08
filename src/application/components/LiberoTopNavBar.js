@@ -25,7 +25,7 @@ class LiberoTopNavBar extends React.PureComponent {
                     <NavDropdown.Item key={i} href={`#seguros/${l}`}>{l}</NavDropdown.Item>
                 )
             })
-        )
+        );
 
     }
 
