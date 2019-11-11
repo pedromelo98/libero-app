@@ -19,13 +19,7 @@ class LiberoTopNavBar extends React.PureComponent {
     }
 
     renderDropdownItens() {
-        return (
-            this.state.seguros.map((l, i) => {
-                return (
-                    <NavDropdown.Item key={i} href={`#seguros/${l}`}>{l}</NavDropdown.Item>
-                )
-            })
-        );
+        return this.state.seguros.map((l, i) => <NavDropdown.Item key={i} href={`#seguros/${l}`}>{l}</NavDropdown.Item>);
 
     }
 

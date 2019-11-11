@@ -2,19 +2,17 @@ import React from 'react';
 import './Screens.css';
 import 'semantic-ui-css/semantic.min.css';
 import { Row, Col } from 'react-bootstrap';
-//import 'bootstrap';
-import LiberoSecurityCard from '../components/LiberoSecurityCard';
 import InsCard from '../components/InsCard';
 
 
 function HomeScreen() {
-
+    // https://blog.benner.com.br/hubfs/internet-das-coisas.jpg
     return (
         <div>
             <Row noGutters={true}>
                 <Col>
                     <InsCard
-                        bg={"https://blog.benner.com.br/hubfs/internet-das-coisas.jpg"}
+                        bg={"https://www.proteste.org.br/-/media/proteste/images/home/seguros/seguro-vida-cobertura.jpg?rev=58118673-a4cc-4d43-97de-b154d9f76baf"}
                         insurance={"Seguro de vida"}
                         text={"Venha conhecer nosso seguro de vida"} />
                 </Col>

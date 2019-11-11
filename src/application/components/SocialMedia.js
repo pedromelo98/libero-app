@@ -11,11 +11,11 @@ class SocialMedia extends React.PureComponent {
                     <Icon size='big' name="facebook f" />
                     <p className='Icon-text' >facebook</p>
                 </div>
-                <div style={{paddingLeft: 5}} className="Icon-component" >
+                <div style={{ paddingLeft: 5 }} className="Icon-component" >
                     <Icon size='big' name="instagram" />
                     <p className='Icon-text' >Instagram</p>
                 </div>
-                
+
             </div>
 
         );

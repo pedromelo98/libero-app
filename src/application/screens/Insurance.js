@@ -6,15 +6,11 @@ import LiberoSecurityCard from '../components/LiberoSecurityCard'
 
 class Insurance extends React.PureComponent {
 
-    state = {
-
-    }
-
 
     render() {
         return (
             <div className="Insurance-component" >
-                <div fixedIntro="insurance" className="Intro-font-component" >
+                <div fixedintro="insurance" className="Intro-font-component" >
                     <p className="Intro-font" >Nossos serviços</p>
                 </div>
                 <br /><br />

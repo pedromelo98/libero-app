@@ -4,11 +4,6 @@ import 'semantic-ui-css/semantic.min.css'
 
 class AboutUs extends React.PureComponent {
 
-    state = {
-
-    }
-
-
     render() {
         return (
             <div className="About-Us" >
