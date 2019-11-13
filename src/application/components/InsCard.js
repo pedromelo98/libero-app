@@ -10,7 +10,7 @@ function InsCard(props) {
     }, [props.bg]);
 
 
-    const dealEnter = _ => over.current.style.backgroundColor = "rgba(127,210,221,1)";
+    const dealEnter = _ => over.current.style.backgroundColor = "rgba(24,42,78,0.9)";
     const dealLeave = _ => over.current.style.backgroundColor = '';
 
     return (

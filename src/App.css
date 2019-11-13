@@ -175,7 +175,7 @@ html, body, #root {
   overflow: hidden;
   width: 45px;
   transition: 0.3s;
-  border: 5px groove #182a4e;
+  border: 5px solid #182a4e;
 }
 
 .Icon-component:hover {
