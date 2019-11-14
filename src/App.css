@@ -173,7 +173,7 @@ html, body, #root {
   align-items: center;
   padding: 8px 8px 8px 12px;
   overflow: hidden;
-  width: 45px;
+  width: 49px;
   transition: 0.3s;
   border: 5px solid #182a4e;
 }
@@ -184,9 +184,13 @@ html, body, #root {
   width: 150px;
 }
 
+.hover-facebook:hover{
+  padding-left: 5px;
+}
+
 .Icon-text {
   font-size: 16px;
-  padding-left: 16px;
+  padding-left: 13px;
   font-weight: bold;
 }
 

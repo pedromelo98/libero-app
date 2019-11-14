@@ -7,11 +7,11 @@ class SocialMedia extends React.PureComponent {
     render() {
         return (
             <div className="Social-media" >
-                <div className="Icon-component" >
+                <div className="Icon-component hover-facebook" >
                     <Icon size='big' name="facebook f" />
                     <p className='Icon-text' >facebook</p>
                 </div>
-                <div style={{ paddingLeft: 5 }} className="Icon-component" >
+                <div style={{ paddingLeft: 7 }} className="Icon-component" >
                     <Icon size='big' name="instagram" />
                     <p className='Icon-text' >Instagram</p>
                 </div>
