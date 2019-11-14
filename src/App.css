@@ -159,11 +159,11 @@ html, body, #root {
   height: 100px;
   flex-direction: column;
   justify-content: space-around;
-  width: 150px;
+  width: 50px;
 }
 
 .Icon-component {
-
+  
   float: right;
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

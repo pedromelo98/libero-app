@@ -22,10 +22,17 @@
     color: #3b414d;
 }
 
+.Slider-img {
+    height: 600px;
+}
+
 @media(max-width:950px) {
     .Intro-font {
         font-weight: bold;
         font-size: 7vw;
         color: #3b414d;
+    }
+    .Slider-img {
+        height: 200px;
     }
 }
