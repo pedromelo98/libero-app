@@ -19,8 +19,8 @@ function CardBox() {
                 <Col>
                     <InsCard
                         bg={"https://jurosbaixos.com.br/conteudo/wp-content/uploads/sites/2/2018/02/media-20180205.png"}
-                        insurance={"Seguro de Carro"}
-                        text={"Venha conhecer nosso seguro de carros"} />
+                        insurance={"Seguro veicular"}
+                        text={"Venha conhecer nosso seguro veicular"} />
                 </Col>
                 <Col>
 
