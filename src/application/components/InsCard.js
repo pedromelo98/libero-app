@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import {Link} from 'react-router-dom'
 import '../../App.css';
 
 function InsCard(props) {
@@ -17,7 +18,9 @@ function InsCard(props) {
         <div ref={card} className="Insurance-card" onMouseEnter={dealEnter} onMouseLeave={dealLeave}>
 
             <div className="card-content">
-                <a href={`#${props.insurance}`} className="card-topic">{props.insurance}</a>
+                <Link to="/insurance">
+                    <a href={`#${props.insurance}`} className="card-topic">{props.insurance}</a>
+                </Link>
                 <h3>{props.text}</h3>
             </div>
             <div ref={over} className="card-overlay"></div>

@@ -9,6 +9,7 @@ import SocialMedia from "../components/SocialMedia";
 import App from '../../App.js';
 import HomeSlider from "../screens/HomeSlider";
 import AboutApp from "../screens/AboutApp.js";
+import CarInsurance from "../components/CarInsurance.js"
 
 function Routes() {
 
@@ -27,6 +28,9 @@ function Routes() {
                     </Route>
                     <Route path="/about">
                         <AboutApp/>
+                    </Route>
+                    <Route path="/insurance">
+                        <CarInsurance/>
                     </Route>
                     <Route path="*">
                         <ComponentNotFound404/>

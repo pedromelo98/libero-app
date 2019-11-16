@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './Screens.css'
 import 'semantic-ui-css/semantic.min.css'
 
@@ -16,10 +17,12 @@ class Insurance extends React.PureComponent {
                 <br /><br />
                 <div className="Insurance" >
                     <div className="Insurance-categorie" >
-                        <LiberoSecurityCard iconName='car' security='CARRO' />
-                        <LiberoSecurityCard iconName='motorcycle' security='MOTO' />
-                        <LiberoSecurityCard iconName='truck' security='CAMINHÃO' />
-                        <LiberoSecurityCard iconName='bicycle' security='BIKE' />
+                        <Link to="/insurance">
+                            <LiberoSecurityCard iconName='car' security='CARRO' />
+                            <LiberoSecurityCard iconName='motorcycle' security='MOTO' />
+                            <LiberoSecurityCard iconName='truck' security='CAMINHÃO' />
+                            <LiberoSecurityCard iconName='bicycle' security='BIKE' />
+                        </Link>
                     </div>
                     <div className="Insurance-categorie" >
                         <LiberoSecurityCard iconName='home' security='RESIDENCIAL' />
