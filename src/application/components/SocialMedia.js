@@ -20,7 +20,7 @@ class SocialMedia extends React.PureComponent {
                     </div>
                 </a>
                 <a href="https://www.instagram.com/liberoseguros/" >
-                    <div style={{ paddingLeft: 7 }} className="Icon-component" >
+                    <div style={{ paddingLeft: 8 }} className="Icon-component" >
                         <Icon size='big' name="instagram" />
                         <p className='Icon-text' >Instagram</p>
                     </div>
