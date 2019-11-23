@@ -17,7 +17,7 @@ class LiberoBottomBar extends React.PureComponent {
                        <Icon size='big' name='home' />
                        <p className='Bottom-text' >Home</p>
                    </a>
-                   <a href="" className="Bottom-item" >
+                   <a href="/social" className="Bottom-item" >
                        <Icon size='big' name='whatsapp' />
                        <p className='Bottom-text' >Social</p>
                    </a>

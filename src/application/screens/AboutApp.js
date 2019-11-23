@@ -12,7 +12,6 @@ class AboutApp extends React.PureComponent {
         return (
             <div className="About-App" >
                 <p className="Intro-font" >Conheça nosso aplicativo</p>
-                <br /><br />
                 <div className="Img" >
                     <img src={require('../images/libero-capa.png')} alt="Imagem promocional do App" />
                 </div>
