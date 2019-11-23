@@ -71,11 +71,9 @@ export default function InsuranceBox(props) {
 function DesktopIcon(props) {
     const tlink = React.useRef(null);
     const { iconName, security } = props;
-    
-    function handleRedirect() {
-        console.log(tlink.current);
-        tlink.current.click();
-    }
+
+    const handleRedirect = () => tlink.current.click();
+
 
 
     return (
