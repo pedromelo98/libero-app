@@ -1,16 +1,15 @@
 import React from 'react';
 import { Card, Button, Row, Col, Container } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
-
+import '../screens/Screens.css'
 
 export default function InsuranceBox() {
     return (
         <Container >
-            {/* <Card className={"text-center"}> */}
+            <p className="Intro-font" >Nossos serviços</p>
             <Card>
-                <Card.Header as="h5">Conheça nossos seguros</Card.Header>
+                <Card.Header as='h5' >Faça sua cotação online:</Card.Header>
                 <Card.Body>
-                    <Card.Title>Faça sua cotação online:</Card.Title>
                     <Row className="text-center">
 
                         <Col sm={3} xs={4}>
@@ -60,7 +59,7 @@ export default function InsuranceBox() {
 
 
                     </Row>
-                    
+
                     {/*<Button variant="primary">Go somewhere</Button>*/}
                 </Card.Body>
             </Card>
