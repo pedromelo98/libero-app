@@ -2,13 +2,14 @@ import React from 'react'
 import '../../App.css';
 import { Input,Dropdown, Button } from 'semantic-ui-react';
 import { Form } from 'react-bootstrap';
-
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
+import TextField from '@material-ui/core/TextField';
+
 
 function CarInsurance(props){
     const gen = [{text:"Masculino", value:"Masculino"},
@@ -20,7 +21,7 @@ function CarInsurance(props){
                  {text:"Divorciado(a)", value:"Divorciado(a)"}]
 
     return(
-        <div>
+        <div style={{textAlign: 'center'}}>
         <FormControl variant="outlined" >
         <InputLabel htmlFor="outlined-age-native-simple">
           Age
@@ -41,7 +42,7 @@ function CarInsurance(props){
         
         <Form>
 
-        
+          <TextField required label="Nome Completo" fullWidth={true} variant={"outlined"}/>
 
             <p>Nome Completo</p><Input/>
             <p>CPF/CNPJ</p><Input/>
