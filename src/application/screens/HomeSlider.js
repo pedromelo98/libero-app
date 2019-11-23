@@ -8,16 +8,6 @@ export default function HomeSlider() {
 
     return (
         <Carousel>
-            {/*<Carousel.Item>
-                <img
-                    carousel={isMobile ? "mobile" : "browser"}
-                    src={require('../images/carro.jpg')}
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                </Carousel.Caption>
-            </Carousel.Item>*/}
-            
             <Carousel.Item>
                 <img
                     carousel={isMobile ? "mobile" : "browser"}
@@ -27,8 +17,20 @@ export default function HomeSlider() {
                 />
 
                 <Carousel.Caption>
+                    Faça seu seguro com a Líbero
                 </Carousel.Caption>
             </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    carousel={isMobile ? "mobile" : "browser"}
+                    src={require('../images/online.jpg')}
+                    alt="First slide"
+                />
+                <Carousel.Caption>
+                    Faça sua cotação online.
+                </Carousel.Caption>
+            </Carousel.Item>
+
         </Carousel>
     );
 }
