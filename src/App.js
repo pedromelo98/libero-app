@@ -7,6 +7,7 @@ function App(props) {
   return (
     <div className="App" >
       <LiberoTopNavBar />
+      <SocialMedia />
       <div style={{ flex: 1 }} className="App-content" >
         {props.children}
       </div>

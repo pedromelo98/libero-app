@@ -12,7 +12,6 @@ export default function HomeScreen() {
             {//<HomeSlider />
             }
             <Insurance />
-            <SocialMedia />
             <AboutApp />
             <CarInsurance />
         </>
