@@ -6,8 +6,9 @@ import { Icon } from 'semantic-ui-react';
 export default function InsuranceBox() {
     return (
         <Container >
-            <Card className={"text-center"}>
-                <Card.Header as="h5">Featured</Card.Header>
+            {/* <Card className={"text-center"}> */}
+                <Card>
+                <Card.Header as="h5">Conheça nossos seguros</Card.Header>
                 <Card.Body>
                     <Card.Title>Special title treatment</Card.Title>
                     <Row className="text-center">
@@ -17,35 +18,35 @@ export default function InsuranceBox() {
                         </Col>
 
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='car' security='CARRO' />
+                            <DesktopIcon iconName='motorcycle' security='MOTO' />
                         </Col>
 
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='car' security='CARRO' />
+                            <DesktopIcon iconName='truck' security='CAMINHÃO' />
                         </Col>
 
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='car' security='CARRO' />
+                            <DesktopIcon iconName='bicycle' security='BIKE' />
                         </Col>
 
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='car' security='CARRO' />
+                            <DesktopIcon iconName='home' security='RESIDENCIAL' />
                         </Col>
 
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='car' security='CARRO' />
+                            <DesktopIcon iconName='warehouse' security='EMPRESA' />
                         </Col>
 
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='car' security='CARRO' />
+                            <DesktopIcon iconName='building' security='CONDOMÍNIO' />
                         </Col>
 
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='car' security='CARRO' />
+                            <DesktopIcon iconName='plane' security='VIAGEM' />
                         </Col>
 
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='car' security='CARRO' />
+                            <DesktopIcon iconName='heart' security='VIDA INDIVIDUAL' />
                         </Col>
 
 
@@ -66,9 +67,11 @@ function DesktopIcon(props) {
     const { iconName, security } = props;
 
     return (
+        <>
         <div className="DesktopIcon text-center"  >
             <Icon name={iconName} size={`${props.size !== undefined ? props.size : 'big'}`} />
-            <p>{security}</p>
+            {/* <p>{security}</p> */}
         </div>
+        </>
     );
 }

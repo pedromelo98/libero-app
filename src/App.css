@@ -171,10 +171,9 @@ html, body, #root {
   color: #182a4e;
   border-radius: 50px;
   align-items: center;
-  padding: 8px 8px 8px 12.5px;
+  padding: 8px 8px 8px 12px;
   overflow: hidden;
   width: 49px;
-  height: 50px;
   transition: 0.3s;
   border: 5px solid #182a4e;
 }
