@@ -1,9 +1,11 @@
 import React from 'react';
 import { Card, Button, Row, Col, Container } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
-import '../screens/Screens.css'
+import { Link } from 'react-router-dom';
+import '../screens/Screens.css';
 
-export default function InsuranceBox() {
+export default function InsuranceBox(props) {
+
     return (
         <Container >
             <p className="Intro-font" >Nossos serviços</p>
@@ -51,10 +53,10 @@ export default function InsuranceBox() {
                             <DesktopIcon iconName='users' security='VIDA GLOBAL' />
                         </Col>
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='doctor' security='ODONTOLÓGICO' />
+                            <DesktopIcon iconName='doctor' security='ODONTOLÓGICO' path="#" />
                         </Col>
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='plus circle' security='DIVERSOS' />
+                            <DesktopIcon iconName='plus circle' security='DIVERSOS' path="#" />
                         </Col>
                     </Row>
 
@@ -67,22 +69,21 @@ export default function InsuranceBox() {
 
 
 function DesktopIcon(props) {
+    const tlink = React.useRef(null);
     const { iconName, security } = props;
-
-    function handleRedirect(path){
-        return evt => {
-            console.log(evt);
-            
-        }
+    
+    function handleRedirect() {
+        console.log(tlink.current);
+        tlink.current.click();
     }
 
 
     return (
         <div className="DesktopIcon-Flemis">
-            <div onClick={handleRedirect("string")} className="DesktopIcon text-center">
+            <div onClick={handleRedirect} className="DesktopIcon">
                 <Icon name={iconName} size={`${props.size !== undefined ? props.size : 'big'}`} />
             </div>
-            <p>{security}</p>
+            <Link ref={tlink} to={props.path ? props.path : "/#?"}>{security}</Link>
 
         </div>
     );
