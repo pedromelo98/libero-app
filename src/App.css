@@ -119,52 +119,6 @@ html, body, #root {
   width: 100vw;
 }
 
-.Social-media {
-  z-index: 10;
-  color: #fff;
-  position: fixed;
-  right: 10px;
-  bottom: 30%;
-  display: flex;
-  height: 170px;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 50px;
-}
-
-.Icon-component {
-  float: right;
-  display: flex;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  color: #182a4e;
-  border-radius: 50px;
-  align-items: center;
-  padding: 8px 8px 8px 12px;
-  overflow: hidden;
-  width: 49px;
-  transition: 0.3s;
-  border: 5px solid #182a4e;
-}
-
-.Icon-component:hover {
-  color: #fff;
-  background-color: #182a4e;
-  width: 150px;
-}
-
-.hover-facebook:hover{
-  padding-left: 5px;
-}
-
-.Icon-text {
-  font-size: 16px;
-  padding-left: 13px;
-  font-weight: bold;
-}
-
-
-
 .Insurance-card {
   color: #FFF;
  /*  flex-direction: column;
