@@ -27,7 +27,6 @@ function Routes() {
                     </Route>
                     <Route path="*">
                         <ComponentNotFound404 />
-                        <SocialMedia />
                     </Route>
                 </Switch>
             </App>
