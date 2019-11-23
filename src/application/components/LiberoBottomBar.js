@@ -1,6 +1,7 @@
 import React from 'react';
-import '../styles/Footer.css'
-import { Icon } from 'semantic-ui-react'
+import '../styles/Footer.css';
+import { Icon } from 'semantic-ui-react';
+import { withRouter } from 'react-router-dom';
 
 class LiberoBottomBar extends React.PureComponent {
 
@@ -31,4 +32,4 @@ class LiberoBottomBar extends React.PureComponent {
     }
 }
 
-export default LiberoBottomBar;
+export default  withRouter(LiberoBottomBar);
