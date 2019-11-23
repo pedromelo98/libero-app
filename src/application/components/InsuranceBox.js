@@ -7,7 +7,7 @@ export default function InsuranceBox() {
     return (
         <Container >
             {/* <Card className={"text-center"}> */}
-                <Card>
+            <Card>
                 <Card.Header as="h5">Conheça nossos seguros</Card.Header>
                 <Card.Body>
                     <Card.Title>Special title treatment</Card.Title>
@@ -67,11 +67,12 @@ function DesktopIcon(props) {
     const { iconName, security } = props;
 
     return (
-        <>
-        <div className="DesktopIcon text-center"  >
-            <Icon name={iconName} size={`${props.size !== undefined ? props.size : 'big'}`} />
-            {/* <p>{security}</p> */}
+        <div className="DesktopIcon-Flemis">
+            <div className="DesktopIcon text-center">
+                <Icon name={iconName} size={`${props.size !== undefined ? props.size : 'big'}`} />
+                {/* <p>{security}</p> */}
+            </div>
+            <p>{security}</p>
         </div>
-        </>
     );
 }

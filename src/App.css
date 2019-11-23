@@ -119,7 +119,6 @@ html, body, #root {
   width: 100vw;
 }
 
-<<<<<<< HEAD
 .Social-media {
   z-index: 10;
   color: #fff;
@@ -166,8 +165,6 @@ html, body, #root {
 
 
 
-=======
->>>>>>> 10312717f0da02a910c70e0747d009c5e6ce130c
 .Insurance-card {
   color: #FFF;
  /*  flex-direction: column;
@@ -260,3 +257,42 @@ html, body, #root {
 }
 
 
+.DesktopIcon-Flemis {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.DesktopIcon {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 67px;
+  background-color: #182a4e;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.Ins-Box {
+  border-style: solid;
+  background-color: #E2DEDE;
+  background: #FFF;
+}
+
+.DesktopIcon p {
+  font-size: 80%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.DesktopIcon:hover {
+  background-color: #fff;
+  color: #182a4e;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
