@@ -69,9 +69,17 @@ export default function InsuranceBox() {
 function DesktopIcon(props) {
     const { iconName, security } = props;
 
+    function handleRedirect(path){
+        return evt => {
+            console.log(evt);
+            
+        }
+    }
+
+
     return (
         <div className="DesktopIcon-Flemis">
-            <div className="DesktopIcon text-center">
+            <div onClick={handleRedirect("string")} className="DesktopIcon text-center">
                 <Icon name={iconName} size={`${props.size !== undefined ? props.size : 'big'}`} />
             </div>
             <p>{security}</p>
