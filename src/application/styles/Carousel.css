@@ -1,4 +1,9 @@
-.Img-Carousel{
+[carousel="mobile"]{
     height: 200px;
+    width: 100vw;
+}
+
+[carousel="browser"]{
+    height: 700px;
     width: 100vw;
 }
