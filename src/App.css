@@ -124,12 +124,18 @@ html, body, #root {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  height: 160px;
-  width: 160px;
+  height: 56px;
+  width: 67px;
   background-color: #182a4e;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+}
+
+.Ins-Box {
+  border-style: solid;
+  background-color: #E2DEDE;
+  background: #FFF;
 }
 
 .LiberoSecurityCard p {
