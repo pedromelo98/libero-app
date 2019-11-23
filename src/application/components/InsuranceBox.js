@@ -10,7 +10,7 @@ export default function InsuranceBox() {
             <Card>
                 <Card.Header as="h5">Conheça nossos seguros</Card.Header>
                 <Card.Body>
-                    <Card.Title>Special title treatment</Card.Title>
+                    <Card.Title>Faça sua cotação online:</Card.Title>
                     <Row className="text-center">
 
                         <Col sm={3} xs={4}>
@@ -60,10 +60,8 @@ export default function InsuranceBox() {
 
 
                     </Row>
-                    <Card.Text>
-                        With supporting text below as a natural lead-in to additional content.
-                </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    
+                    {/*<Button variant="primary">Go somewhere</Button>*/}
                 </Card.Body>
             </Card>
         </Container>
