@@ -34,48 +34,13 @@ html, body, #root {
   justify-content: flex-end;
 }
 
-.Bottom-bar {
-  background-color: #fff;
-  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  position: fixed;
-  display: flex;
-  width: 100vw;
-  height: 15vh;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  float: right;
-  overflow: auto;
-}
+
 
 [logo=top] {
   width: 50vw;
   max-width: 400px;
 }
 
-[logo=bottom] {
-  max-height: 100px;
-  max-width: 100px;
-}
-
-[conteudo=bottom] {
-  color: #fff;
-  display: flex;
-  flex: 1;
-  align-items: center;
-}
-
-.Bottom-Flex {
-  flex: 1;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.Responsive-Text {
-  font-size: 25px;
-}
 
 [link=bottom] {
   color: white;
@@ -152,50 +117,6 @@ html, body, #root {
 
 .Intro-font-component {
   width: 100vw;
-}
-
-.Social-media {
-  z-index: 10;
-  color: #fff;
-  position: fixed;
-  right: 10px;
-  bottom: 30%;
-  display: flex;
-  height: 170px;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 50px;
-}
-
-.Icon-component {
-  float: right;
-  display: flex;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  color: #182a4e;
-  border-radius: 50px;
-  align-items: center;
-  padding: 8px 8px 8px 12px;
-  overflow: hidden;
-  width: 49px;
-  transition: 0.3s;
-  border: 5px solid #182a4e;
-}
-
-.Icon-component:hover {
-  color: #fff;
-  background-color: #182a4e;
-  width: 150px;
-}
-
-.hover-facebook:hover{
-  padding-left: 5px;
-}
-
-.Icon-text {
-  font-size: 16px;
-  padding-left: 13px;
-  font-weight: bold;
 }
 
 

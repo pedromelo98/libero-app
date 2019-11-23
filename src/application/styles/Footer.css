@@ -1,0 +1,36 @@
+[conteudo=bottom] {
+    display: flex;
+    flex: 1;
+}
+
+[logo=bottom] {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.Bottom-bar {
+    background-color: #182a4e;
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    float: right;
+}
+
+.Bottom-item {
+    color: #fff;
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Bottom-text {
+    font-weight: bold;
+}
