@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css'
+import '../styles/Footer.css'
 import { Icon } from 'semantic-ui-react'
 
 class LiberoBottomBar extends React.PureComponent {

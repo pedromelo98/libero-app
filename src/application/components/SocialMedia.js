@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import '../styles/SocialMedia.css';
 import { Icon } from 'semantic-ui-react';
 
 class SocialMedia extends React.PureComponent {
