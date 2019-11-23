@@ -10,13 +10,13 @@ export default function HomeScreen() {
     return (
         <>
             <HomeSlider />
+            <BrowserView>
+                <InsuranceBox/>
+            </BrowserView>
             <MobileView>
                 <Insurance />
             </MobileView>
             <AboutApp />
-            <BrowserView>
-                <InsuranceBox/>
-            </BrowserView>
         </>
 
     );
