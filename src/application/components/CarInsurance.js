@@ -2,13 +2,15 @@ import React from 'react'
 import '../../App.css';
 import { Input,Dropdown, Button } from 'semantic-ui-react';
 import { Form } from 'react-bootstrap';
+
+import TextField from '@material-ui/core/TextField';
+
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
-import TextField from '@material-ui/core/TextField';
 
 
 function CarInsurance(props){
@@ -22,24 +24,23 @@ function CarInsurance(props){
 
     return(
         <div style={{textAlign: 'center'}}>
-        <FormControl variant="outlined" >
-        <InputLabel htmlFor="outlined-age-native-simple">
-          Age
-        </InputLabel>
-        <Select
-          native
-          inputProps={{
-            name: 'age',
-            id: 'outlined-age-native-simple',
-          }}
-        >
-          <option value="" />
-          <option value={10}>Ten</option>
-          <option value={20}>Twenty</option>
-          <option value={30}>Thirty</option>
-        </Select>
-      </FormControl>
-        
+
+        <FormControl fullWidth={true}>
+            <InputLabel htmlFor="age-native-simple">Age</InputLabel>
+            <Select
+                native
+                inputProps={{
+                    name: 'age',
+                    id: 'age-native-simple'
+                }}
+                >
+                <option value="" />
+                <option value={10}>Ten</option>
+                <option value={20}>Twenty</option>
+                <option value={30}>Thirty</option>
+            </Select>
+        </FormControl>
+
         <Form>
 
           <TextField required label="Nome Completo" fullWidth={true} variant={"outlined"}/>
@@ -47,7 +48,7 @@ function CarInsurance(props){
             <p>Nome Completo</p><Input/>
             <p>CPF/CNPJ</p><Input/>
             <p>Data de Nascimento</p><Input/>
-            <p>Gênero</p><Dropdown  placeholder='Selecione o gênero' selection options={gen}/>
+            <p>Gênero</p><Dropdown  placeholder='Selecione o gênero' fluid selection options={gen}/>
             <p>Estado Civil</p><Dropdown placeholder='Selecione o Estado Civil' selection options={sts}/>
             <Button>Próximo</Button>
             
