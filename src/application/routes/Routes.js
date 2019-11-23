@@ -5,6 +5,7 @@ import SocialMedia from "../components/SocialMedia";
 import App from '../../App.js';
 import HomeSlider from "../screens/HomeSlider";
 import AboutApp from "../screens/AboutApp.js";
+import Social from "../screens/Social.js";
 import CarInsurance from "../components/CarInsurance.js"
 
 function Routes() {
@@ -15,6 +16,9 @@ function Routes() {
                 <Switch>
                     <Route exact path="/">
                         <HomeScreen />
+                    </Route>
+                    <Route path="/social">
+                        <Social />
                     </Route>
                     <Route path="/slider">
                         <HomeSlider />
