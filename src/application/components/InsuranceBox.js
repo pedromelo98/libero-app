@@ -55,7 +55,7 @@ export default function InsuranceBox() {
                             <DesktopIcon iconName='heart' security='VIDA INDIVIDUAL' />
                         </Col>
                         <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='plus' security='DIVERSOS' />
+                            <DesktopIcon iconName='plus circle' security='DIVERSOS' />
                         </Col>
 
 
