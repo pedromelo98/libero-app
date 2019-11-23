@@ -214,9 +214,8 @@ html, body, #root {
 .DesktopIcon-Flemis {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-
-
 
 .DesktopIcon {
   margin: 10px;
@@ -225,8 +224,8 @@ html, body, #root {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  height: 56px;
-  width: 67px;
+  height: 80px;
+  width: 80px;
   background-color: #182a4e;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -247,6 +246,7 @@ html, body, #root {
 
 .DesktopIcon:hover {
   background-color: #fff;
+  cursor: pointer;
   color: #182a4e;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }

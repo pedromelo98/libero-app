@@ -48,6 +48,15 @@ export default function InsuranceBox() {
                         <Col sm={3} xs={4}>
                             <DesktopIcon iconName='heart' security='VIDA INDIVIDUAL' />
                         </Col>
+                        <Col sm={3} xs={4}>
+                            <DesktopIcon iconName='heart' security='VIDA INDIVIDUAL' />
+                        </Col>
+                        <Col sm={3} xs={4}>
+                            <DesktopIcon iconName='heart' security='VIDA INDIVIDUAL' />
+                        </Col>
+                        <Col sm={3} xs={4}>
+                            <DesktopIcon iconName='plus' security='DIVERSOS' />
+                        </Col>
 
 
                     </Row>
@@ -70,9 +79,9 @@ function DesktopIcon(props) {
         <div className="DesktopIcon-Flemis">
             <div className="DesktopIcon text-center">
                 <Icon name={iconName} size={`${props.size !== undefined ? props.size : 'big'}`} />
-                {/* <p>{security}</p> */}
             </div>
             <p>{security}</p>
+
         </div>
     );
 }
