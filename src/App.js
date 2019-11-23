@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import LiberoTopNavBar from './application/components/LiberoTopNavBar';
 import LiberoBottomBar from './application/components/LiberoBottomBar';
+import SocialMedia from './application/components/SocialMedia.js';
 
 function App(props) {
   return (
