@@ -16,7 +16,7 @@ class LiberoBottomBar extends React.PureComponent {
                     </div>
 
                     <div className="Bottom-Flex" >
-                        <img alt="logo libero" src={require("../images/libero-logo.png")} logo="bottom" />
+                        <img alt="logo libero" src={require("../images/liberologo.png")} logo="bottom" />
                     </div>
 
                     <div className="Bottom-Flex" >

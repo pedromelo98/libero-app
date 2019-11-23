@@ -19,19 +19,15 @@ function Routes() {
                 <Switch>
                     <Route exact path="/">
                         <HomeScreen />
-                        {/* <SocialMedia /> */}
                     </Route>
                     <Route path="/slider">
                         <HomeSlider />
-                        {/* <SocialMedia /> */}
                     </Route>
                     <Route path="/about">
                         <AboutApp/>
-                        {/* <SocialMedia /> */}
                     </Route>
                     <Route path="/insurance">
                         <CarInsurance/>
-                        {/* <SocialMedia /> */}
                     </Route>
                     <Route path="*">
                         <ComponentNotFound404/>
