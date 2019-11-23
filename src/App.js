@@ -1,18 +1,25 @@
 import React from 'react';
-import './App.css';
+import { BrowserView, MobileView } from 'react-device-detect'
+
 import LiberoTopNavBar from './application/components/LiberoTopNavBar';
 import LiberoBottomBar from './application/components/LiberoBottomBar';
-import SocialMedia from './application/components/SocialMedia.js';
+import SocialMedia from './application/components/SocialMedia'
+
+import './App.css';
 
 function App(props) {
   return (
     <div className="App" >
       <LiberoTopNavBar />
-      <SocialMedia />
+      <BrowserView>
+        <SocialMedia />
+      </BrowserView>
       <div style={{ flex: 1 }} className="App-content" >
         {props.children}
       </div>
-      <LiberoBottomBar />
+      <MobileView>
+        <LiberoBottomBar />
+      </MobileView>
     </div>
   );
 }

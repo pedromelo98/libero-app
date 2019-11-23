@@ -20,10 +20,10 @@ function Routes() {
                         <HomeSlider />
                     </Route>
                     <Route path="/about">
-                        <AboutApp />
+                        <AboutApp/>
                     </Route>
                     <Route path="/insurance">
-                        <CarInsurance />
+                        <CarInsurance/>
                     </Route>
                     <Route path="*">
                         <ComponentNotFound404 />
