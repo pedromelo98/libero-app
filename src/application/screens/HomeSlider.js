@@ -10,7 +10,7 @@ export default function HomeSlider() {
                 <Carousel.Item>
                     <img
                         className="Img-Carousel"
-                        src="https://www.proteste.org.br/-/media/proteste/images/home/seguros/seguro-vida-cobertura.jpg?rev=58118673-a4cc-4d43-97de-b154d9f76baf"
+                        src={require('../images/carro.jpg')}
                         alt="First slide"
                     />
                     <Carousel.Caption>
