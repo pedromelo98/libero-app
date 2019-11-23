@@ -19,21 +19,23 @@ function Routes() {
                 <Switch>
                     <Route exact path="/">
                         <HomeScreen />
-                    </Route>
-                    <Route path="/social">
                         <SocialMedia />
                     </Route>
                     <Route path="/slider">
                         <HomeSlider />
+                        <SocialMedia />
                     </Route>
                     <Route path="/about">
                         <AboutApp/>
+                        <SocialMedia />
                     </Route>
                     <Route path="/insurance">
                         <CarInsurance/>
+                        <SocialMedia />
                     </Route>
                     <Route path="*">
                         <ComponentNotFound404/>
+                        <SocialMedia />
                     </Route>
                 </Switch>
             </App>
