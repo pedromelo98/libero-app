@@ -8,7 +8,7 @@ export default function InsuranceBox() {
         <Container >
             <p className="Intro-font" >Nossos serviços</p>
             <Card>
-                <Card.Header as='h5' >Faça sua cotação online:</Card.Header>
+                <Card.Header as='h2' >Faça sua cotação online:</Card.Header>
                 <Card.Body>
                     <Row className="text-center">
 
@@ -56,11 +56,8 @@ export default function InsuranceBox() {
                         <Col sm={3} xs={4}>
                             <DesktopIcon iconName='plus circle' security='DIVERSOS' />
                         </Col>
-
-
                     </Row>
 
-                    {/*<Button variant="primary">Go somewhere</Button>*/}
                 </Card.Body>
             </Card>
         </Container>
