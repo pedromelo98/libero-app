@@ -16,19 +16,19 @@ class LiberoBottomBar extends React.PureComponent {
         return (
             <div className="Bottom-bar" >
                 <div conteudo="bottom" >
-                    <Link to="/insurance" className={this.setSelectedByPath('/insurance')} >
-                        <Icon size='big' name='shield' />
-                        <p className='Bottom-text' >Seguros</p>
-                    </Link>
                     <Link to="/" className={this.setSelectedByPath('/')} >
                         <Icon size='big' name='home' />
                         <p className='Bottom-text' >Home</p>
                     </Link>
-                    <Link to="/social" className={this.setSelectedByPath('/social')} >
+                    <Link to="/seguros" className={this.setSelectedByPath('/seguros')} >
+                        <Icon size='big' name='shield' />
+                        <p className='Bottom-text' >Seguros</p>
+                    </Link>
+                    <Link to="/redesocial" className={this.setSelectedByPath('/redesocial')} >
                         <Icon size='big' name='whatsapp' />
                         <p className='Bottom-text' >Social</p>
                     </Link>
-                    <Link to="/cotact" className={this.setSelectedByPath('/contact')} >
+                    <Link to="/contato" className={this.setSelectedByPath('/contato')} >
                         <Icon size='big' name='phone' />
                         <p className='Bottom-text' >Contato</p>
                     </Link>

@@ -2,7 +2,7 @@
     width: 10vw;
     height: 10vw;
     border: solid #182a4e;
-    border-radius: 75px;
+    border-radius: 100px;
     overflow: hidden;
     margin-top: 10px;
 }
@@ -30,6 +30,7 @@
 
 .Insurance-text{
     text-align: center;
+    font-size: 1vw;
 }
 
 .Insurance-img {

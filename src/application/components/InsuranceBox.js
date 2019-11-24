@@ -99,25 +99,6 @@ export default function InsuranceBox(props) {
                                 <p className="Insurance-text" >DIVERSOS</p>
                             </div>
                         </div>
-
-                        {/*<DesktopIcon iconName='motorcycle' security='MOTO' />
-
-                        <DesktopIcon iconName='truck' security='CAMINHÃO' />
-
-                        <DesktopIcon iconName='bicycle' security='BIKE' />
-
-                        <DesktopIcon iconName='home' security='RESIDENCIAL' />
-
-                        <DesktopIcon iconName='warehouse' security='EMPRESA' />
-
-                        <DesktopIcon iconName='building' security='CONDOMÍNIO' />
-
-                        <DesktopIcon iconName='plane' security='VIAGEM' />
-
-                        <DesktopIcon iconName='heart' security='VIDA INDIVIDUAL' />
-                        <DesktopIcon iconName='users' security='VIDA GLOBAL' />
-                        <DesktopIcon iconName='doctor' security='ODONTOLÓGICO' path="#" />
-                        <DesktopIcon iconName='plus circle' security='DIVERSOS' path="#" />*/}
                     </div>
 
                 </Card.Body>

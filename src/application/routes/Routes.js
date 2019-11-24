@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomeScreen from "../screens/HomeScreen.js";
-import SocialMedia from "../components/SocialMedia";
+import Insurance from "../screens/Insurance";
 import App from '../../App.js';
-import HomeSlider from "../screens/HomeSlider";
+import Contact from "../screens/Contact";
 import AboutApp from "../screens/AboutApp.js";
 import Social from "../screens/Social.js";
 import CarInsurance from "../components/CarInsurance.js"
@@ -17,17 +17,20 @@ function Routes() {
                     <Route exact path="/">
                         <HomeScreen />
                     </Route>
-                    <Route path="/social">
+                    <Route path="/redesocial">
                         <Social />
                     </Route>
-                    <Route path="/slider">
-                        <HomeSlider />
+                    <Route path="/sobre">
+                        <AboutApp />
                     </Route>
-                    <Route path="/about">
-                        <AboutApp/>
+                    <Route path="/seguro/carro">
+                        <CarInsurance />
                     </Route>
-                    <Route path="/insurance">
-                        <CarInsurance/>
+                    <Route path="/contato">
+                        <Contact />
+                    </Route>
+                    <Route path="/seguros">
+                        <Insurance />
                     </Route>
                     <Route path="*">
                         <ComponentNotFound404 />

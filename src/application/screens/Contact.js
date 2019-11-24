@@ -16,8 +16,8 @@ class Contact extends React.Component {
                 <p className="Intro-font" >Entre em contato conosco:</p>
                 <div className="Socials" >
                     <a className="Social-item" >
-                        <Icon name='whatsapp square' size='huge' />
-                        <p className="Social-font" >(34) 9 9999-9999</p>
+                        <Icon name='phone' size='huge' />
+                        <p className="Social-font" >(34)3322-6000</p>
                     </a>
                     <a className="Social-item" >
                         <Icon name='facebook' size='huge' />
