@@ -30,6 +30,10 @@
     justify-content: center;
 }
 
+.Bottom-selected:visited{ 
+    color: #182a4e
+}
+
 .Bottom-item {
     background-color: #182a4e;
     color: #fff;
