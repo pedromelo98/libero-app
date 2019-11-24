@@ -8,6 +8,7 @@ class LiberoTopNavBar extends React.PureComponent {
 
     state = {
         seguros: [
+            "Carro",
             "Bike",
             "Consórcio",
             "Financiamentos",
@@ -20,7 +21,7 @@ class LiberoTopNavBar extends React.PureComponent {
     }
 
     renderDropdownItens() {
-        return this.state.seguros.map((l, i) => <NavDropdown.Item key={i} href={`#seguros/${l}`}>{l}</NavDropdown.Item>);
+        return this.state.seguros.map((l, i) => <NavDropdown.Item key={i} href={`/seguro/${l}`}>{l}</NavDropdown.Item>);
 
     }
 
@@ -34,26 +35,23 @@ class LiberoTopNavBar extends React.PureComponent {
                     <Nav style={{ margin: 8 }} className="Header-links">
                         
                         <Link
-                            className={`top-link ${this.props.location.pathname === '/' && "active"}`}
+                            className={`nav-link ${this.props.location.pathname === '/' && "active"}`}
                             to="/">
-                            <Icon name="home" />
-                            <p>PAGINA INICIAL</p>
+                            <Icon name="home" />PAGINA INICIAL
                         </Link>
 
                         <Link
-                            className={`top-link ${this.props.location.pathname === '/about' && "active"}`}
+                            className={`nav-link ${this.props.location.pathname === '/about' && "active"}`}
                             to="/about">
-                            <Icon name="question circle" />
-                            <p>QUEM SOMOS</p>
+                            <Icon name="question circle" />QUEM SOMOS
                         </Link>
                         
-                        <NavDropdown className={'top-link'} title="SEGUROS" id="collasible-nav-dropdown">
+                        <NavDropdown title="SEGUROS" id="collasible-nav-dropdown">
                             {this.renderDropdownItens()}
                         </NavDropdown>
 
-                        <Link className={`top-link ${this.props.location.pathname === '/contato' && "active"}`} to="/contato">
-                            <Icon name="phone square" />
-                            <p>ENTRE EM CONTATO</p>
+                        <Link className={'nav-link'} to="/contato">
+                            <Icon name="phone square" />ENTRE EM CONTATO
                         </Link>
 
                     </Nav>
