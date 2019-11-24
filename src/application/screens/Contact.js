@@ -1,36 +1,45 @@
 import React from 'react';
-import '../styles/Social.css'
-import './Screens.css'
+import '../styles/Social.css';
+import './Screens.css';
+import { Icon } from 'semantic-ui-react';
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/styles';
 
-import { Icon } from 'semantic-ui-react'
-
-class Contact extends React.Component {
-
-    state = {
-
+const useStyles = makeStyles(theme => ({
+    btn: {
+        marginTop: 20
     }
+}));
 
-    render() {
+
+function Contact () {
+    const classes = useStyles();
+
+
         return (
             <div className="Social" >
                 <p className="Intro-font" >Entre em contato conosco:</p>
                 <div className="Socials" >
-                    <a className="Social-item" >
+                    <div className="Social-item" >
                         <Icon name='phone' size='huge' />
-                        <p className="Social-font" >(34)3322-6000</p>
-                    </a>
-                    <a className="Social-item" >
+                        <p className="Social-font" >(34) 3322-6000</p>
+                    </div>
+
+                    <Button className={classes.btn} color="primary" variant="contained">
+                        Solicite Uma Ligação!
+                    </Button>
+                    {/* <a className="Social-item" >
                         <Icon name='facebook' size='huge' />
                         <p className="Social-font" >liberoseguros</p>
                     </a>
                     <a className="Social-item" >
                         <Icon name='instagram' size='huge' />
                         <p className="Social-font" >@liberoseguros</p>
-                    </a>
+                    </a> */}
                 </div>
             </div>
         );
-    }
+    
 }
 
 export default Contact;
