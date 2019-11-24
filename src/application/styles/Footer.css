@@ -9,7 +9,6 @@
 }
 
 .Bottom-bar {
-    background-color: #182a4e;
     box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: fixed;
     display: flex;
@@ -20,7 +19,19 @@
     right: 0;
 }
 
+.Bottom-selected {
+    background-color: #fff;
+    color: #182a4e;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .Bottom-item {
+    background-color: #182a4e;
     color: #fff;
     flex: 1;
     padding: 10px;
