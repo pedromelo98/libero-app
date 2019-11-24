@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './Screens.css'
+import '../styles/Insurances.css'
 import 'semantic-ui-css/semantic.min.css'
 
 import { Link } from 'react-router-dom'
