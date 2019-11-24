@@ -32,21 +32,30 @@ class LiberoTopNavBar extends React.PureComponent {
                 <Navbar.Toggle style={{ margin: 8 }} aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav style={{ margin: 8 }} className="Header-links">
+                        
                         <Link
-                            className={`nav-link ${this.props.location.pathname === '/' && "active"}`}
+                            className={`top-link ${this.props.location.pathname === '/' && "active"}`}
                             to="/">
-                            <Icon name="home" />PAGINA INICIAL
+                            <Icon name="home" />
+                            <p>PAGINA INICIAL</p>
                         </Link>
 
                         <Link
-                            className={`nav-link ${this.props.location.pathname === '/about' && "active"}`}
+                            className={`top-link ${this.props.location.pathname === '/about' && "active"}`}
                             to="/about">
-                            <Icon name="question circle" />QUEM SOMOS
+                            <Icon name="question circle" />
+                            <p>QUEM SOMOS</p>
                         </Link>
-                        <NavDropdown title="SEGUROS" id="collasible-nav-dropdown">
+                        
+                        <NavDropdown className={'top-link'} title="SEGUROS" id="collasible-nav-dropdown">
                             {this.renderDropdownItens()}
                         </NavDropdown>
-                        <Nav.Link href="#contato"><Icon name="phone square" />ENTRE EM CONTATO</Nav.Link>
+
+                        <Link className={`top-link ${this.props.location.pathname === '/contato' && "active"}`} to="/contato">
+                            <Icon name="phone square" />
+                            <p>ENTRE EM CONTATO</p>
+                        </Link>
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

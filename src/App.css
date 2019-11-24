@@ -34,6 +34,9 @@ html, body, #root {
   justify-content: flex-end;
 }
 
+.top-link{
+  color: white;
+}
 
 
 [logo=top] {

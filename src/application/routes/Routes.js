@@ -33,7 +33,7 @@ function Routes() {
                         <Insurance />
                     </Route>
                     <Route path="*">
-                        <ComponentNotFound404 />
+                        {/*}<ComponentNotFound404 />{*/}
                     </Route>
                 </Switch>
             </App>
