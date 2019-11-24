@@ -43,12 +43,12 @@ function CarInsurance(props){
         </FormControl>
         <Button variant="outlined">Próximo</Button>
 
-        <TextField id="standard-basic" label="Email" />
-        <TextField id="standard-basic" label="Celular" />
-        <TextField id="standard-basic" label="Fixo" />
+        <TextField label="Email" />
+        <TextField label="Celular" />
+        <TextField label="Fixo" />
         <Button variant="outlined">Próximo</Button>
 
-        <TextField id="standard-basic" label="" />
+        <TextField label="" />
         
         
 
