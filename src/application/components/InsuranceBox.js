@@ -3,6 +3,7 @@ import { Card, Button, Row, Col, Container } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import '../screens/Screens.css';
+import '../styles/Insurances.css';
 
 export default function InsuranceBox(props) {
 
@@ -12,57 +13,116 @@ export default function InsuranceBox(props) {
             <Card>
                 <Card.Header as='h2' >Faça sua cotação online:</Card.Header>
                 <Card.Body>
-                    <Row className="text-center">
+                    <div className="Insurance-row" >
+                        <div className="Insurance-column" >
+                            <a className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/carro.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >CARRO</p>
+                            </a>
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/house.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >RESIDENCIAL</p>
+                            </div>
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/life.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >SAÚDE</p>
+                            </div>
+                            
+                        </div>
 
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='car' security='CARRO' />
-                        </Col>
+                        <div className="Insurance-column" >
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/moto.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >MOTO</p>
+                            </div>
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/empresa.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >EMPRESA</p>
+                            </div>
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/portateis.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >PORTÁTEIS</p>
+                            </div>
+                            
+                        </div>
 
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='motorcycle' security='MOTO' />
-                        </Col>
+                        <div className="Insurance-column" >
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/truck.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >CAMINHÃO</p>
+                            </div>
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/condominio.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >CONDOMÍNIO</p>
+                            </div>
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/odontologico.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >ODONTOLÓGICO</p>
+                            </div>
+                        </div>
 
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='truck' security='CAMINHÃO' />
-                        </Col>
+                        <div className="Insurance-column" >
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/bike.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >BIKE</p>
+                            </div>
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/viagem.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >VIAGEM</p>
+                            </div>
+                            <div className="Insurance-item" >
+                                <div className="Img-component" >
+                                    <img className="Insurance-img" src={require("../images/diversos.jpg")} />
+                                </div>
+                                <p className="Insurance-text" >DIVERSOS</p>
+                            </div>
+                        </div>
 
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='bicycle' security='BIKE' />
-                        </Col>
+                        {/*<DesktopIcon iconName='motorcycle' security='MOTO' />
 
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='home' security='RESIDENCIAL' />
-                        </Col>
+                        <DesktopIcon iconName='truck' security='CAMINHÃO' />
 
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='warehouse' security='EMPRESA' />
-                        </Col>
+                        <DesktopIcon iconName='bicycle' security='BIKE' />
 
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='building' security='CONDOMÍNIO' />
-                        </Col>
+                        <DesktopIcon iconName='home' security='RESIDENCIAL' />
 
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='plane' security='VIAGEM' />
-                        </Col>
+                        <DesktopIcon iconName='warehouse' security='EMPRESA' />
 
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='heart' security='VIDA INDIVIDUAL' />
-                        </Col>
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='users' security='VIDA GLOBAL' />
-                        </Col>
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='doctor' security='ODONTOLÓGICO' path="#" />
-                        </Col>
-                        <Col sm={3} xs={4}>
-                            <DesktopIcon iconName='plus circle' security='DIVERSOS' path="#" />
-                        </Col>
-                    </Row>
+                        <DesktopIcon iconName='building' security='CONDOMÍNIO' />
+
+                        <DesktopIcon iconName='plane' security='VIAGEM' />
+
+                        <DesktopIcon iconName='heart' security='VIDA INDIVIDUAL' />
+                        <DesktopIcon iconName='users' security='VIDA GLOBAL' />
+                        <DesktopIcon iconName='doctor' security='ODONTOLÓGICO' path="#" />
+                        <DesktopIcon iconName='plus circle' security='DIVERSOS' path="#" />*/}
+                    </div>
 
                 </Card.Body>
             </Card>
-        </Container>
+        </Container >
     );
 }
 

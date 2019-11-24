@@ -1,0 +1,43 @@
+.Img-component{
+    width: 150px;
+    height: 150px;
+    border: solid #182a4e;
+    border-radius: 75px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.Insurance-row{
+    display: flex;
+    flex: 1;
+}
+
+.Insurance-column{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.Insurance-column{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.Insurance-text{
+    text-align: center;
+}
+
+.Insurance-img {
+    width: 200px;
+    height: 150px;
+}
+
+.Insurance-img:hover {
+    width: 210px;
+    height: 160px;
+}
