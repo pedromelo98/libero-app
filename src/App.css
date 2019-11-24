@@ -18,7 +18,7 @@ html, body, #root {
 
 .App-content {
   flex: 1;
-  padding-top: 10vw;
+
   padding-bottom: 20vh;
   width: 100%;
 }
