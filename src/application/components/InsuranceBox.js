@@ -11,7 +11,7 @@ export default function InsuranceBox(props) {
         <Container >
             <p className="Intro-font" >Nossos serviços</p>
             <Card>
-                <Card.Header as='h2' >Faça sua cotação online:</Card.Header>
+                <Card.Header as='h2' >Seguros:</Card.Header>
                 <Card.Body>
                     <div className="Insurance-row" >
                         <div className="Insurance-column" >
