@@ -1,55 +1,59 @@
 import React from 'react'
 import '../../App.css';
-import { Input,Dropdown, Button } from 'semantic-ui-react';
+import '../styles/FormInsurance.css'
+import { Input,Dropdown } from 'semantic-ui-react';
 import { Form } from 'react-bootstrap';
 
 import TextField from '@material-ui/core/TextField';
 
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import NativeSelect from '@material-ui/core/NativeSelect';
+import Button from '@material-ui/core/Button';
 
 
 function CarInsurance(props){
-    const gen = [{text:"Masculino", value:"Masculino"},
-                 {text:"Feminino", value:"Feminino"}]
-
-    const sts = [{text:"Solteiro(a)", value:"Solteiro(a)"},
-                 {text:"Casado(a)", value:"Casado(a)"},
-                 {text:"Viúvo(a)", value:"Viúvo(a)"},
-                 {text:"Divorciado(a)", value:"Divorciado(a)"}]
 
     return(
-        <div style={{textAlign: 'center'}}>
+        <Form className="form-insurance">
 
-        <FormControl fullWidth={true}>
-            <InputLabel htmlFor="age-native-simple">Age</InputLabel>
-            <Select
-                native
-                inputProps={{
-                    name: 'age',
-                    id: 'age-native-simple'
-                }}
-                >
-                <option value="" disabled />
-                <option value={10}>Ten</option>
-                <option value={20}>Twenty</option>
-                <option value={30}>Thirty</option>
+        <TextField id="standard-basic" label="Nome completo" />
+        <TextField id="standard-basic" label="CPF/CNPJ" />
+        <TextField id="standard-basic" label="Data de Nascimento" />
+
+        <FormControl>
+            <InputLabel>Gênero</InputLabel>
+            <Select native>
+                <option value="" />
+                <option value={'Masculino'}>Masculino</option>
+                <option value={'Feminino'}>Feminino</option>
             </Select>
         </FormControl>
 
-        <Form>
+        <FormControl>
+            <InputLabel>Estado Civil</InputLabel>
+            <Select native>
+                <option value="" />
+                <option value={'Solteiro(a)'}>Solteiro(a)</option>
+                <option value={'Casado(a)'}>Casado(a)</option>
+                <option value={'Viúvo(a)'}>Viúvo(a)</option>
+                <option value={'Divorciado(a)'}>Divorciado(a)</option>
+            </Select>
+        </FormControl>
+        <Button variant="outlined">Próximo</Button>
 
-          <TextField required label="Nome Completo" fullWidth={true} variant={"outlined"}/>
+        <TextField id="standard-basic" label="Email" />
+        <TextField id="standard-basic" label="Celular" />
+        <TextField id="standard-basic" label="Fixo" />
+        <Button variant="outlined">Próximo</Button>
 
-            <p>Nome Completo</p><Input/>
-            <p>CPF/CNPJ</p><Input/>
-            <p>Data de Nascimento</p><Input/>
-            <p>Gênero</p><Dropdown  placeholder='Selecione o gênero' fluid selection options={gen}/>
-            <p>Estado Civil</p><Dropdown placeholder='Selecione o Estado Civil' selection options={sts}/>
+        <TextField id="standard-basic" label="" />
+        
+        
+
+            {/*<p>Gênero</p><Dropdown  placeholder='Selecione o gênero' fluid selection options={gen}/>
+            <p>Estado Civil</p><Dropdown placeholder='Selecione o Estado Civil' selection options={sts}/>*/}
             <Button>Próximo</Button>
             
             <p>Email</p><Input/>
@@ -118,7 +122,6 @@ function CarInsurance(props){
             <p>morte/invalidez</p><Input/>
 
         </Form>
-        </div>
     )
 
 }

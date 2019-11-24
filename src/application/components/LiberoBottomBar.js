@@ -39,4 +39,4 @@ class LiberoBottomBar extends React.PureComponent {
     }
 }
 
-export default withRouter(LiberoBottomBar);
+export default LiberoBottomBar;
