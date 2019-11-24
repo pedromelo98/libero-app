@@ -12,6 +12,11 @@
     flex: 1;
 }
 
+.Insurance-component{
+    margin-top: 100px;
+    display: block;
+  }
+
 .Insurance-column{
     display: flex;
     flex-direction: column;

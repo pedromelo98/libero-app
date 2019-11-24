@@ -3,6 +3,8 @@ import '../styles/Social.css'
 import './Screens.css'
 
 import { Icon, Button } from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
+
 
 class Social extends React.Component {
 
@@ -15,21 +17,21 @@ class Social extends React.Component {
             <div className="Social" >
                 <p className="Intro-font" >Redes sociais:</p>
                 <div className="Socials" >
-                    <div className="Social-item" >
+                    <a href="https://wa.me/15551234567" className="Social-item" >
                         <Button className="Social-button" size='big' color='green'>
                             <Icon name='whatsapp square' /> Whatsapp
                         </Button>
-                    </div>
-                    <div className="Social-item" >
-                        <Button className="Social-button" size='big'  color='facebook'>
+                    </a>
+                    <a href="https://pt-br.facebook.com/liberoseguros/" className="Social-item" >
+                        <Button className="Social-button" size='big' color='facebook'>
                             <Icon name='facebook' /> liberoseguros
                         </Button>
-                    </div>
-                    <div className="Social-item" >
-                        <Button className="Social-button" size='big'  color='instagram'>
+                    </a>
+                    <a href="https://www.instagram.com/liberoseguros/" className="Social-item" >
+                        <Button className="Social-button" size='big' color='instagram'>
                             <Icon name='instagram' /> @liberoseguros
                         </Button>
-                    </div>
+                    </a>
                 </div>
             </div>
         );
