@@ -6,7 +6,7 @@ import App from '../../App.js';
 import Contact from "../screens/Contact";
 import AboutApp from "../screens/AboutApp.js";
 import Social from "../screens/Social.js";
-import CarInsurance from "../components/CarInsurance.js"
+import CarInsurance from "../Insurances/CarInsurance/CarInsurance.js"
 
 function Routes() {
 
