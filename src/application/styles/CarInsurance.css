@@ -1,0 +1,63 @@
+.Intro-Component {
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Intro-View {
+    display: flex;
+    flex: 1;
+    width: 90vw;
+    border: solid #182a4e;
+    border-radius: 110px;
+    overflow: hidden;
+    background-color: #182a4e;
+    justify-content: space-between;
+    align-items: center;
+    animation-duration: 3s;
+    animation-name: openGate;
+}
+
+@keyframes openGate {
+    from {
+        width: 60vw;
+    }
+    to {
+        width: 90vw;
+    }
+}
+
+.Intro-View span {
+    width: 100vw;
+}
+
+
+
+.Button-View {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.Car-Component {}
+
+.Image-Component {
+    overflow: hidden;
+}
+
+.Car-Image {
+    height: 20vw;
+    width: 30vw;
+}
+
+[image=inverted] {
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
