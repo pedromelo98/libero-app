@@ -4,9 +4,9 @@ import '../../App.css';
 
 export default class Insurances extends React.Component {
     render() {
-        return(
+        return (
             <div>
-                
+
             </div>
         )
     }

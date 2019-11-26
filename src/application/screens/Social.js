@@ -1,16 +1,11 @@
 import React from 'react';
-import '../styles/Social.css'
-import './Screens.css'
-
-import { Icon, Button } from 'semantic-ui-react'
+import '../styles/Social.css';
+import './Screens.css';
+import { Icon, Button } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 
 class Social extends React.Component {
-
-    state = {
-
-    }
 
     render() {
         return (

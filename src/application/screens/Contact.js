@@ -12,23 +12,23 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-function Contact () {
+function Contact() {
     const classes = useStyles();
 
 
-        return (
-            <div className="Social" >
-                <p className="Intro-font" >Entre em contato conosco:</p>
-                <div className="Socials" >
-                    <div className="Social-item" >
-                        <Icon name='phone' size='huge' />
-                        <p className="Social-font" >(34) 3322-6000</p>
-                    </div>
+    return (
+        <div className="Social" >
+            <p className="Intro-font" >Entre em contato conosco:</p>
+            <div className="Socials" >
+                <div className="Social-item" >
+                    <Icon name='phone' size='huge' />
+                    <p className="Social-font" >(34) 3322-6000</p>
+                </div>
 
-                    <Button className={classes.btn} color="primary" variant="contained">
-                        Solicite Uma Ligação!
+                <Button className={classes.btn} color="primary" variant="contained">
+                    Solicite Uma Ligação!
                     </Button>
-                    {/* <a className="Social-item" >
+                {/* <a className="Social-item" >
                         <Icon name='facebook' size='huge' />
                         <p className="Social-font" >liberoseguros</p>
                     </a>
@@ -36,10 +36,10 @@ function Contact () {
                         <Icon name='instagram' size='huge' />
                         <p className="Social-font" >@liberoseguros</p>
                     </a> */}
-                </div>
             </div>
-        );
-    
+        </div>
+    );
+
 }
 
 export default Contact;

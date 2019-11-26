@@ -11,21 +11,17 @@ const mapStyles = {
 
 class Location extends React.Component {
 
-    state = {
-
-    }
-
     render() {
         return (
-                <Map
-                    style={mapStyles}
-                    google={this.props.google}
-                    zoom={15}
+            <Map
+                style={mapStyles}
+                google={this.props.google}
+                zoom={15}
 
-                    initialCenter={{ lat: -19.745322, lng: -47.930422 }}
-                >
-                    <Marker name={'Líbero seguros'} />
-                </Map>
+                initialCenter={{ lat: -19.745322, lng: -47.930422 }}
+            >
+                <Marker name={'Líbero seguros'} />
+            </Map>
         );
     }
 }

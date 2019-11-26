@@ -33,7 +33,7 @@ export default function InsuranceBox(props) {
                                 </div>
                                 <p className="Insurance-text" >SAÚDE</p>
                             </div>
-                            
+
                         </div>
 
                         <div className="Insurance-column" >
@@ -55,7 +55,7 @@ export default function InsuranceBox(props) {
                                 </div>
                                 <p className="Insurance-text" >PORTÁTEIS</p>
                             </div>
-                            
+
                         </div>
 
                         <div className="Insurance-column" >
@@ -114,8 +114,6 @@ function DesktopIcon(props) {
     const { iconName, security } = props;
 
     const handleRedirect = () => tlink.current.click();
-
-
 
     return (
         <div className="DesktopIcon-Flemis">

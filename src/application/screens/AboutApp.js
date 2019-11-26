@@ -1,6 +1,6 @@
 import React from 'react';
-import './Screens.css'
-import 'semantic-ui-css/semantic.min.css'
+import './Screens.css';
+import 'semantic-ui-css/semantic.min.css';
 
 class AboutApp extends React.PureComponent {
 

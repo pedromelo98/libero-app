@@ -8,13 +8,13 @@ class SocialMedia extends React.PureComponent {
         return (
             <div className="Social-media" >
                 <a href="https://wa.me/15551234567" >
-                    <div style={{ paddingLeft: 8.5, paddingBottom:8.5 }} className="Icon-component" >
+                    <div style={{ paddingLeft: 8.5, paddingBottom: 8.5 }} className="Icon-component" >
                         <Icon size='big' name="whatsapp" />
                         <p className='Icon-text' >Whatsapp</p>
                     </div>
                 </a>
                 <a href="https://pt-br.facebook.com/liberoseguros/" >
-                    <div style={{paddingBottom:5.5 }} className="Icon-component hover-facebook" >
+                    <div style={{ paddingBottom: 5.5 }} className="Icon-component hover-facebook" >
                         <Icon size='big' name="facebook f" />
                         <p className='Icon-text' >Facebook</p>
                     </div>
