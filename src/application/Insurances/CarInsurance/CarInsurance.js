@@ -10,6 +10,7 @@ import FormControl from '@material-ui/core/FormControl';
 import MaterialButton from '@material-ui/core/Button';
 import '../../styles/CarInsurance.css';
 import '../../screens/Screens.css';
+import GenInfoForm from './GeneralInsurance';
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -95,59 +96,7 @@ function CarInsurance() {
 
 
             <Form className={classes.form}>
-                <div className={classes.formTitle}>
-
-                    <h1>Segurado</h1>
-                </div>
-
-                <TextField className={classes.input} id="standard-basic" label="Nome completo" fullWidth variant="outlined" />
-
-                <TextField className={classes.input} id="cpf" label="CPF/CNPJ" fullWidth variant="outlined" />
-
-                <TextField className={classes.input} id="cu-basic" label="Data de Nascimento" fullWidth variant="outlined" />
-
-                <FormControl className={classes.formControl}>
-                    <InputLabel htmlFor="gender-select">Gênero</InputLabel>
-                    <Select
-                        native
-                        inputProps={{
-                            name: 'gender',
-                            id: 'gender-select'
-                        }}
-
-
-                    >
-                        <option value="" />
-                        <option value={'Masculino'}>Masculino</option>
-                        <option value={'Feminino'}>Feminino</option>
-
-                    </Select>
-                </FormControl>
-
-                <FormControl className={classes.formControl}  >
-                    <InputLabel htmlFor="estado-civil">Estado Civil</InputLabel>
-
-                    <Select
-                        native
-                        inputProps={{
-                            id: "estado-civil",
-                            name: "estado-civil"
-                        }}
-
-                    >
-                        <option value="" />
-                        <option value={'Solteiro(a)'}>Solteiro(a)</option>
-                        <option value={'Casado(a)'}>Casado(a)</option>
-                        <option value={'Viúvo(a)'}>Viúvo(a)</option>
-                        <option value={'Divorciado(a)'}>Divorciado(a)</option>
-                    </Select>
-                </FormControl>
-                <hr />
-                <div className={classes.btnContainer} >
-
-                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
-                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
-                </div>
+                <GenInfoForm cls={classes}/>
                 <br></br>
                 <br></br>
                 <br></br>
