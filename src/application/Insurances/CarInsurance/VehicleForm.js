@@ -8,7 +8,7 @@ import '../../styles/CarInsurance.css';
 import '../../screens/Screens.css';
 
 
-function ContactForm(props) {
+function VehicleForm(props) {
 
     return (
         <>
@@ -45,6 +45,7 @@ function ContactForm(props) {
 
                 </Select>
             </FormControl>
+
             <TextField
                 label="Modelo"
                 type="text"
@@ -58,12 +59,14 @@ function ContactForm(props) {
                 className={props.cls.input}
                 fullWidth
                 variant="outlined" />
+
             <TextField
                 label="MARCA"
                 type="text"
                 className={props.cls.input}
                 fullWidth
                 variant="outlined" />
+
             <FormControl className={props.cls.formControl}>
                 <InputLabel htmlFor="fuel-select">Combustivel</InputLabel>
                 <Select
@@ -94,14 +97,10 @@ function ContactForm(props) {
                         name: 'gas',
                         id: 'gas-select'
                     }}
-
-
                 >
                     <option value="" />
                     <option value={"Não"}>Não</option>
                     <option value={"Sim"}>Sim</option>
-
-
                 </Select>
             </FormControl>
 
@@ -113,16 +112,13 @@ function ContactForm(props) {
                         name: 'financ',
                         id: 'financ-select'
                     }}
-
-
                 >
                     <option value="" />
                     <option value={"Não"}>Não</option>
                     <option value={"Sim"}>Sim</option>
-
-
                 </Select>
             </FormControl>
+
             <FormControl className={props.cls.formControl}>
                 <InputLabel htmlFor="aintifurto-select">Antifurto</InputLabel>
                 <Select
@@ -131,8 +127,6 @@ function ContactForm(props) {
                         name: 'aintifurto',
                         id: 'aintifurto-select'
                     }}
-
-
                 >
                     <option value="" />
                     <option value={"Não Possui"}>Não Possui</option>
@@ -152,6 +146,7 @@ function ContactForm(props) {
                 className={props.cls.input}
                 fullWidth
                 variant="outlined" />
+
             <TextField
                 label="Chassi"
                 type="text"
@@ -161,7 +156,6 @@ function ContactForm(props) {
 
 
             <div className={props.cls.btnContainer} >
-
                 <Button className={props.cls.button} color={"secondary"} variant="contained">Voltar</Button>
                 <Button className={props.cls.button} color={"primary"} variant="contained">Próximo</Button>
             </div>
@@ -169,4 +163,4 @@ function ContactForm(props) {
     );
 }
 
-export default ContactForm;
+export default VehicleForm;
