@@ -1,16 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Input, Button } from 'semantic-ui-react';
+import { Button as SemanticButton } from 'semantic-ui-react';
 import { Form } from 'react-bootstrap';
-import { Container, Select } from '@material-ui/core'
-import MenuItem from '@material-ui/core/MenuItem';
+import { Container, Select } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
-import MaterialButton from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 import '../../styles/CarInsurance.css';
 import '../../screens/Screens.css';
-import GenInfoForm from './GeneralInsurance';
+import InsuredForm from '../GeneralInsurance/InsuredForm.js';
+import ContactForm from '../GeneralInsurance/ContactForm.js';
+import VehicleForm from './VehicleForm.js';
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -72,11 +73,11 @@ function CarInsurance() {
                     {animationFinished &&
                         <div className={`Button-View ${classes.timeout}`} >
                             <p>Solicite nossa proposta:</p>
-                            <Button.Group >
-                                <Button className="Button" >PREENCHER ONLINE</Button>
-                                <Button.Or text='OU' />
-                                <Button color='green' >SOLICITAR LIGAÇÃO </Button>
-                            </Button.Group>
+                            <SemanticButton.Group >
+                                <SemanticButton className="Button" >PREENCHER ONLINE</SemanticButton>
+                                <SemanticButton.Or text='OU' />
+                                <SemanticButton color='green' >SOLICITAR LIGAÇÃO </SemanticButton>
+                            </SemanticButton.Group>
                         </div>
                     }
 
@@ -96,41 +97,12 @@ function CarInsurance() {
 
 
             <Form className={classes.form}>
-                <GenInfoForm cls={classes}/>
+                <InsuredForm cls={classes} />
                 <br></br>
                 <br></br>
                 <br></br>
                 <br></br>
-                <div className={classes.formTitle}>
-
-                    <h1>Contato</h1>
-                </div>
-                <TextField
-                    label="E-mail"
-                    type="email"
-                    className={classes.input}
-                    fullWidth
-                    variant="outlined"
-                />
-                <TextField
-                    label="Telefone Celular"
-                    type="text"
-                    className={classes.input}
-                    fullWidth
-                    variant="outlined"
-                />
-                <TextField
-                    label="Telefone Fixo"
-                    type="text"
-                    className={classes.input}
-                    fullWidth
-                    variant="outlined" />
-                <hr />
-                <div className={classes.btnContainer}>
-
-                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
-                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
-                </div>
+                <ContactForm cls={classes}/>
 
                 <br></br>
                 <br></br>
@@ -138,160 +110,7 @@ function CarInsurance() {
                 <br></br>
                 <br></br>
 
-                <div className={classes.formTitle}>
-
-<h1>Veículo</h1>
-</div>
-                <TextField
-                    label="Placa"
-                    type="text"
-                    className={classes.input}
-                    fullWidth
-                    variant="outlined" />
-
-                <TextField
-                    label="Ano Modelo"
-                    type="text"
-                    className={classes.input}
-                    fullWidth
-                    variant="outlined" />
-                <FormControl className={classes.formControl}>
-                    <InputLabel htmlFor="zero-select">Carro Zero</InputLabel>
-                    <Select
-                        native
-                        inputProps={{
-                            name: 'zero',
-                            id: 'zero-select'
-                        }}
-
-
-                    >
-                        <option value="" />
-                        <option value={0}>Não</option>
-                        <option value={1}>Sim</option>
-
-                    </Select>
-                </FormControl>
-                <TextField
-                    label="Modelo"
-                    type="text"
-                    className={classes.input}
-                    fullWidth
-                    variant="outlined" />
-
-                <TextField
-                    label="Código FIPE"
-                    type="text"
-                    className={classes.input}
-                    fullWidth
-                    variant="outlined" />
-                <TextField
-                    label="MARCA"
-                    type="text"
-                    className={classes.input}
-                    fullWidth
-                    variant="outlined" />
-                <FormControl className={classes.formControl}>
-                    <InputLabel htmlFor="fuel-select">Combustivel</InputLabel>
-                    <Select
-                        native
-                        inputProps={{
-                            name: 'fuel',
-                            id: 'fuel-select'
-                        }}
-
-
-                    >
-                        <option value="" />
-                        <option value={"Flex"}>Flex</option>
-                        <option value={"Gasolina"}>Gasolina</option>
-                        <option value={"Álcool"}>Álcool</option>
-                        <option value={"Diesel"}>Diesel</option>
-                        <option value={"Híbrido"}>Híbrido</option>
-                        <option value={"Tetrafuel"}>Tetrafuel</option>
-
-                    </Select>
-                </FormControl>
-
-                <FormControl className={classes.formControl} fullWidth>
-                    <InputLabel htmlFor="gas-select">Possui Kit Gás</InputLabel>
-                    <Select
-                        native
-                        inputProps={{
-                            name: 'gas',
-                            id: 'gas-select'
-                        }}
-
-
-                    >
-                        <option value="" />
-                        <option value={"Não"}>Não</option>
-                        <option value={"Sim"}>Sim</option>
-
-
-                    </Select>
-                </FormControl>
-
-                <FormControl className={classes.formControl} fullWidth>
-                    <InputLabel htmlFor="financ-select">Alienado/Financiado</InputLabel>
-                    <Select
-                        native
-                        inputProps={{
-                            name: 'financ',
-                            id: 'financ-select'
-                        }}
-
-
-                    >
-                        <option value="" />
-                        <option value={"Não"}>Não</option>
-                        <option value={"Sim"}>Sim</option>
-
-
-                    </Select>
-                </FormControl>
-                <FormControl className={classes.formControl}>
-                    <InputLabel htmlFor="aintifurto-select">Antifurto</InputLabel>
-                    <Select
-                        native
-                        inputProps={{
-                            name: 'aintifurto',
-                            id: 'aintifurto-select'
-                        }}
-
-
-                    >
-                        <option value="" />
-                        <option value={"Não Possui"}>Não Possui</option>
-                        <option value={"Alarme"}>Alarme</option>
-                        <option value={"Bloqueador de Ignição"}>Bloqueador de Ignição</option>
-                        <option value={"Trava Carneiro"}>Trava Carneiro</option>
-                        <option value={"Trava Mul-T-Lock"}>Trava Mul-T-Lock</option>
-                        <option value={"Outros"}>Outros</option>
-
-                    </Select>
-                </FormControl>
-
-
-                <TextField
-                    label="CEP do Pernoite"
-                    type="text"
-                    className={classes.input}
-                    fullWidth
-                    variant="outlined" />
-                <TextField
-                    label="Chassi"
-                    type="text"
-                    className={classes.input}
-                    fullWidth
-                    variant="outlined" />
-
-
-                <div className={classes.btnContainer} >
-
-                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
-                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
-                </div>
+                <VehicleForm cls={classes}/>
                 <br />
                 <br />
                 <br />
@@ -301,8 +120,8 @@ function CarInsurance() {
 
                 <div className={classes.formTitle}>
 
-<h1>Seguro</h1>
-</div>
+                    <h1>Seguro</h1>
+                </div>
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="instype-select">Tipo de Seguro</InputLabel>
                     <Select
@@ -371,8 +190,8 @@ function CarInsurance() {
 
                 <div className={classes.btnContainer} >
 
-                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
-                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
+                    <Button className={classes.button} color={"secondary"} variant="contained">Voltar</Button>
+                    <Button className={classes.button} color={"primary"} variant="contained">Próximo</Button>
                 </div>
 
                 <br />
@@ -543,8 +362,8 @@ function CarInsurance() {
 
                 <div className={classes.btnContainer} >
 
-                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
-                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
+                    <Button className={classes.button} color={"secondary"} variant="contained">Voltar</Button>
+                    <Button className={classes.button} color={"primary"} variant="contained">Próximo</Button>
                 </div>
 
                 <br />
@@ -553,8 +372,8 @@ function CarInsurance() {
                 <br />
                 <div className={classes.formTitle}>
 
-<h1>Condutor Principal</h1>
-</div>
+                    <h1>Condutor Principal</h1>
+                </div>
                 <FormControl fullWidth className={classes.formControl}>
                     <InputLabel htmlFor="instype-select">Relação Segurado/Condutor</InputLabel>
                     <Select
@@ -628,8 +447,8 @@ function CarInsurance() {
 
                 <div className={classes.btnContainer} >
 
-                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
-                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
+                    <Button className={classes.button} color={"secondary"} variant="contained">Voltar</Button>
+                    <Button className={classes.button} color={"primary"} variant="contained">Próximo</Button>
                 </div>
 
                 <br />
@@ -639,8 +458,8 @@ function CarInsurance() {
 
                 <div className={classes.formTitle}>
 
-<h1>Coberturas</h1>
-</div>
+                    <h1>Coberturas</h1>
+                </div>
 
                 <FormControl fullWidth className={classes.formControl}  >
                     <InputLabel htmlFor="estado-civil">Tipo de Franquia</InputLabel>
@@ -758,8 +577,8 @@ function CarInsurance() {
                     variant="outlined" />
                 <div className={classes.btnContainer} >
 
-                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
-                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
+                    <Button className={classes.button} color={"secondary"} variant="contained">Voltar</Button>
+                    <Button className={classes.button} color={"primary"} variant="contained">Próximo</Button>
                 </div>
 
             </Form>

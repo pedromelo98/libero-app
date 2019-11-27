@@ -10,12 +10,11 @@ import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 
 
-function GenInfoForm(props) {
-    console.log("working fine");
+function InsuredForm(props) {
+
     return (
         <>
             <div className={props.cls.formTitle}>
-
                 <h1>Segurado</h1>
             </div>
 
@@ -71,4 +70,4 @@ function GenInfoForm(props) {
     );
 }
 
-export default GenInfoForm;
+export default InsuredForm;
