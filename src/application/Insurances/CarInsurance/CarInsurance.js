@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Input, Button } from 'semantic-ui-react';
 import { Form } from 'react-bootstrap';
 import { Container, Select } from '@material-ui/core'
@@ -50,7 +50,13 @@ const useStyles = makeStyles(theme => ({
 function CarInsurance() {
     const [animationFinished, setAnimationFinished] = useState(false);
     const classes = useStyles();
+    const [lw, setLw] = useState(0);
+    const fc = useRef(null);
 
+    useEffect(() => {
+
+        setLw("Carro Reserva".length * 8);//fc.current.offsetWidth/2);
+    });
 
 
     const renderIntro = () => {
@@ -182,6 +188,11 @@ function CarInsurance() {
                 <br></br>
                 <br></br>
                 <br></br>
+
+                <div className={classes.formTitle}>
+
+<h1>Veículo</h1>
+</div>
                 <TextField
                     label="Placa"
                     type="text"
@@ -338,6 +349,11 @@ function CarInsurance() {
                 <br />
                 <br />
                 <br />
+
+                <div className={classes.formTitle}>
+
+<h1>Seguro</h1>
+</div>
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="instype-select">Tipo de Seguro</InputLabel>
                     <Select
@@ -415,7 +431,10 @@ function CarInsurance() {
                 <br />
                 <br />
                 <br />
+                <div className={classes.formTitle}>
 
+                    <h1>Questionário</h1>
+                </div>
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="instype-select">Tipo de Residência</InputLabel>
                     <Select
@@ -583,6 +602,10 @@ function CarInsurance() {
                 <br />
                 <br />
                 <br />
+                <div className={classes.formTitle}>
+
+<h1>Condutor Principal</h1>
+</div>
                 <FormControl fullWidth className={classes.formControl}>
                     <InputLabel htmlFor="instype-select">Relação Segurado/Condutor</InputLabel>
                     <Select
@@ -612,7 +635,7 @@ function CarInsurance() {
                 <TextField className={classes.input} id="cpf" label="CPF" fullWidth variant="outlined" />
 
                 <TextField className={classes.input} id="cu-basic" label="Data de Nascimento" fullWidth variant="outlined" />
-                    
+
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="gender-select">Gênero</InputLabel>
                     <Select
@@ -665,21 +688,130 @@ function CarInsurance() {
                 <br />
                 <br />
 
-                <p>coberturas</p>
-                <p>tipo franquia</p><Input />
-                <p>fator de ajuste</p><Input />
-                <p>acessorios</p>
-                <p>valor do kit gas</p><Input />
+                <div className={classes.formTitle}>
+
+<h1>Coberturas</h1>
+</div>
+
+                <FormControl fullWidth className={classes.formControl}  >
+                    <InputLabel htmlFor="estado-civil">Tipo de Franquia</InputLabel>
+
+                    <Select
+                        native
+                        inputProps={{
+                            id: "estado-civil",
+                            name: "estado-civil"
+                        }}
+
+                    >
+                        <option value="" />
+                        <option value={'Normal'}>Normal</option>
+                        <option value={'Reduzida'}>Reduzida</option>
+
+                    </Select>
+                </FormControl>
+                <TextField
+                    label="Fator de Ajuste"
+                    type="text"
+                    className={classes.input}
+                    fullWidth
+                    variant="outlined" />
+
                 <p>servicos</p>
-                <p>assistencia</p><Input />
-                <p>vidros</p><Input />
-                <p>carro reserva</p><Input />
+
+                <FormControl fullWidth className={classes.formControl}  >
+                    <InputLabel htmlFor="estado-civil">Assistência</InputLabel>
+
+                    <Select
+                        native
+                        inputProps={{
+                            id: "estado-civil",
+                            name: "estado-civil"
+                        }}
+
+                    >
+                        <option value="" />
+                        <option value={'Não'}>Não</option>
+                        <option value={'Completa'}>Completa</option>
+                        <option value={'Intermediária'}>Intermediária</option>
+                        <option value={'Básica'}>Básica</option>
+
+                    </Select>
+                </FormControl>
+                <FormControl fullWidth className={classes.formControl}  >
+                    <InputLabel htmlFor="estado-civil">Vidros</InputLabel>
+
+                    <Select
+                        native
+                        inputProps={{
+                            id: "estado-civil",
+                            name: "estado-civil"
+                        }}
+
+                    >
+                        <option value="" />
+                        <option value={'Não'}>Não</option>
+                        <option value={'Básico'}>Básico</option>
+                        <option value={'Completo'}>Completo</option>
+
+                    </Select>
+                </FormControl>
+                <FormControl ref={fc} variant={"outlined"} fullWidth className={classes.formControl}  >
+                    <InputLabel htmlFor="estado-civil">Carro Reserva</InputLabel>
+
+                    <Select
+                        native
+                        labelWidth={lw}
+                        inputProps={{
+                            id: "estado-civil",
+                            name: "estado-civil"
+                        }}
+
+                    >
+                        <option value="" />
+                        <option value={'Não'}>Não</option>
+                        <option value={'Completa'}>7 Dias</option>
+                        <option value={'Intermediária'}>15 Dias</option>
+                        <option value={'Básica'}>30 Dias</option>
+
+                    </Select>
+                </FormControl>
+
                 <p>RCF</p>
-                <p>danos materiais</p><Input />
-                <p>danos corporais</p><Input />
-                <p>danos morais</p><Input />
+                <TextField
+                    label="Danos Materiais"
+                    type="text"
+                    className={classes.input}
+                    fullWidth
+                    variant="outlined" />
+
+                <TextField
+                    label="Danos Corporais"
+                    type="text"
+                    className={classes.input}
+                    fullWidth
+                    variant="outlined" />
+
+                <TextField
+                    label="Danos Morais"
+                    type="text"
+                    className={classes.input}
+                    fullWidth
+                    variant="outlined" />
+
                 <p>APP</p>
-                <p>morte/invalidez</p><Input />
+
+                <TextField
+                    label="Danos Morais"
+                    type="text"
+                    className={classes.input}
+                    fullWidth
+                    variant="outlined" />
+                <div className={classes.btnContainer} >
+
+                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
+                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
+                </div>
 
             </Form>
         </Container >
