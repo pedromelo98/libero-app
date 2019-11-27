@@ -47,7 +47,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-function CarInsurance(props) {
+function CarInsurance() {
     const [animationFinished, setAnimationFinished] = useState(false);
     const classes = useStyles();
 
@@ -332,35 +332,338 @@ function CarInsurance(props) {
                     <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
                     <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
                 </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <FormControl className={classes.formControl}>
+                    <InputLabel htmlFor="instype-select">Tipo de Seguro</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'instype',
+                            id: 'instype-select'
+                        }}
 
-                <p>Tipo seguro NOVO?</p><Input />
-                <p>vigencia inicial</p><Input />
-                <p>vigencia final</p><Input />
-                <p>banco de maior relacionamento</p><Input />
-                <p>observacoes</p><Input />
-                <MaterialButton>Próximo</MaterialButton>
 
-                <p>Tipo residencia</p><Input />
-                <p>Qtd veiculos residencia</p><Input />
-                <p>garagem na residencia</p><Input />
-                <p>garagem no trabalho</p><Input />
-                <p>garagem no local de estudo</p><Input />
-                <p>funcao</p><Input />
-                <p>distancia ate o trab</p><Input />
-                <p>tipo de uso</p><Input />
-                <p>pcd</p><Input />
-                <p>km mensal</p><Input />
-                <MaterialButton>Próximo</MaterialButton>
+                    >
+                        <option value="" />
+                        <option value={"Novo"}>Novo</option>
+                        <option value={"Renovação"}>Renovação</option>
 
-                <p>relacao segurado/condutor</p><Input />
-                <p>nome ja tem</p><Input />
-                <p>cpf ja tem</p><Input />
-                <p>estado civil ja tem</p><Input />
-                <p>genero ja tem</p><Input />
-                <p>dta nascimento ja tem</p><Input />
-                <p>habilitado desde</p><Input />
-                <p>numero da habilitacao</p><Input />
-                <MaterialButton>Próximo</MaterialButton>
+
+                    </Select>
+                </FormControl>
+
+
+                <TextField
+                    label="Vigência Inicial"
+                    type="text"
+                    className={classes.input}
+                    fullWidth
+                    variant="outlined" />
+
+                <TextField
+                    label="Vigência Final"
+                    type="text"
+                    className={classes.input}
+                    fullWidth
+                    variant="outlined" />
+
+                <FormControl fullWidth className={classes.formControl}>
+                    <InputLabel htmlFor="bank-select">Banco de maior Relacionamento</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'bank',
+                            id: 'bank-select'
+                        }}
+
+
+                    >
+                        <option value="" />
+                        <option value={"Banco do Brasil"}>Banco do Brasil</option>
+                        <option value={"Santander"}>Santander</option>
+                        <option value={"Caixa Econômica Federal"}>Caixa Econômica Federal</option>
+                        <option value={"Bradesco"}>Bradesco</option>
+                        <option value={"Itaú"}>Itaú</option>
+                        <option value={"HSBC"}>HSBC</option>
+                        <option value={"SICREDI"}>SICREDI</option>
+                        <option value={"Sicoob"}>Sicoob</option>
+
+
+                    </Select>
+                </FormControl>
+
+                <TextField
+                    label="Observações"
+                    type="text"
+                    className={classes.input}
+                    fullWidth
+                    variant="outlined" />
+
+                <div className={classes.btnContainer} >
+
+                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
+                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+                <FormControl className={classes.formControl}>
+                    <InputLabel htmlFor="instype-select">Tipo de Residência</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'instype',
+                            id: 'instype-select'
+                        }}
+
+
+                    >
+                        <option value="" />
+                        <option value={"Casa"}>Casa</option>
+                        <option value={"Apartamento"}>Apartamento</option>
+                        <option value={"Condomínio de Casas"}>Condomínio de Casas</option>
+                        <option value={"Outros"}>Outros</option>
+
+
+                    </Select>
+                </FormControl>
+
+                <FormControl fullWidth className={classes.formControl}>
+                    <InputLabel htmlFor="instype-select">Qtd Veículos na Residência</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'instype',
+                            id: 'instype-select'
+                        }}
+
+
+                    >
+                        <option value="" />
+                        <option value={1}>Um</option>
+                        <option value={2}>Dois</option>
+                        <option value={3}>Três</option>
+                        <option value={4}>Quatro</option>
+                        <option value={5}>Cinco</option>
+
+
+                    </Select>
+                </FormControl>
+
+                <FormControl className={classes.formControl}>
+                    <InputLabel htmlFor="instype-select">Garagem na Residência</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'instype',
+                            id: 'instype-select'
+                        }}
+
+
+                    >
+                        <option value="" />
+                        <option value={1}>Com Portão Eletrônico</option>
+                        <option value={2}>Com Portão Manual</option>
+                        <option value={3}>Não Possui Garagem</option>
+
+                    </Select>
+                </FormControl>
+
+                <FormControl className={classes.formControl}>
+                    <InputLabel htmlFor="instype-select">Garagem no Trabalho</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'instype',
+                            id: 'instype-select'
+                        }}
+
+
+                    >
+                        <option value="" />
+                        <option value={1}>Não utiliza para este fim</option>
+                        <option value={2}>Não</option>
+                        <option value={3}>Sim</option>
+                        <option value={4}>Não trabalha</option>
+
+                    </Select>
+                </FormControl>
+                <FormControl fullWidth className={classes.formControl}>
+                    <InputLabel htmlFor="instype-select">Garagem no Local de Estudo</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'instype',
+                            id: 'instype-select'
+                        }}
+
+
+                    >
+                        <option value="" />
+                        <option value={1}>Não utiliza para este fim</option>
+                        <option value={2}>Não</option>
+                        <option value={3}>Sim</option>
+                        <option value={4}>Não estuda</option>
+
+                    </Select>
+                </FormControl>
+
+
+                <TextField
+                    label="Profissão"
+                    type="text"
+                    className={classes.input}
+                    fullWidth
+                    variant="outlined" />
+
+                <FormControl fullWidth className={classes.formControl}>
+                    <InputLabel htmlFor="instype-select">Distância até o Trabalho</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'instype',
+                            id: 'instype-select'
+                        }}
+
+
+                    >
+                        <option value="" />
+                        <option value={1}>Não utiliza para este fim</option>
+                        <option value={2}>Não</option>
+                        <option value={3}>Sim</option>
+                        <option value={4}>Não trabalha</option>
+
+                    </Select>
+                </FormControl>
+
+
+                <FormControl fullWidth className={classes.formControl}>
+                    <InputLabel htmlFor="instype-select">Tipo de Uso</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'instype',
+                            id: 'instype-select'
+                        }}
+
+
+                    >
+                        <option value="" />
+                        <option value={1}>Particular</option>
+                        <option value={2}>Profissional</option>
+                        <option value={3}>Taxi</option>
+                        <option value={4}>Motorista de App</option>
+
+                    </Select>
+                </FormControl>
+
+                <TextField
+                    label="Quilometragem Mensal"
+                    type="text"
+                    className={classes.input}
+                    fullWidth
+                    variant="outlined" />
+
+                <div className={classes.btnContainer} >
+
+                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
+                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <FormControl fullWidth className={classes.formControl}>
+                    <InputLabel htmlFor="instype-select">Relação Segurado/Condutor</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'instype',
+                            id: 'instype-select'
+                        }}
+
+
+                    >
+                        <option value="" />
+                        <option value={1}>Próprio</option>
+                        <option value={2}>Cônjugue</option>
+                        <option value={3}>Empregado(a)</option>
+                        <option value={4}>Irmã(o)</option>
+                        <option value={5}>Filho(a)</option>
+                        <option value={6}>Mãe</option>
+                        <option value={7}>Pai</option>
+                        <option value={8}>Outros</option>
+
+                    </Select>
+                </FormControl>
+
+                <TextField className={classes.input} id="flemis-basic" label="Nome completo" fullWidth variant="outlined" />
+
+                <TextField className={classes.input} id="cpf" label="CPF" fullWidth variant="outlined" />
+
+                <TextField className={classes.input} id="cu-basic" label="Data de Nascimento" fullWidth variant="outlined" />
+                    
+                <FormControl className={classes.formControl}>
+                    <InputLabel htmlFor="gender-select">Gênero</InputLabel>
+                    <Select
+                        native
+                        inputProps={{
+                            name: 'gender',
+                            id: 'gender-select'
+                        }}
+
+
+                    >
+                        <option value="" />
+                        <option value={'Masculino'}>Masculino</option>
+                        <option value={'Feminino'}>Feminino</option>
+
+                    </Select>
+                </FormControl>
+
+                <FormControl className={classes.formControl}  >
+                    <InputLabel htmlFor="estado-civil">Estado Civil</InputLabel>
+
+                    <Select
+                        native
+                        inputProps={{
+                            id: "estado-civil",
+                            name: "estado-civil"
+                        }}
+
+                    >
+                        <option value="" />
+                        <option value={'Solteiro(a)'}>Solteiro(a)</option>
+                        <option value={'Casado(a)'}>Casado(a)</option>
+                        <option value={'Viúvo(a)'}>Viúvo(a)</option>
+                        <option value={'Divorciado(a)'}>Divorciado(a)</option>
+                    </Select>
+                </FormControl>
+
+                <TextField className={classes.input} id="cucu-basic" label="Habilitado  Desde" fullWidth variant="outlined" />
+
+                <TextField className={classes.input} id="hab-basic" label="Número da Habilitação" fullWidth variant="outlined" />
+
+                <div className={classes.btnContainer} >
+
+                    <MaterialButton className={classes.button} color={"secondary"} variant="contained">Voltar</MaterialButton>
+                    <MaterialButton className={classes.button} color={"primary"} variant="contained">Próximo</MaterialButton>
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
 
                 <p>coberturas</p>
                 <p>tipo franquia</p><Input />
