@@ -17,7 +17,7 @@ export default function HomeSlider() {
                 />
 
                 <Carousel.Caption>
-                    Faça seu seguro com a Líbero
+                    Solicite nossa proposta.
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -27,7 +27,7 @@ export default function HomeSlider() {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    Faça sua cotação online.
+                    Simule online.
                 </Carousel.Caption>
             </Carousel.Item>
 

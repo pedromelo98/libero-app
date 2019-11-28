@@ -11,7 +11,7 @@ export default function InsuranceBox(props) {
         <Container >
             <p className="Intro-font" >Nossos serviços</p>
             <Card>
-                <Card.Header as='h2' >Seguros:</Card.Header>
+                <Card.Header as='h2' >Solicite nossa proposta ou faça uma Simulação online:</Card.Header>
                 <Card.Body>
                     <div className="Insurance-row" >
                         <div className="Insurance-column" >
@@ -19,7 +19,7 @@ export default function InsuranceBox(props) {
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/carro.jpg")} />
                                 </div>
-                                <p className="Insurance-text" >CARRO</p>
+                                <p className="Insurance-text" >AUTO</p>
                             </a>
                             <div className="Insurance-item" >
                                 <div className="Img-component" >
@@ -47,7 +47,7 @@ export default function InsuranceBox(props) {
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/empresa.jpg")} />
                                 </div>
-                                <p className="Insurance-text" >EMPRESA</p>
+                                <p className="Insurance-text" >EMPRESARIAL</p>
                             </div>
                             <div className="Insurance-item" >
                                 <div className="Img-component" >
@@ -63,7 +63,7 @@ export default function InsuranceBox(props) {
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/truck.jpg")} />
                                 </div>
-                                <p className="Insurance-text" >CAMINHÃO</p>
+                                <p className="Insurance-text" >CARGAS</p>
                             </div>
                             <div className="Insurance-item" >
                                 <div className="Img-component" >
@@ -94,9 +94,9 @@ export default function InsuranceBox(props) {
                             </div>
                             <div className="Insurance-item" >
                                 <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/diversos.jpg")} />
+                                    <img className="Insurance-img" src={require("../images/calculadora.jpg")} />
                                 </div>
-                                <p className="Insurance-text" >DIVERSOS</p>
+                                <p className="Insurance-text" >FINANCIAMENTOS</p>
                             </div>
                         </div>
                     </div>

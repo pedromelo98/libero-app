@@ -15,6 +15,34 @@
     font-size: 30px;
 }
 
+.Component-Buttons{
+    display: flex;
+    flex: 1;
+    width: 45vw;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.App-Button{
+    display: flex;
+    background-color: #182a4e;
+    color: #fff;
+    width: 150px;
+    padding: 10px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.App-Button:hover{
+    background-color: #fff;
+    color: #182a4e;
+}
+
 .Intro-font {
     text-align: center;
     font-weight: bold;
@@ -34,5 +62,9 @@
     }
     .Slider-img {
         height: 200px;
+    }
+    .Component-Buttons{
+        display: flex;
+        flex-direction: column;
     }
 }
