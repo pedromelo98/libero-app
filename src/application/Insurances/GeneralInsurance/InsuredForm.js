@@ -1,13 +1,9 @@
-import React from 'react'
-import '../../../App.css';
-import '../../styles/CarInsurance.css';
-import '../../screens/Screens.css';
+import React from 'react';
 import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
+import Select from '@material-ui/core/Select';
 
 
 function InsuredForm(props) {
@@ -63,8 +59,8 @@ function InsuredForm(props) {
             <hr />
             <div className={props.cls.btnContainer} >
 
-                <Button className={props.cls.button} color={"secondary"} variant="contained">Voltar</Button>
-                <Button className={props.cls.button} color={"primary"} variant="contained">Próximo</Button>
+                {/* <Button className={props.cls.button} color={"secondary"} variant="contained">Voltar</Button> */}
+                <Button className={props.cls.button} onClick={props.onNext} color={"primary"} variant="contained">Próximo</Button>
             </div>
         </>
     );

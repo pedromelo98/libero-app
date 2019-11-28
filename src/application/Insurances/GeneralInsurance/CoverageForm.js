@@ -1,22 +1,18 @@
-import React, {useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Select } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Button from '@material-ui/core/Button';
-import '../../styles/CarInsurance.css';
-import '../../screens/Screens.css';
-
 
 function CoverageForm(props) {
 
     const [lw, setLw] = useState(0);
     const fc = useRef(null);
 
-    useEffect(() => {
+    //fc.current.offsetWidth/2);
+    useEffect(() =>     setLw("Carro Reserva".length * 8));
 
-        setLw("Carro Reserva".length * 8);//fc.current.offsetWidth/2);
-    });
     return (
         <>
             <div className={props.cls.formTitle}>
@@ -140,7 +136,7 @@ function CoverageForm(props) {
                 variant="outlined" />
             <div className={props.cls.btnContainer} >
 
-                <Button className={props.cls.button} color={"secondary"} variant="contained">Voltar</Button>
+                <Button className={props.cls.button} onClick={props.onBack} color={"secondary"} variant="contained">Voltar</Button>
                 <Button className={props.cls.button} color={"primary"} variant="contained">Próximo</Button>
             </div>
         </>
