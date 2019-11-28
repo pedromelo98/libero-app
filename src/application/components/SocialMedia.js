@@ -7,7 +7,7 @@ class SocialMedia extends React.PureComponent {
     render() {
         return (
             <div className="Social-media" >
-                <a href="https://wa.me/15551234567" >
+                <a href="https://wa.me/5534998896000" >
                     <div style={{ paddingLeft: 8.5, paddingBottom: 8.5 }} className="Icon-component" >
                         <Icon size='big' name="whatsapp" />
                         <p className='Icon-text' >Whatsapp</p>

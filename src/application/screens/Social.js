@@ -12,7 +12,7 @@ class Social extends React.Component {
             <div className="Social" >
                 <p className="Intro-font" >Redes sociais:</p>
                 <div className="Socials" >
-                    <a href="https://wa.me/15551234567" className="Social-item" >
+                    <a href="https://wa.me/5534998896000" className="Social-item" >
                         <Button className="Social-button" size='big' color='green'>
                             <Icon name='whatsapp square' /> Whatsapp
                         </Button>
