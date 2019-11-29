@@ -47,7 +47,7 @@ function ComponentNotFound404() {
     return (
 
         <div style={{ textAlign: 'center', paddingTop: 30  }}>
-            <img className="img-fluid" src="https://kicksdigitalmarketing.com/u/2019/09/iStock-1142986365.jpg" alt="'404 NOT FOUND'" />
+            <img style={{maxHeight: 600}} className="img-fluid" src="https://kicksdigitalmarketing.com/u/2019/09/iStock-1142986365.jpg" alt="'404 NOT FOUND'" />
         </div>
 
     );

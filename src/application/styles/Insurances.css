@@ -5,6 +5,7 @@
     border-radius: 100px;
     overflow: hidden;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .Insurance-row{
@@ -26,12 +27,12 @@
 }
 
 
-.Insurance-column{
+/* .Insurance-column{
     display: flex;
     flex-direction: column;
     flex: 1;
     align-items: center;
-}
+} */
 
 .Insurance-text{
     text-align: center;
