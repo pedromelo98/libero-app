@@ -1,17 +1,13 @@
 import React from 'react';
-
-import './Screens.css'
-import '../styles/Insurances.css'
-import 'semantic-ui-css/semantic.min.css'
-
-import { Link } from 'react-router-dom'
-import { isBrowser, isMobile } from 'react-device-detect'
-
-import LiberoSecurityCard from '../components/LiberoSecurityCard'
+import './Screens.css';
+import '../styles/Insurances.css';
+import 'semantic-ui-css/semantic.min.css';
+import { Link } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
+import LiberoSecurityCard from '../components/LiberoSecurityCard';
 import InsuranceBox from '../components/InsuranceBox.js';
 
 class Insurance extends React.PureComponent {
-
 
     render() {
         if (isMobile) {
@@ -45,11 +41,9 @@ class Insurance extends React.PureComponent {
                         </div>
                     </div>
                 </div>
-            )
+            );
         }
-        return (
-            <InsuranceBox />
-        )
+        return  <InsuranceBox />;
     }
 }
 

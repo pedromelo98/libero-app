@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import { Icon } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react';
 
 class LiberoSecurityCard extends React.PureComponent {
 

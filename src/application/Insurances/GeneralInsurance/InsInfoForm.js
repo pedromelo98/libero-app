@@ -5,14 +5,14 @@ import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Button from '@material-ui/core/Button';
 
-function ContactForm(props) {
+function InsInfoForm(props) {
 
     return (
         <>
             <div className={props.cls.formTitle}>
-
                 <h1>Seguro</h1>
             </div>
+
             <FormControl className={props.cls.formControl}>
                 <InputLabel htmlFor="instype-select">Tipo de Seguro</InputLabel>
                 <Select
@@ -90,4 +90,4 @@ function ContactForm(props) {
     );
 }
 
-export default ContactForm;
+export default InsInfoForm;

@@ -33,7 +33,7 @@ function Routes() {
                         <Insurance />
                     </Route>
                     <Route path="*">
-                        {/*}<ComponentNotFound404 />{*/}
+                        <ComponentNotFound404 />
                     </Route>
                 </Switch>
             </App>
@@ -46,8 +46,8 @@ function Routes() {
 function ComponentNotFound404() {
     return (
 
-        <div style={{ textAlign: 'center', paddingTop: 30 }}>
-            <img src="https://neilpatel.com/wp-content/uploads/2019/05/ilustracao-sobre-o-error-404-not-found.jpeg" alt="'404 NOT FOUND'" />
+        <div style={{ textAlign: 'center', paddingTop: 30  }}>
+            <img className="img-fluid" src="https://kicksdigitalmarketing.com/u/2019/09/iStock-1142986365.jpg" alt="'404 NOT FOUND'" />
         </div>
 
     );

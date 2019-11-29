@@ -11,7 +11,9 @@ function CoverageForm(props) {
     const fc = useRef(null);
 
     //fc.current.offsetWidth/2);
-    useEffect(() =>     setLw("Carro Reserva".length * 8));
+    useEffect(() =>
+        setLw("Carro Reserva".length * 8)
+        , []);
 
     return (
         <>

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import { isMobile } from 'react-device-detect'
-
-import '../styles/Carousel.css'
+import { isMobile } from 'react-device-detect';
+import '../styles/Carousel.css';
 
 export default function HomeSlider() {
 
