@@ -26,6 +26,10 @@
     justify-content: space-around;
 }
 
+.Insurance-item{
+    color: black;
+}
+
 
 /* .Insurance-column{
     display: flex;
@@ -48,4 +52,8 @@
 .Insurance-img:hover {
     width: 16vw;
     height: 11vw;
+}
+
+.Insurance-item:hover{
+    color: #182a4e;
 }

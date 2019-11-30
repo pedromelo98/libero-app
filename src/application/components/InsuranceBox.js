@@ -5,6 +5,8 @@ import { Card, /*Button, Row, Col,*/ Container } from 'react-bootstrap';
 import '../screens/Screens.css';
 import '../styles/Insurances.css';
 
+import * as LINKS from '../constants/Links'
+
 export default function InsuranceBox(props) {
 
     return (
@@ -21,18 +23,18 @@ export default function InsuranceBox(props) {
                                 </div>
                                 <p className="Insurance-text" >AUTO</p>
                             </div>
-                            <div className="Insurance-item" >
+                            <a href={LINKS.LINK_RESIDENCIAL} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/house.jpg")} alt="Seguro Residencial" />
                                 </div>
                                 <p className="Insurance-text" >RESIDENCIAL</p>
-                            </div>
-                            <div className="Insurance-item" >
+                            </a>
+                            <a href={LINKS.LINK_VIDA_INDIVIDUAL} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/life.jpg")} alt="Seguro de Vida" />
                                 </div>
-                                <p className="Insurance-text" >SAÚDE</p>
-                            </div>
+                                <p className="Insurance-text" >VIDA INDIVIDUAL</p>
+                            </a>
 
                         </div>
 
@@ -49,12 +51,12 @@ export default function InsuranceBox(props) {
                                 </div>
                                 <p className="Insurance-text" >EMPRESARIAL</p>
                             </div>
-                            <div className="Insurance-item" >
+                            <a href={LINKS.LINK_PORTATEIS} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/portateis.jpg")} alt="Seguro de Portateis" />
                                 </div>
                                 <p className="Insurance-text" >PORTÁTEIS</p>
-                            </div>
+                            </a>
 
                         </div>
 
@@ -71,12 +73,12 @@ export default function InsuranceBox(props) {
                                 </div>
                                 <p className="Insurance-text" >CONDOMÍNIO</p>
                             </div>
-                            <div className="Insurance-item" >
+                            <a href={LINKS.LINK_ODONTOLOGICO} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/odontologico.jpg")} alt="Seguro Odontológico" />
                                 </div>
                                 <p className="Insurance-text" >ODONTOLÓGICO</p>
-                            </div>
+                            </a>
                         </div>
 
                         <div className="Insurance-column" >
@@ -86,12 +88,12 @@ export default function InsuranceBox(props) {
                                 </div>
                                 <p className="Insurance-text" >BIKE</p>
                             </div>
-                            <div className="Insurance-item" >
+                            <a href={LINKS.LINK_VIAGEM} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/viagem.jpg")} alt="Seguro de Viagem" />
                                 </div>
                                 <p className="Insurance-text" >VIAGEM</p>
-                            </div>
+                            </a>
                             <div className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/calculadora.jpg")} alt="Financiamentos" />

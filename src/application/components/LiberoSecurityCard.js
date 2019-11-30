@@ -5,12 +5,14 @@ import { Icon } from 'semantic-ui-react';
 class LiberoSecurityCard extends React.PureComponent {
 
     render() {
-        const { iconName, security } = this.props;
+        const { iconName, security, link } = this.props;
         return (
-            <div className="LiberoSecurityCard" >
-                <Icon name={iconName} size={`${this.props.size !== undefined ? this.props.size : 'big'}`} />
-                <p>{security}</p>
-            </div>
+            <a href={link} >
+                <div className="LiberoSecurityCard" >
+                    <Icon name={iconName} size={`${this.props.size !== undefined ? this.props.size : 'big'}`} />
+                    <p>{security}</p>
+                </div>
+            </a>
         );
     }
 }

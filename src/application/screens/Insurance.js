@@ -7,6 +7,8 @@ import { isMobile } from 'react-device-detect';
 import LiberoSecurityCard from '../components/LiberoSecurityCard';
 import InsuranceBox from '../components/InsuranceBox.js';
 
+import * as LINKS from '../constants/Links'
+
 class Insurance extends React.PureComponent {
 
     render() {
@@ -19,25 +21,23 @@ class Insurance extends React.PureComponent {
                     <br /><br />
                     <div className="Insurance" >
                         <div className="Insurance-categorie" >
-                            <Link to="/insurance">
-                                <LiberoSecurityCard iconName='car' security='CARRO' />
-                                <LiberoSecurityCard iconName='motorcycle' security='MOTO' />
-                                <LiberoSecurityCard iconName='truck' security='CAMINHÃO' />
+                                <LiberoSecurityCard iconName='car' security='CARRO' link={"/seguro/carro"} />
+                                <LiberoSecurityCard iconName='laptop' security='PORTATEIS' link={LINKS.LINK_PORTATEIS}  />
+                                <LiberoSecurityCard iconName='truck' security='CARGAS' />
                                 <LiberoSecurityCard iconName='bicycle' security='BIKE' />
-                            </Link>
                         </div>
                         <div className="Insurance-categorie" >
-                            <LiberoSecurityCard iconName='home' security='RESIDENCIAL' />
+                            <LiberoSecurityCard iconName='home' security='RESIDENCIAL' link={LINKS.LINK_RESIDENCIAL} />
                             <LiberoSecurityCard iconName='warehouse' security='EMPRESA' />
                             <LiberoSecurityCard iconName='building' security='CONDOMÍNIO' />
-                            <LiberoSecurityCard iconName='plane' security='VIAGEM' />
+                            <LiberoSecurityCard iconName='plane' security='VIAGEM' link={LINKS.LINK_VIAGEM}  />
 
                         </div>
                         <div className="Insurance-categorie" >
-                            <LiberoSecurityCard iconName='heart' security='VIDA INDIVIDUAL' />
+                            <LiberoSecurityCard iconName='heart' security='VIDA INDIVIDUAL' link={LINKS.LINK_VIDA_INDIVIDUAL}  />
                             <LiberoSecurityCard iconName='users' security='VIDA GLOBAL' />
-                            <LiberoSecurityCard iconName='doctor' security='ODONTOLÓGICO' />
-                            <LiberoSecurityCard iconName='plus circle' security='DIVERSOS' />
+                            <LiberoSecurityCard iconName='doctor' security='ODONTOLÓGICO' link={LINKS.LINK_ODONTOLOGICO}  />
+                            <LiberoSecurityCard iconName='calculator' security='FINANCIAMENTOS' />
                         </div>
                     </div>
                 </div>
