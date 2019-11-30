@@ -1,9 +1,11 @@
 import React from 'react';
 import { Card, /*Button, Row, Col,*/ Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 // import { Icon } from 'semantic-ui-react';
 // import { Link } from 'react-router-dom';
 import '../screens/Screens.css';
 import '../styles/Insurances.css';
+
 
 import * as LINKS from '../constants/Links'
 
@@ -17,12 +19,12 @@ export default function InsuranceBox(props) {
                 <Card.Body>
                     <div className="Insurance-row" >
                         <div className="Insurance-column" >
-                            <div className="Insurance-item" >
+                            <Link to='seguro/carro' className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/carro.jpg")} alt="Seguro Automobilistico" />
                                 </div>
                                 <p className="Insurance-text" >AUTO</p>
-                            </div>
+                            </Link>
                             <a href={LINKS.LINK_RESIDENCIAL} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/house.jpg")} alt="Seguro Residencial" />
