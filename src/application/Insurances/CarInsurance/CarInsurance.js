@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-// import { Button as SemanticButton } from 'semantic-ui-react';
+import { Button as SemanticButton } from 'semantic-ui-react';
 import { Form } from 'react-bootstrap';
 import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -50,10 +50,15 @@ const useStyles = makeStyles(theme => ({
 
 
 function CarInsurance() {
-   // const [animationFinished, setAnimationFinished] = useState(false);
+    // const [animationFinished, setAnimationFinished] = useState(false);
+    const [renderForm, setRenderForm] = useState(false);
     const [fnum, setFnum] = useState(0);
     const form = useRef(null);
     const classes = useStyles();
+
+    function handleForm() {
+        setRenderForm(!renderForm)
+    }
 
     function realNext() {
         if (fnum < 6) setFnum(fnum + 1);
@@ -109,52 +114,52 @@ function CarInsurance() {
         }, 10);
     }
 
-    /* const renderIntro = () => {
+    const renderIntro = () => {
+        return (
+            <div className="Intro-Component" >
+                <p className="Intro-font" >Seguro Auto Individual</p>
+                <div className="Intro-View" >
+                    <div id='gate' className="Image-Component" >
+                        <img className="Car-Image" src={require('../../images/carro.jpg')} />
+                    </div>
 
-         return (
-             <div className="Intro-Component" >
-                 <p className="Intro-font" >Seguro Auto Individual</p>
-                 <div className="Intro-View" >
-                     <div id='gate' className="Image-Component" >
-                         <img className="Car-Image" src={require('../../images/carro.jpg')} />
-                     </div>
-                     {animationFinished &&
-                         <div className={`Button-View ${classes.timeout}`} >
-                             <p>Solicite nossa proposta:</p>
-                             <SemanticButton.Group >
-                                 <SemanticButton className="Button" >PREENCHER ONLINE</SemanticButton>
-                                 <SemanticButton.Or text='OU' />
-                                 <SemanticButton color='green' >SOLICITAR LIGAÇÃO </SemanticButton>
-                             </SemanticButton.Group>
-                         </div>
-                     }
-
-                     <div className="Image-Component" >
-                         <img image='inverted' className="Car-Image" src={require('../../images/carro.jpg')} />
-                     </div>
-                 </div>
-             </div>
-         )
-
-     }
-
-     return renderIntro();*/
+                    <div className={`Button-View ${classes.timeout}`} >
+                        <p>Solicite nossa proposta:</p>
+                        <SemanticButton.Group >
+                            <SemanticButton onClick={() => handleForm()} className="Button" >PREENCHER ONLINE</SemanticButton>
+                            <SemanticButton.Or text='OU' />
+                            <SemanticButton color='green' >SOLICITAR LIGAÇÃO </SemanticButton>
+                        </SemanticButton.Group>
+                    </div>
+                    <div />
+                </div>
+            </div>
+        )
+    }
 
     return (
-        <Container component="main" maxWidth="sm">
+        <div>
+            {renderForm ?
+                <Container component="main" maxWidth="sm">
 
-            <Form className={classes.form} ref={form}>
-                {fnum <= 0 ? <InsuredForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-                {fnum === 1 ? <ContactForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-                {fnum === 2 ? <VehicleForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-                {fnum === 3 ? <InsInfoForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-                {fnum === 4 ? <QuizForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-                {fnum === 5 ? <MainDriverForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-                {fnum >= 6 ? <CoverageForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-            </Form>
+                    <Form className={classes.form} ref={form}>
+                        {fnum <= 0 ? <InsuredForm cls={classes} onBack={handleForm} onNext={handleNext} /> : null}
+                        {fnum === 1 ? <ContactForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                        {fnum === 2 ? <VehicleForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                        {fnum === 3 ? <InsInfoForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                        {fnum === 4 ? <QuizForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                        {fnum === 5 ? <MainDriverForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                        {fnum >= 6 ? <CoverageForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                    </Form>
 
-        </Container >
+                </Container >
+                :
+                renderIntro()
+            }
+
+        </div>
     )
+
 }
 
 

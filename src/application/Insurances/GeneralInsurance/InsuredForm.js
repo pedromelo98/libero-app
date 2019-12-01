@@ -59,7 +59,7 @@ function InsuredForm(props) {
             <hr />
             <div className={props.cls.btnContainer} >
 
-                {/* <Button className={props.cls.button} color={"secondary"} variant="contained">Voltar</Button> */}
+                <Button className={props.cls.button} color={"secondary"} onClick={props.onBack} variant="contained">Voltar</Button>
                 <Button className={props.cls.button} onClick={props.onNext} color={"primary"} variant="contained">Próximo</Button>
             </div>
         </>
