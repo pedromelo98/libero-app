@@ -7,6 +7,7 @@ import Contact from "../screens/Contact";
 import AboutApp from "../screens/AboutApp.js";
 import Social from "../screens/Social.js";
 import CarInsurance from "../Insurances/CarInsurance/CarInsurance.js"
+import PageNotFound from "../components/PageNotFound.js";
 
 function Routes() {
 
@@ -33,7 +34,7 @@ function Routes() {
                         <Insurance />
                     </Route>
                     <Route path="*">
-                        <ComponentNotFound404 />
+                        <PageNotFound />
                     </Route>
                 </Switch>
             </App>
@@ -42,15 +43,5 @@ function Routes() {
 
 }
 
-
-function ComponentNotFound404() {
-    return (
-
-        <div style={{ textAlign: 'center', paddingTop: 30  }}>
-            <img style={{maxHeight: 600}} className="img-fluid" src="https://kicksdigitalmarketing.com/u/2019/09/iStock-1142986365.jpg" alt="'404 NOT FOUND'" />
-        </div>
-
-    );
-}
 
 export default Routes;

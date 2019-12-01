@@ -4,24 +4,28 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
 import { Link, withRouter } from 'react-router-dom';
 
+import * as LINKS from '../constants/Links'
+
 class LiberoTopNavBar extends React.PureComponent {
 
     state = {
         seguros: [
-            "Carro",
-            "Bike",
-            "Consórcio",
-            "Financiamentos",
-            "Odontológico",
-            "Portáteis",
-            "Residencial",
-            "Viagem",
-            "Vida",
+            { name: "Carro", link: "/seguro/carro" },
+            { name: "Cargas", link: "/seguro/cargas" },
+            { name: "Bike", link: "/seguro/bike" },
+            { name: "Residencial", link: LINKS.LINK_RESIDENCIAL },
+            { name: "Empresarial", link: "/seguro/empresarial" },
+            { name: "Condomínio", link: "/seguro/condominio" },
+            { name: "Viagem", link: LINKS.LINK_VIAGEM },
+            { name: "Vida Individual", link: LINKS.LINK_VIDA_INDIVIDUAL },
+            { name: "Portáteis", link: LINKS.LINK_PORTATEIS },
+            { name: "Odontológico", link: LINKS.LINK_ODONTOLOGICO },
+            { name: "Financiamentos", link: "/seguro/financiamentos" },
         ]
     };
 
     renderDropdownItens() {
-        return this.state.seguros.map((l, i) => <NavDropdown.Item key={i} href={`/seguro/${l}`}>{l}</NavDropdown.Item>);
+        return this.state.seguros.map((l, i) => <NavDropdown.Item key={i} href={l.link}>{l.name}</NavDropdown.Item>);
     }
 
     render() {

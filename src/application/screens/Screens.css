@@ -15,7 +15,17 @@
     font-size: 30px;
 }
 
-.Component-Buttons{
+.Not-Found {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Component-Buttons {
     display: flex;
     flex: 1;
     width: 45vw;
@@ -24,7 +34,7 @@
     align-items: center;
 }
 
-.App-Button{
+.App-Button {
     display: flex;
     background-color: #182a4e;
     color: #fff;
@@ -38,7 +48,7 @@
     margin-bottom: 10px;
 }
 
-.App-Button:hover{
+.App-Button:hover {
     background-color: #fff;
     color: #182a4e;
 }
@@ -63,7 +73,7 @@
     .Slider-img {
         height: 200px;
     }
-    .Component-Buttons{
+    .Component-Buttons {
         display: flex;
         flex-direction: column;
     }

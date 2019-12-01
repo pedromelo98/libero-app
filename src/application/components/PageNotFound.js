@@ -1,7 +1,10 @@
 import React from 'react';
 
-import './Screens.css';
+import '../screens/Screens.css';
 import 'semantic-ui-css/semantic.min.css';
+
+import { Icon } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 
 class PageNotFound extends React.PureComponent {
@@ -11,10 +14,12 @@ class PageNotFound extends React.PureComponent {
     }
     render() {
         return (
-            <div className="About-App" >
+            <div className="Not-Found" >
                 <p className="Intro-font" >Página não encontrada</p>
-                
-
+                <Link to='/' className="App-Button" >
+                    <Icon size='big' name="arrow left" />
+                    <p>HOME</p>
+                </Link>
             </div>
 
         );

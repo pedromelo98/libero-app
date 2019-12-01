@@ -3,8 +3,11 @@ import { Button as SemanticButton } from 'semantic-ui-react';
 import { Form } from 'react-bootstrap';
 import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { isMobile } from 'react-device-detect';
+
 import '../../styles/CarInsurance.css';
 import '../../screens/Screens.css';
+
 import InsuredForm from '../GeneralInsurance/InsuredForm.js';
 import ContactForm from '../GeneralInsurance/ContactForm.js';
 import VehicleForm from './VehicleForm.js';
@@ -12,6 +15,7 @@ import InsInfoForm from '../GeneralInsurance/InsInfoForm.js';
 import QuizForm from '../GeneralInsurance/QuizForm.js';
 import MainDriverForm from './MainDriverForm.js';
 import CoverageForm from '../GeneralInsurance/CoverageForm.js';
+import RenderIntro from '../Insurance-Intro';
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -115,6 +119,28 @@ function CarInsurance() {
     }
 
     const renderIntro = () => {
+        if (isMobile) {
+            return (
+                <div className="Intro-Component" >
+                    <p className="Intro-font" >Seguro Auto Individual</p>
+                    <div className="Mobile-Intro" >
+                        <div id='gate' className="Image-Component" >
+                            <img className="Mobile-Car" src={require('../../images/carro.jpg')} />
+                        </div>
+
+                        <div className='Mobile-Button-View' >
+                            <p>Solicite nossa proposta:</p>
+                            <SemanticButton.Group size='mini' >
+                                <SemanticButton onClick={() => handleForm()}  >PREENCHER ONLINE</SemanticButton>
+                                <SemanticButton.Or text='OU' />
+                                <SemanticButton color='green' >SOLICITAR LIGAÇÃO </SemanticButton>
+                            </SemanticButton.Group>
+                        </div>
+                        <div />
+                    </div>
+                </div>
+            )
+        }
         return (
             <div className="Intro-Component" >
                 <p className="Intro-font" >Seguro Auto Individual</p>
@@ -154,7 +180,7 @@ function CarInsurance() {
 
                 </Container >
                 :
-                renderIntro()
+                <RenderIntro handleForm={handleForm} img={require('../../images/carro.jpg')} title="Seguro Auto Individual" />
             }
 
         </div>
