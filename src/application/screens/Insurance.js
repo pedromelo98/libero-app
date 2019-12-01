@@ -35,7 +35,7 @@ class Insurance extends React.PureComponent {
                         </div>
                         <div className="Insurance-categorie" >
                             <LiberoSecurityCard iconName='heart' security='VIDA INDIVIDUAL' link={LINKS.LINK_VIDA_INDIVIDUAL}  />
-                            <LiberoSecurityCard iconName='users' security='VIDA GLOBAL' />
+                            <LiberoSecurityCard iconName='child' security='EVENTOS' />
                             <LiberoSecurityCard iconName='doctor' security='ODONTOLÓGICO' link={LINKS.LINK_ODONTOLOGICO}  />
                             <LiberoSecurityCard iconName='calculator' security='FINANCIAMENTOS' />
                         </div>

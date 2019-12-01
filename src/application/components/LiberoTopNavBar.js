@@ -11,6 +11,7 @@ class LiberoTopNavBar extends React.PureComponent {
     state = {
         seguros: [
             { name: "Carro", link: "/seguro/carro" },
+            { name: "Eventos", link: "/seguro/eventos" },
             { name: "Cargas", link: "/seguro/cargas" },
             { name: "Bike", link: "/seguro/bike" },
             { name: "Residencial", link: LINKS.LINK_RESIDENCIAL },
