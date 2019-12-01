@@ -3,8 +3,7 @@ import '../../App.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
 import { Link, withRouter } from 'react-router-dom';
-
-import * as LINKS from '../constants/Links'
+import * as LINKS from '../constants/Links';
 
 class LiberoTopNavBar extends React.PureComponent {
 

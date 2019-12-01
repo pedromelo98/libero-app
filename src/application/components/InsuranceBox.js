@@ -1,13 +1,9 @@
 import React from 'react';
-import { Card, /*Button, Row, Col,*/ Container } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// import { Icon } from 'semantic-ui-react';
-// import { Link } from 'react-router-dom';
 import '../screens/Screens.css';
 import '../styles/Insurances.css';
-
-
-import * as LINKS from '../constants/Links'
+import * as LINKS from '../constants/Links';
 
 export default function InsuranceBox(props) {
 

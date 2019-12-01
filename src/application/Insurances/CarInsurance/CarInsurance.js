@@ -1,13 +1,9 @@
 import React, { useState, useRef } from 'react';
-import { Button as SemanticButton } from 'semantic-ui-react';
 import { Form } from 'react-bootstrap';
 import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { isMobile } from 'react-device-detect';
-
 import '../../styles/CarInsurance.css';
 import '../../screens/Screens.css';
-
 import InsuredForm from '../GeneralInsurance/InsuredForm.js';
 import ContactForm from '../GeneralInsurance/ContactForm.js';
 import VehicleForm from './VehicleForm.js';
@@ -15,7 +11,7 @@ import InsInfoForm from '../GeneralInsurance/InsInfoForm.js';
 import QuizForm from '../GeneralInsurance/QuizForm.js';
 import MainDriverForm from './MainDriverForm.js';
 import CoverageForm from '../GeneralInsurance/CoverageForm.js';
-import RenderIntro from '../Insurance-Intro';
+import RenderIntro from './Insurance-Intro';
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -61,7 +57,7 @@ function CarInsurance() {
     const classes = useStyles();
 
     function handleForm() {
-        setRenderForm(!renderForm)
+        setRenderForm(!renderForm);
     }
 
     function realNext() {
@@ -118,7 +114,7 @@ function CarInsurance() {
         }, 10);
     }
 
-    const renderIntro = () => {
+    /*const renderIntro = () => {
         if (isMobile) {
             return (
                 <div className="Intro-Component" >
@@ -161,7 +157,7 @@ function CarInsurance() {
                 </div>
             </div>
         )
-    }
+    }*/
 
     return (
         <div>

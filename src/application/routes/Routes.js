@@ -8,6 +8,7 @@ import AboutApp from "../screens/AboutApp.js";
 import Social from "../screens/Social.js";
 import CarInsurance from "../Insurances/CarInsurance/CarInsurance.js"
 import PageNotFound from "../components/PageNotFound.js";
+import CallRequest from "../Insurances/CallRequest.js";
 
 function Routes() {
 
@@ -32,6 +33,9 @@ function Routes() {
                     </Route>
                     <Route path="/seguros">
                         <Insurance />
+                    </Route>
+                    <Route path="/seguro/ligacao">
+                        <CallRequest/>
                     </Route>
                     <Route path="*">
                         <PageNotFound />
