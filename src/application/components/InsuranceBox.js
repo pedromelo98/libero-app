@@ -43,9 +43,9 @@ export default function InsuranceBox(props) {
                         <div className="Insurance-column" >
                             <div className="Insurance-item" >
                                 <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/party.jpg")} alt="Seguro Automobilistico" />
+                                    <img className="Insurance-img" src={require("../images/trator.jpg")} alt="Seguro Automobilistico" />
                                 </div>
-                                <p className="Insurance-text" >EVENTOS</p>
+                                <p className="Insurance-text" >RISCOS AGRÍCOLAS</p>
                             </div>
                             <div className="Insurance-item" >
                                 <div className="Img-component" >
