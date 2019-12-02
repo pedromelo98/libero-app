@@ -1,13 +1,9 @@
 import React from 'react';
-import { Card, /*Button, Row, Col,*/ Container } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// import { Icon } from 'semantic-ui-react';
-// import { Link } from 'react-router-dom';
 import '../screens/Screens.css';
 import '../styles/Insurances.css';
-
-
-import * as LINKS from '../constants/Links'
+import * as LINKS from '../constants/Links';
 
 export default function InsuranceBox(props) {
 
@@ -15,7 +11,7 @@ export default function InsuranceBox(props) {
         <Container >
             <p className="Intro-font" >Nossos serviços</p>
             <Card>
-                <Card.Header as='h2' >Solicite nossa proposta ou faça uma Simulação online:</Card.Header>
+                <Card.Header as='h2' >Simule online ou solicite nossa proposta:</Card.Header>
                 <Card.Body>
                     <div className="Insurance-row" >
                         <div className="Insurance-column" >

@@ -7,9 +7,9 @@ class LiberoBottomBar extends React.PureComponent {
 
     setSelectedByPath(path) {
         if (this.props.location && path === this.props.location.pathname) {
-            return 'Bottom-selected'
+            return 'Bottom-selected';
         }
-        return 'Bottom-item'
+        return 'Bottom-item';
     }
 
     render() {

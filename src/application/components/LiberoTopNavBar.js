@@ -3,15 +3,14 @@ import '../../App.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
 import { Link, withRouter } from 'react-router-dom';
-
-import * as LINKS from '../constants/Links'
+import * as LINKS from '../constants/Links';
 
 class LiberoTopNavBar extends React.PureComponent {
 
     state = {
         seguros: [
             { name: "Carro", link: "/seguro/carro" },
-            { name: "Eventos", link: "/seguro/eventos" },
+            { name: "Riscos agrícolas", link: "/seguro/riscosagricolas" },
             { name: "Cargas", link: "/seguro/cargas" },
             { name: "Bike", link: "/seguro/bike" },
             { name: "Residencial", link: LINKS.LINK_RESIDENCIAL },
