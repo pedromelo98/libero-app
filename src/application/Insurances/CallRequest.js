@@ -70,8 +70,8 @@ function CallRequest(props) {
             <hr />
             <div className={classes.btnContainer}>
 
-                <Button className={classes.button}  color={"secondary"} variant="contained">Voltar</Button>
-                <Button className={classes.button}  color={"primary"} variant="contained">Avançar</Button>
+                <Button className={classes.button} variant="contained">Voltar</Button>
+                <Button className={classes.button}  color={"primary"} variant="contained">CONFIRMAR</Button>
             </div>
         </Container>
     );

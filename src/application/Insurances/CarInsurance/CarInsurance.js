@@ -114,53 +114,8 @@ function CarInsurance() {
         }, 10);
     }
 
-    /*const renderIntro = () => {
-        if (isMobile) {
-            return (
-                <div className="Intro-Component" >
-                    <p className="Intro-font" >Seguro Auto Individual</p>
-                    <div className="Mobile-Intro" >
-                        <div id='gate' className="Image-Component" >
-                            <img className="Mobile-Car" src={require('../../images/carro.jpg')} />
-                        </div>
-
-                        <div className='Mobile-Button-View' >
-                            <p>Solicite nossa proposta:</p>
-                            <SemanticButton.Group size='mini' >
-                                <SemanticButton onClick={() => handleForm()}  >PREENCHER ONLINE</SemanticButton>
-                                <SemanticButton.Or text='OU' />
-                                <SemanticButton color='green' >SOLICITAR LIGAÇÃO </SemanticButton>
-                            </SemanticButton.Group>
-                        </div>
-                        <div />
-                    </div>
-                </div>
-            )
-        }
-        return (
-            <div className="Intro-Component" >
-                <p className="Intro-font" >Seguro Auto Individual</p>
-                <div className="Intro-View" >
-                    <div id='gate' className="Image-Component" >
-                        <img className="Car-Image" src={require('../../images/carro.jpg')} />
-                    </div>
-
-                    <div className={`Button-View ${classes.timeout}`} >
-                        <p>Solicite nossa proposta:</p>
-                        <SemanticButton.Group >
-                            <SemanticButton onClick={() => handleForm()} className="Button" >PREENCHER ONLINE</SemanticButton>
-                            <SemanticButton.Or text='OU' />
-                            <SemanticButton color='green' >SOLICITAR LIGAÇÃO </SemanticButton>
-                        </SemanticButton.Group>
-                    </div>
-                    <div />
-                </div>
-            </div>
-        )
-    }*/
-
     return (
-        <div>
+        <div className="Top-Space" >
             {renderForm ?
                 <Container component="main" maxWidth="sm">
 

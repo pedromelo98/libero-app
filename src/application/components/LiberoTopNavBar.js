@@ -21,6 +21,7 @@ class LiberoTopNavBar extends React.PureComponent {
             { name: "Portáteis", link: LINKS.LINK_PORTATEIS },
             { name: "Odontológico", link: LINKS.LINK_ODONTOLOGICO },
             { name: "Financiamentos", link: "/seguro/financiamentos" },
+            { name: "Outro", link: "/seguro/ligacao" },
         ]
     };
 
