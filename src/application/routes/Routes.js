@@ -36,10 +36,16 @@ function Routes() {
                     <Route path={LINKS.LINK_CARGAS}>
                         <CallInsurances />
                     </Route>
+                    <Route path={LINKS.LINK_RESIDENCIAL}>
+                        <CallInsurances />
+                    </Route>
                     <Route path={LINKS.LINK_EMPRESARIAL}>
                         <CallInsurances />
                     </Route>
                     <Route path={LINKS.LINK_CONDOMINIO}>
+                        <CallInsurances />
+                    </Route>
+                    <Route path={LINKS.LINK_VIDA_INDIVIDUAL}>
                         <CallInsurances />
                     </Route>
                     <Route path={LINKS.LINK_FINANCIAMENTOS}>

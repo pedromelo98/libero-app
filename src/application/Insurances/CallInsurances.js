@@ -39,6 +39,17 @@ class CallInsurances extends React.PureComponent {
                             title="Seguro de Cargas"
                         />
                     );
+                case LINKS.LINK_RESIDENCIAL:
+                    return (
+                        <RenderIntro
+                            callInsurance={"empresarial"}
+                            titlePhrase={"Solicite nossa proposta!"}
+                            img={require('../images/house.jpg')}
+                            redirect={LINKS.REDIRECT_RESIDENCIAL}
+                            haveForm={true}
+                            title="Seguro Residencial"
+                        />
+                    );
                 case LINKS.LINK_EMPRESARIAL:
                     return (
                         <RenderIntro
@@ -46,17 +57,30 @@ class CallInsurances extends React.PureComponent {
                             titlePhrase={"Proteja sua empresa!"}
                             img={require('../images/empresa.jpg')}
                             redirect={LINKS.REDIRECT_EMPRESARIAL}
+                            haveForm={true}
                             title="Seguro Empresarial"
                         />
                     );
                 case LINKS.LINK_CONDOMINIO:
                     return (
                         <RenderIntro
-                            callInsurance={"condominio"}
-                            titlePhrase={"Proteja seu condomínio!"}
+                            callInsurance={"empresarial"}
+                            titlePhrase={"Solicite nossa proposta!"}
                             img={require('../images/condominio.jpg')}
                             redirect={LINKS.REDIRECT_CONDOMINIO}
-                            title="Seguro de Condomínio"
+                            haveForm={true}
+                            title="Seguro para Condomínios"
+                        />
+                    );
+                case LINKS.LINK_VIDA_INDIVIDUAL:
+                    return (
+                        <RenderIntro
+                            callInsurance={"condominio"}
+                            titlePhrase={"Solicite nossa proposta!"}
+                            img={require('../images/life.jpg')}
+                            redirect={LINKS.REDIRECT_VIDA_INDIVIDUAL}
+                            haveForm={true}
+                            title="Seguro de Vida Individual"
                         />
                     );
                 case LINKS.LINK_FINANCIAMENTOS:

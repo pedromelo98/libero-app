@@ -43,11 +43,17 @@ class RenderIntro extends React.Component {
 
                     <div className='Button-View' >
                         <p>{this.props.titlePhrase}</p>
-                        <SemanticButton.Group >
-                            <SemanticButton href={this.props.redirect} className="Button" >PREENCHER ONLINE</SemanticButton>
-                            <SemanticButton.Or text='OU' />
-                            <SemanticButton href={REDIRECT_OTHERS} color='green' >SOLICITAR LIGAÇÃO </SemanticButton>
-                        </SemanticButton.Group>
+                        {this.props.haveForm
+                            ?
+                            <SemanticButton.Group >
+                                <SemanticButton href={this.props.redirect} className="Button" >PREENCHER ONLINE</SemanticButton>
+                                <SemanticButton.Or text='OU' />
+                                <SemanticButton href={REDIRECT_OTHERS} color='green' >SOLICITAR LIGAÇÃO </SemanticButton>
+                            </SemanticButton.Group>
+                            :
+                            <SemanticButton href={REDIRECT_OTHERS} color='green' >SOLICITAR PROPOSTA </SemanticButton>
+                        }
+
                     </div>
                     <div />
                 </div>
