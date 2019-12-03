@@ -9,8 +9,7 @@ import Social from "../screens/Social.js";
 import CarInsurance from "../Insurances/CarInsurance/CarInsurance.js"
 import PageNotFound from "../components/PageNotFound.js";
 import CallRequest from "../Insurances/CallRequest.js";
-
-import * as LINKS from '../constants/Links'
+import * as LINKS from '../constants/Links';
 import CallInsurances from "../Insurances/CallInsurances.js";
 
 function Routes() {

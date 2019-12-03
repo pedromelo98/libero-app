@@ -122,13 +122,13 @@ function CarInsurance() {
                 <Container className={classes.topSpace} component="main" maxWidth="sm">
 
                     <Form className={classes.form} ref={form}>
-                        {fnum <= 0 ? <InsuredForm cls={classes} onBack={handleForm} onNext={handleNext} /> : null}
-                        {fnum === 1 ? <ContactForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-                        {fnum === 2 ? <VehicleForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-                        {fnum === 3 ? <InsInfoForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-                        {fnum === 4 ? <QuizForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                        {fnum <= 0 ? <InsuredForm     cls={classes} onBack={handleForm} onNext={handleNext} /> : null}
+                        {fnum === 1 ? <ContactForm    cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                        {fnum === 2 ? <VehicleForm    cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                        {fnum === 3 ? <InsInfoForm    cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                        {fnum === 4 ? <QuizForm       cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
                         {fnum === 5 ? <MainDriverForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
-                        {fnum >= 6 ? <CoverageForm cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
+                        {fnum >= 6 ? <CoverageForm    cls={classes} onBack={handleBack} onNext={handleNext} /> : null}
                     </Form>
 
                 </Container >

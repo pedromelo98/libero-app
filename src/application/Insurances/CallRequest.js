@@ -1,7 +1,7 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import {makeStyles, Container} from '@material-ui/core';
+import { makeStyles, Container } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -71,7 +71,7 @@ function CallRequest(props) {
             <div className={classes.btnContainer}>
 
                 <Button className={classes.button} variant="contained">Voltar</Button>
-                <Button className={classes.button}  color={"primary"} variant="contained">CONFIRMAR</Button>
+                <Button className={classes.button} color={"primary"} variant="contained">CONFIRMAR</Button>
             </div>
         </Container>
     );

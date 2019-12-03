@@ -81,8 +81,8 @@ function InsInfoForm(props) {
 
             <div className={props.cls.btnContainer} >
 
-                <Button className={props.cls.button} onClick={props.onBack}  variant="contained">Voltar</Button>
-                <Button className={props.cls.button} onClick={props.onNext} color={"primary"}   variant="contained">Próximo</Button>
+                <Button className={props.cls.button} onClick={props.onBack} variant="contained">Voltar</Button>
+                <Button className={props.cls.button} onClick={props.onNext} color={"primary"} variant="contained">Próximo</Button>
             </div>
 
 

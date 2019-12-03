@@ -1,7 +1,5 @@
 import React from 'react';
-
-import { Icon } from 'semantic-ui-react';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import * as LINKS from '../constants/Links'
 import RenderIntro from './Insurance-Intro';
 
@@ -18,7 +16,7 @@ class CallInsurances extends React.PureComponent {
                             img={require('../images/trator.jpg')}
                             title="Seguro para Riscos Agrícolas"
                         />
-                    )
+                    );
                 case LINKS.LINK_CARGAS:
                     return (
                         <RenderIntro
@@ -27,7 +25,7 @@ class CallInsurances extends React.PureComponent {
                             img={require('../images/truck.jpg')}
                             title="Seguro de Cargas"
                         />
-                    )
+                    );
                 case LINKS.LINK_EMPRESARIAL:
                     return (
                         <RenderIntro
@@ -36,7 +34,7 @@ class CallInsurances extends React.PureComponent {
                             img={require('../images/empresa.jpg')}
                             title="Seguro Empresarial"
                         />
-                    )
+                    );
                 case LINKS.LINK_CONDOMINIO:
                     return (
                         <RenderIntro
@@ -45,7 +43,7 @@ class CallInsurances extends React.PureComponent {
                             img={require('../images/condominio.jpg')}
                             title="Seguro de Condomínio"
                         />
-                    )
+                    );
                 case LINKS.LINK_FINANCIAMENTOS:
                     return (
                         <RenderIntro
@@ -54,15 +52,17 @@ class CallInsurances extends React.PureComponent {
                             img={require('../images/calculadora.jpg')}
                             title="Seguro para Financiamentos"
                         />
-                    )
+                    );
+
+                default:
+                    
+                    return(<></>);
             }
         }
     }
 
     render() {
-        return (
-            this.renderInsuranceByPath()
-        );
+        return this.renderInsuranceByPath();
     }
 }
 
