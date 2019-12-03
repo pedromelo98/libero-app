@@ -44,13 +44,15 @@ const useStyles = makeStyles(theme => ({
     },
     timeout: {
         transition: '.3s'
+    },
+    topSpace: {
+        paddingTop: "5vh"
     }
 
 }));
 
 
 function CarInsurance() {
-    // const [animationFinished, setAnimationFinished] = useState(false);
     const [renderForm, setRenderForm] = useState(false);
     const [fnum, setFnum] = useState(0);
     const form = useRef(null);
@@ -117,7 +119,7 @@ function CarInsurance() {
     return (
         <div  >
             {renderForm ?
-                <Container className="Top-Space" component="main" maxWidth="sm">
+                <Container className={classes.topSpace} component="main" maxWidth="sm">
 
                     <Form className={classes.form} ref={form}>
                         {fnum <= 0 ? <InsuredForm cls={classes} onBack={handleForm} onNext={handleNext} /> : null}

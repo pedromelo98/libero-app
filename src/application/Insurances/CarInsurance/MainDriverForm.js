@@ -10,9 +10,9 @@ function MainDriverForm(props) {
     return (
         <>
             <div className={props.cls.formTitle}>
-
                 <h1>Condutor Principal</h1>
             </div>
+
             <FormControl fullWidth className={props.cls.formControl}>
                 <InputLabel htmlFor="instype-select">Relação Segurado/Condutor</InputLabel>
                 <Select
