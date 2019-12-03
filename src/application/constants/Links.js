@@ -4,6 +4,7 @@ export const LINK_VIDA_INDIVIDUAL = "https://wwws.portoseguro.com.br/vendaonline
 export const LINK_VIAGEM = "https://wwws.portoseguro.com.br/vendaonline/viagem/home.ns?cod=a68f1013d67b48968f20d604a7507b86&utm_source=7860JJ&utm_medium=geradorLinks&utm_campaign=GeradordeLinks_NY93YJ&utm_content=LIBERO_CORRETORA_LTDA";
 export const LINK_ODONTOLOGICO = "http://sulamericaodonto.com.br/liberosegs";
 export const LINK_BIKE = "https://www.berkley.com.br/PortalSegurado/Bike/Home.html#/LBRO";
+
 export const LINK_AUTO = "/seguro/auto";
 export const LINK_AGRICOLAS = "/seguro/riscosagricolas";
 export const LINK_CARGAS = "/seguro/cargas";
