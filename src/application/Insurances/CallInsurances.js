@@ -74,14 +74,24 @@ class CallInsurances extends React.PureComponent {
                     );
                 case LINKS.LINK_VIDA_INDIVIDUAL:
                     return (
-                        <RenderIntro
-                            callInsurance={"condominio"}
-                            titlePhrase={"Solicite nossa proposta!"}
-                            img={require('../images/life.jpg')}
-                            redirect={LINKS.REDIRECT_VIDA_INDIVIDUAL}
-                            haveForm={true}
-                            title="Seguro de Vida Individual"
-                        />
+                        <>
+                            <RenderIntro
+                                callInsurance={"vida"}
+                                titlePhrase={"Solicite nossa proposta!"}
+                                img={require('../images/life.jpg')}
+                                redirect={LINKS.REDIRECT_VIDA_GLOBAL}
+                                haveForm={true}
+                                title="Seguro de Vida individual"
+                            />
+                            <RenderIntro
+                                callInsurance={"vidaglobal"}
+                                titlePhrase={"Solicite nossa proposta!"}
+                                img={require('../images/grupo.jpg')}
+                                redirect={LINKS.REDIRECT_VIDA_GLOBAL}
+                                haveForm={true}
+                                title="Seguro de Vida em grupo"
+                            />
+                        </>
                     );
                 case LINKS.LINK_FINANCIAMENTOS:
                     return (
