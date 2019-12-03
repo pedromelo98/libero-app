@@ -23,7 +23,7 @@ class CallInsurances extends React.PureComponent {
                     return (
                         <RenderIntro
                             callInsurance={"agricolas"}
-                            titlePhrase={"Proteja seu patrimônio!"}
+                            titlePhrase={"Solicite nossa proposta!"}
                             img={require('../images/trator.jpg')}
                             redirect={LINKS.REDIRECT_OTHERS}
                             title="Seguro para Riscos Agrícolas"
@@ -33,7 +33,7 @@ class CallInsurances extends React.PureComponent {
                     return (
                         <RenderIntro
                             callInsurance={"cargas"}
-                            titlePhrase={"Proteja suas cargas!"}
+                            titlePhrase={"Solicite nossa proposta!"}
                             img={require('../images/truck.jpg')}
                             redirect={LINKS.REDIRECT_OTHERS}
                             title="Seguro de Cargas"
