@@ -54,7 +54,7 @@ class CallInsurances extends React.PureComponent {
                     return (
                         <RenderIntro
                             callInsurance={"empresarial"}
-                            titlePhrase={"Proteja sua empresa!"}
+                            titlePhrase={"Solicite nossa proposta!"}
                             img={require('../images/empresa.jpg')}
                             redirect={LINKS.REDIRECT_EMPRESARIAL}
                             haveForm={true}

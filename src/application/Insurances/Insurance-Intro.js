@@ -20,12 +20,17 @@ class RenderIntro extends React.Component {
                         </div>
 
                         <div className='Mobile-Button-View' >
-                            <p>Solicite nossa proposta:</p>
-                            <SemanticButton.Group size='mini' >
-                                <SemanticButton href={this.props.redirect}  >PREENCHER ONLINE</SemanticButton>
-                                <SemanticButton.Or text='OU' />
-                                <SemanticButton onClick={REDIRECT_OTHERS} color='green' >SOLICITAR LIGAÇÃO </SemanticButton>
-                            </SemanticButton.Group>
+                            <p>{this.props.titlePhrase}</p>
+                            {this.props.haveForm
+                                ?
+                                <SemanticButton.Group size='mini' >
+                                    <SemanticButton href={this.props.redirect}  >PREENCHER ONLINE</SemanticButton>
+                                    <SemanticButton.Or text='OU' />
+                                    <SemanticButton href={REDIRECT_OTHERS} color='green' >SOLICITAR LIGAÇÃO </SemanticButton>
+                                </SemanticButton.Group>
+                                :
+                                <SemanticButton href={REDIRECT_OTHERS} color='green' >SOLICITAR PROPOSTA </SemanticButton>
+                            }
                         </div>
                         <div />
                     </div>

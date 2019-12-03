@@ -11,7 +11,7 @@ export const LINK_EMPRESARIAL = "/seguro/empresarial";
 export const LINK_CONDOMINIO = "/seguro/condominio";
 export const LINK_VIDA_INDIVIDUAL = "/seguro/vida";
 export const LINK_FINANCIAMENTOS = "/seguro/financiamentos";
-export const LINK_LIGACAO = "/seguro/ligacao";
+export const LINK_LIGACAO = "https://libero.aggilizador.com.br/several";
 
 export const REDIRECT_AUTO = "https://libero.aggilizador.com.br/auto";
 export const REDIRECT_CONDOMINIO = "https://libero.aggilizador.com.br/condominium";
