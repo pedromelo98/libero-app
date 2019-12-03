@@ -28,7 +28,7 @@ function Routes() {
                         <AboutApp />
                     </Route>
                     <Route path={LINKS.LINK_AUTO} >
-                        <CarInsurance />
+                        <CallInsurances />
                     </Route>
                     <Route path={LINKS.LINK_AGRICOLAS}>
                         <CallInsurances />
