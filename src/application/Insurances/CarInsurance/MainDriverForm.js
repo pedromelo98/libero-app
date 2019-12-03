@@ -86,7 +86,7 @@ function MainDriverForm(props) {
 
             <div className={props.cls.btnContainer} >
 
-                <Button className={props.cls.button} onClick={props.onBack} color={"secondary"} variant="contained">Voltar</Button>
+                <Button className={props.cls.button} onClick={props.onBack} variant="contained">Voltar</Button>
                 <Button className={props.cls.button} onClick={props.onNext} color={"primary"} variant="contained">Próximo</Button>
             </div>
 

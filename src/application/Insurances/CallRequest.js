@@ -45,7 +45,7 @@ function CallRequest(props) {
     return (
         <Container component="main" maxWidth="sm" >
             <div className={classes.formTitle}>
-                <h1>Solicite nossa proposta</h1>
+                <h1>Solicite nossa proposta:</h1>
             </div>
             <TextField
                 label="Nome"

@@ -9,19 +9,19 @@ class LiberoTopNavBar extends React.PureComponent {
 
     state = {
         seguros: [
-            { name: "Carro", link: "/seguro/carro" },
-            { name: "Riscos agrícolas", link: "/seguro/riscosagricolas" },
-            { name: "Cargas", link: "/seguro/cargas" },
-            { name: "Bike", link: "/seguro/bike" },
+            { name: "Carro", link: LINKS.LINK_AUTO },
+            { name: "Riscos agrícolas", link: LINKS.LINK_AGRICOLAS },
+            { name: "Cargas", link: LINKS.LINK_CARGAS },
+            { name: "Bike", link: LINKS.LINK_BIKE },
             { name: "Residencial", link: LINKS.LINK_RESIDENCIAL },
-            { name: "Empresarial", link: "/seguro/empresarial" },
-            { name: "Condomínio", link: "/seguro/condominio" },
+            { name: "Empresarial", link: LINKS.LINK_EMPRESARIAL },
+            { name: "Condomínio", link: LINKS.LINK_CONDOMINIO },
             { name: "Viagem", link: LINKS.LINK_VIAGEM },
             { name: "Vida Individual", link: LINKS.LINK_VIDA_INDIVIDUAL },
             { name: "Portáteis", link: LINKS.LINK_PORTATEIS },
             { name: "Odontológico", link: LINKS.LINK_ODONTOLOGICO },
-            { name: "Financiamentos", link: "/seguro/financiamentos" },
-            { name: "Outro", link: "/seguro/ligacao" },
+            { name: "Financiamentos", link: LINKS.LINK_FINANCIAMENTOS },
+            { name: "Outro", link: LINKS.LINK_LIGACAO },
         ]
     };
 

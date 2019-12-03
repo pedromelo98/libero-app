@@ -15,7 +15,7 @@ export default function InsuranceBox(props) {
                 <Card.Body>
                     <div className="Insurance-row" >
                         <div className="Insurance-column" >
-                            <Link to='seguro/carro' className="Insurance-item" >
+                            <Link to={LINKS.LINK_AUTO} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/carro.jpg")} alt="Seguro Automobilistico" />
                                 </div>
@@ -80,12 +80,12 @@ export default function InsuranceBox(props) {
                         </div>
 
                         <div className="Insurance-column" >
-                            <div className="Insurance-item" >
+                            <a href={LINKS.LINK_BIKE} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/bike.jpg")} alt="Seguro Automobilistico" />
                                 </div>
                                 <p className="Insurance-text" >BIKE</p>
-                            </div>
+                            </a>
                             <a href={LINKS.LINK_VIAGEM} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/viagem.jpg")} alt="Seguro de Viagem" />

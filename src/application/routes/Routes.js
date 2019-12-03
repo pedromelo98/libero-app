@@ -25,7 +25,7 @@ function Routes() {
                     <Route path="/sobre">
                         <AboutApp />
                     </Route>
-                    <Route path="/seguro/Carro">
+                    <Route path="/seguro/auto">
                         <CarInsurance />
                     </Route>
                     <Route path="/contato">

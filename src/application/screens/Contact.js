@@ -4,6 +4,7 @@ import './Screens.css';
 import { Icon } from 'semantic-ui-react';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/styles';
+import { LINK_LIGACAO } from '../constants/Links'
 
 const useStyles = makeStyles(theme => ({
     btn: {
@@ -25,17 +26,9 @@ function Contact() {
                     <p className="Social-font" >(34) 3322-6000</p>
                 </div>
 
-                <Button className={classes.btn} color="primary" variant="contained">
-                    Solicite Uma Ligação!
-                    </Button>
-                {/* <a className="Social-item" >
-                        <Icon name='facebook' size='huge' />
-                        <p className="Social-font" >liberoseguros</p>
-                    </a>
-                    <a className="Social-item" >
-                        <Icon name='instagram' size='huge' />
-                        <p className="Social-font" >@liberoseguros</p>
-                    </a> */}
+                <Button href={LINK_LIGACAO} className={classes.btn} color="primary" variant="contained">
+                    Solicite uma Ligação!
+                </Button>
             </div>
         </div>
     );
