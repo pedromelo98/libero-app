@@ -36,18 +36,18 @@ export default function InsuranceBox(props) {
                         </div>
 
                         <div className="Insurance-column" >
-                            <div className="Insurance-item" >
+                            <Link to={LINKS.LINK_AGRICOLAS} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/trator.jpg")} alt="Seguro Automobilistico" />
                                 </div>
                                 <p className="Insurance-text" >RISCOS AGRÍCOLAS</p>
-                            </div>
-                            <div className="Insurance-item" >
+                            </Link>
+                            <Link to={LINKS.LINK_EMPRESARIAL} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/empresa.jpg")} alt="Seguro Empresarial" />
                                 </div>
                                 <p className="Insurance-text" >EMPRESARIAL</p>
-                            </div>
+                            </Link>
                             <a href={LINKS.LINK_PORTATEIS} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/portateis.jpg")} alt="Seguro de Portateis" />
@@ -58,18 +58,18 @@ export default function InsuranceBox(props) {
                         </div>
 
                         <div className="Insurance-column" >
-                            <div className="Insurance-item" >
+                            <Link to={LINKS.LINK_CARGAS} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/truck.jpg")} alt="Seguro de Cargas" />
                                 </div>
                                 <p className="Insurance-text" >CARGAS</p>
-                            </div>
-                            <div className="Insurance-item" >
+                            </Link>
+                            <Link to={LINKS.LINK_CONDOMINIO} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/condominio.jpg")} alt="Seguro de Condomínio" />
                                 </div>
                                 <p className="Insurance-text" >CONDOMÍNIO</p>
-                            </div>
+                            </Link>
                             <a href={LINKS.LINK_ODONTOLOGICO} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/odontologico.jpg")} alt="Seguro Odontológico" />
@@ -91,12 +91,12 @@ export default function InsuranceBox(props) {
                                 </div>
                                 <p className="Insurance-text" >VIAGEM</p>
                             </a>
-                            <div className="Insurance-item" >
+                            <Link to={LINKS.LINK_FINANCIAMENTOS} className="Insurance-item" >
                                 <div className="Img-component" >
                                     <img className="Insurance-img" src={require("../images/calculadora.jpg")} alt="Financiamentos" />
                                 </div>
                                 <p className="Insurance-text" >FINANCIAMENTOS</p>
-                            </div>
+                            </Link>
                         </div>
                     </div>
 

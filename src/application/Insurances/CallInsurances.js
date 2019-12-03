@@ -23,6 +23,7 @@ class CallInsurances extends React.PureComponent {
                     return (
                         <RenderIntro
                             callInsurance={"cargas"}
+                            titlePhrase={"Proteja suas cargas!"}
                             img={require('../images/truck.jpg')}
                             title="Seguro de Cargas"
                         />
@@ -31,6 +32,7 @@ class CallInsurances extends React.PureComponent {
                     return (
                         <RenderIntro
                             callInsurance={"empresarial"}
+                            titlePhrase={"Proteja sua empresa!"}
                             img={require('../images/empresa.jpg')}
                             title="Seguro Empresarial"
                         />
@@ -39,6 +41,7 @@ class CallInsurances extends React.PureComponent {
                     return (
                         <RenderIntro
                             callInsurance={"condominio"}
+                            titlePhrase={"Proteja seu condomínio!"}
                             img={require('../images/condominio.jpg')}
                             title="Seguro de Condomínio"
                         />
@@ -47,6 +50,7 @@ class CallInsurances extends React.PureComponent {
                     return (
                         <RenderIntro
                             callInsurance={"financiamentos"}
+                            titlePhrase={"Financiamentos seguros!"}
                             img={require('../images/calculadora.jpg')}
                             title="Seguro para Financiamentos"
                         />
