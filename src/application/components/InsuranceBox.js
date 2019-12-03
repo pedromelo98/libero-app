@@ -33,7 +33,6 @@ export default function InsuranceBox(props) {
                                 </div>
                                 <p className="Insurance-text" >VIDA INDIVIDUAL</p>
                             </a>
-
                         </div>
 
                         <div className="Insurance-column" >

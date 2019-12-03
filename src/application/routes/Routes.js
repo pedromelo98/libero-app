@@ -10,6 +10,9 @@ import CarInsurance from "../Insurances/CarInsurance/CarInsurance.js"
 import PageNotFound from "../components/PageNotFound.js";
 import CallRequest from "../Insurances/CallRequest.js";
 
+import * as LINKS from '../constants/Links'
+import CallInsurances from "../Insurances/CallInsurances.js";
+
 function Routes() {
 
     return (
@@ -25,8 +28,23 @@ function Routes() {
                     <Route path="/sobre">
                         <AboutApp />
                     </Route>
-                    <Route path="/seguro/auto">
+                    <Route path={LINKS.LINK_AUTO} >
                         <CarInsurance />
+                    </Route>
+                    <Route path={LINKS.LINK_AGRICOLAS}>
+                        <CallInsurances />
+                    </Route>
+                    <Route path={LINKS.LINK_CARGAS}>
+                        <CallInsurances />
+                    </Route>
+                    <Route path={LINKS.LINK_EMPRESARIAL}>
+                        <CallInsurances />
+                    </Route>
+                    <Route path={LINKS.LINK_CONDOMINIO}>
+                        <CallInsurances />
+                    </Route>
+                    <Route path={LINKS.LINK_FINANCIAMENTOS}>
+                        <CallInsurances />
                     </Route>
                     <Route path="/contato">
                         <Contact />
@@ -34,8 +52,8 @@ function Routes() {
                     <Route path="/seguros">
                         <Insurance />
                     </Route>
-                    <Route path="/seguro/ligacao">
-                        <CallRequest/>
+                    <Route path={LINKS.LINK_LIGACAO}>
+                        <CallRequest />
                     </Route>
                     <Route path="*">
                         <PageNotFound />

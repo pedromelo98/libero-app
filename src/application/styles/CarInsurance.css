@@ -4,6 +4,7 @@
 
 .Intro-Component {
     display: flex;
+    padding-top: 10vh;
     flex: 1;
     width: 100vw;
     flex-direction: column;

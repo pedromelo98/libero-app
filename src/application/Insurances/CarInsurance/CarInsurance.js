@@ -11,7 +11,7 @@ import InsInfoForm from '../GeneralInsurance/InsInfoForm.js';
 import QuizForm from '../GeneralInsurance/QuizForm.js';
 import MainDriverForm from './MainDriverForm.js';
 import CoverageForm from '../GeneralInsurance/CoverageForm.js';
-import RenderIntro from './Insurance-Intro';
+import RenderIntro from '../Insurance-Intro';
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -115,9 +115,9 @@ function CarInsurance() {
     }
 
     return (
-        <div className="Top-Space" >
+        <div  >
             {renderForm ?
-                <Container component="main" maxWidth="sm">
+                <Container className="Top-Space" component="main" maxWidth="sm">
 
                     <Form className={classes.form} ref={form}>
                         {fnum <= 0 ? <InsuredForm cls={classes} onBack={handleForm} onNext={handleNext} /> : null}
