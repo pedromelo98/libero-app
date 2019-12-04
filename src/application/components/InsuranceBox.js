@@ -105,23 +105,3 @@ export default function InsuranceBox(props) {
         </Container >
     );
 }
-
-
-/*
-function DesktopIcon(props) {
-    const tlink = React.useRef(null);
-    const { iconName, security } = props;
-
-    const handleRedirect = () => tlink.current.click();
-
-    return (
-        <div className="DesktopIcon-Flemis">
-            <div onClick={handleRedirect} className="DesktopIcon">
-                <Icon name={iconName} size={`${props.size !== undefined ? props.size : 'big'}`} />
-            </div>
-            <Link ref={tlink} to={props.path ? props.path : "/#?"}>{security}</Link>
-
-        </div>
-    );
-}
- */
