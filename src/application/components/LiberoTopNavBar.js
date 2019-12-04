@@ -50,7 +50,7 @@ class LiberoTopNavBar extends React.PureComponent {
                             <Icon name="question circle" />QUEM SOMOS
                         </Link>
                         <div className="Row-adjust" >
-                            <img style={{ width: 22, height: 20, marginTop: 5, marginRight: 5 }} src={require("../images/liberoicon.png")} />
+                            <img style={{ width: 22, height: 20, marginTop: 5, marginRight: 5, marginLeft: 5 }} src={require("../images/liberoicon.png")} />
                             <NavDropdown title="SEGUROS" id="collasible-nav-dropdown">
                                 {this.renderDropdownItens()}
                             </NavDropdown>
