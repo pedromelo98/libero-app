@@ -22,7 +22,7 @@ html, body, #root {
 
 .App-content {
   flex: 1;
-  padding-top: 10vw;
+  padding-top: 6.9vw;
   padding-bottom: 20vh;
   width: 100%;
 }
@@ -189,6 +189,9 @@ html, body, #root {
   .Insurance-categorie {
     display: flex;
     flex-direction: column;
+  }
+  .App-content{
+    padding-top: 10vw;
   }
   .Insurance {
     display: flex;
