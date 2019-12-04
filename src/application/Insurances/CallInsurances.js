@@ -79,7 +79,7 @@ class CallInsurances extends React.PureComponent {
                                 callInsurance={"vida"}
                                 titlePhrase={"Solicite nossa proposta!"}
                                 img={require('../images/life.jpg')}
-                                redirect={LINKS.REDIRECT_VIDA_GLOBAL}
+                                redirect={LINKS.REDIRECT_VIDA_INDIVIDUAL}
                                 haveForm={true}
                                 title="Seguro de Vida individual"
                             />
