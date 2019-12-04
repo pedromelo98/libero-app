@@ -11,6 +11,10 @@
   flex-direction: column;
 }
 
+.Row-adjust{
+  display: flex;
+}
+
 html, body, #root {
   min-height: 100%;
   background: #f2f2f2;
