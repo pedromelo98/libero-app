@@ -2,8 +2,8 @@ import React from 'react';
 import { Button as SemanticButton } from 'semantic-ui-react';
 import { isMobile } from 'react-device-detect';
 import { withRouter } from 'react-router-dom';
-// import '../styles/CarInsurance.css';
-// import '../screens/Screens.css';
+import '../styles/CarInsurance.css';
+import '../screens/Screens.css';
 
 import { REDIRECT_OTHERS } from '../constants/Links'
 
