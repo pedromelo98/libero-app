@@ -8,7 +8,7 @@
     flex: 1;
     align-items: center;
     background-color: #182a4e;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .Contacts {
@@ -31,9 +31,19 @@
     font-weight: bold;
 }
 
+[align=left] {
+    justify-content: flex-start;
+}
+
+[align=right] {
+    align-items: flex-end;
+}
+
 .Libero-Location {
     height: 600px;
     width: 800px;
+    animation-duration: 3s;
+    animation-name: intro;
 }
 
 .Img-location {
@@ -96,7 +106,7 @@
 @media(max-width:800px) {
     .Container {
         align-items: flex-start;
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 0px;
     }
     .Img-location {
@@ -107,5 +117,10 @@
     }
     .Overlay-Button {
         display: none;
+        justify-content: space-around;
     }
+    [align=right] {
+        align-self: flex-end;
+    }
+    
 }

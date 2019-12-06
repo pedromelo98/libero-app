@@ -14,19 +14,9 @@ class Contact extends React.Component {
                 <div className="Contact" >
                     <p className="Intro-font" >Entre em contato conosco:</p>
                     <div className="Container" >
-                        <div className="Contacts" >
-                            <div className="Contact-item" >
-                                <Icon name='phone' size='big' />
-                                <p className="Contact-font" >(34) 3322-6000</p>
-                            </div>
-                            <div className="Contact-item" >
-                                <Icon name='envelope' size='big' />
-                                <p className="Contact-font" >libero@liberocorretora.com.br</p>
-                            </div>
-                        </div>
 
-                        <div className="Contacts" >
-                            
+                        <div align="right" className="Contacts" >
+                            <Icon name='map marker alternate' size='big' />
                             <div className="Contact-item" >
                                 <p className="Contact-font" >Uberaba - MG, R. Padre Zeferino, 542</p>
                             </div>
@@ -45,6 +35,16 @@ class Contact extends React.Component {
                             <img className="Libero-Location" src={require("../images/liberoloc.png")} />
                         </a>
 
+                        <div className="Contacts" >
+                            <div align="left" className="Contact-item" >
+                                <Icon name='phone' size='big' />
+                                <p className="Contact-font" >(34) 3322-6000</p>
+                            </div>
+                            <div align="left" className="Contact-item" >
+                                <Icon name='envelope' size='big' />
+                                <p className="Contact-font" >libero@liberocorretora.com.br</p>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
