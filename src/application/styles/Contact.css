@@ -1,0 +1,111 @@
+.Contact {
+    padding-top: 10vh;
+}
+
+.Container {
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: #182a4e;
+    justify-content: space-around;
+}
+
+.Contacts {
+    display: flex;
+    flex-direction: column;
+    background-color: #182a4e;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.Contact-item {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.Contact-font {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Libero-Location {
+    height: 600px;
+    width: 800px;
+}
+
+.Img-location {
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    border-radius: 500px;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.Overlay-Button {
+    display: flex;
+    background-color: #fff;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    transition: .8s ease;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button-Text {
+    color: #182a4e;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+}
+
+.Img-location:hover .Overlay-Button {
+    opacity: 0.9;
+    height: 100%;
+}
+
+.Logo-Component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ligacao {
+    display: flex;
+    color: #fff;
+    background-color: #182a4e;
+    border-radius: 10px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@media(max-width:800px) {
+    .Container {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .Img-location {
+        position: relative;
+        display: flex;
+        width: 100vw;
+        border-radius: 0px;
+    }
+    .Overlay-Button {
+        display: none;
+    }
+}
