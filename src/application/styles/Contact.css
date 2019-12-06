@@ -40,21 +40,17 @@
 }
 
 .Libero-Location {
-    height: 600px;
-    width: 800px;
-    animation-duration: 3s;
-    animation-name: intro;
+    height: 450px;
+    width: 600px;
 }
 
 .Img-location {
     position: relative;
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border-radius: 500px;
-    overflow: hidden;
     align-items: center;
-    flex-direction: column;
     overflow: hidden;
     justify-content: center;
 }
@@ -62,6 +58,7 @@
 .Overlay-Button {
     display: flex;
     background-color: #fff;
+    border-radius: 500px;
     position: absolute;
     height: 0%;
     width: 100%;
