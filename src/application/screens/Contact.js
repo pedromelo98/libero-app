@@ -28,7 +28,7 @@ class Contact extends React.Component {
                             </div>
                         </div>
 
-                        <a href="https://maps.google.com/?q=LÍBERO CORRETORA DE SEGUROS" className="Img-location" >
+                        <a href="https://maps.google.com/?q=LÍBERO CORRETORA DE SEGUROS - Rua Padre Zeferino - Estados Unidos, Uberaba - MG" className="Img-location" >
                             <div className="Overlay-Button" >
                                 <p className="Button-Text" >Visualizar no mapa</p>
                             </div>
