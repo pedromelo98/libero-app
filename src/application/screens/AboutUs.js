@@ -3,7 +3,7 @@ import './Screens.css';
 import '../styles/About.css';
 import 'semantic-ui-css/semantic.min.css';
 
-import { Icon } from 'semantic-ui-react';
+import { Grid, Label, Segment } from 'semantic-ui-react'
 
 class AboutUs extends React.PureComponent {
 
@@ -12,6 +12,44 @@ class AboutUs extends React.PureComponent {
             <div className="About-Us" >
                 <text className="Intro-font" >Sobre a líbero:</text>
                 <div className="Component" >
+                    <Grid columns={2}>
+                        <Grid.Column>
+                            <Segment className="Cards" color="green" raised>
+                                <Label color='green' ribbon>
+                                    MISSÃO
+                                </Label>
+                                <p className="Text-Component" >
+                                    OFERECER UMA ASSESSORIA DE QUALIDADE COM AS MELHORES SOLUÇOES EM SEGUROS DE
+                                    ACORDO COM PERFIL DE CADA CLIENTE, COM OBJETIVO DE GARANTIR A TRANQUILIDADE E
+                                    CONFIANÇA.
+                                </p>
+
+                            </Segment>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Segment className="Cards" color="green" raised>
+                                <Label color='green' ribbon>
+                                    VISÃO
+                                </Label>
+                                <p className="Text-Component" >
+                                    SER REFERENCIA NA CORRETAGEM DE SEGUROS, CONSOLIDANDO-SE NA LIDERANÇA
+                                    REGIONAL, MANTENDO A QUALIDADE E PROXIMIDADE COM NOSSOS CLIENTES.
+                                </p>
+
+                            </Segment>
+                        </Grid.Column>
+                        <div className="Values" >
+                            <Segment color="green" className="Segment Cards" raised>
+                                <Label color='green' ribbon>
+                                    VALORES
+                                </Label>
+                                <p className="Text-Component" >
+                                    ÉTICA, CONFIANÇA, CREDIBILIDADE E TRANSPARENCIA.
+                                </p>
+                            </Segment>
+                        </div>
+
+                    </Grid>
                     <div className="Feature-Component" >
                         <div className="Feature-Text" >
                             <div className="Title-Component" >

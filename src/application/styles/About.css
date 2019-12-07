@@ -4,6 +4,7 @@
 
 .Feature-Component {
     display: flex;
+    margin-top: 50px;
     flex: 1;
     justify-content: space-between;
     align-items: center;
@@ -15,12 +16,9 @@
 
 .Component {
     margin-top: 100px;
-    display: flex;
+    display: block;
     padding: 50px;
     width: 100vw;
-    height: 100vh;
-    justify-content: space-around;
-    align-items: flex-start;
     background-color: #f2f2f2;
 }
 
@@ -61,4 +59,19 @@
 
 .Text-Component {
     color: rgb(230, 230, 230);
+}
+
+.Values{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Segment{
+    width: 50vw;
+}
+
+.Cards{
+    background-color: #182a4e !important;
 }
