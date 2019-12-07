@@ -26,6 +26,13 @@ html, body, #root {
   width: 100%;
 }
 
+.App-content-mobile {
+  flex: 1;
+  margin-bottom: 70px;
+  padding-top: 6.9vw;
+  width: 100%;
+}
+
 
 .App-bar {
   background-color: #182a4e;

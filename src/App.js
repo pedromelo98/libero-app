@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserView, MobileView } from 'react-device-detect';
+import { BrowserView, MobileView, isMobile } from 'react-device-detect';
 import LiberoTopNavBar from './application/components/LiberoTopNavBar';
 import LiberoBottomBar from './application/components/LiberoBottomBar';
 import SocialMedia from './application/components/SocialMedia';
@@ -12,9 +12,19 @@ function App(props) {
       <BrowserView>
         <SocialMedia />
       </BrowserView>
-      <div className="App-content" >
-        {props.children}
-      </div>
+      {isMobile
+        ?
+        <div className="App-content-mobile" >
+          {props.children}
+
+        </div>
+        :
+        <div className="App-content" >
+          {props.children}
+
+        </div>
+      }
+
       <MobileView>
         <LiberoBottomBar />
       </MobileView>
