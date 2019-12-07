@@ -45,9 +45,9 @@ class LiberoTopNavBar extends React.PureComponent {
                         </Link>
 
                         <Link
-                            className={`nav-link ${this.props.location.pathname === '/about' && "active"}`}
-                            to="/about">
-                            <Icon name="question circle" />QUEM SOMOS
+                            className={`nav-link ${this.props.location.pathname === '/sobre' && "active"}`}
+                            to="/sobre">
+                            <Icon name="info circle" />SOBRE A LÍBERO
                         </Link>
                         <div className="Row-adjust" >
                             <img style={{ width: 22, height: 20, marginTop: 5, marginRight: 5, marginLeft: 5 }} src={require("../images/liberoicon.png")} />

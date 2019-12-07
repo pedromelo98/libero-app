@@ -1,0 +1,64 @@
+.About-Us {
+    padding-top: 10vh;
+}
+
+.Feature-Component {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #182a4e;
+    border-radius: 10%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.Component {
+    margin-top: 100px;
+    display: flex;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #f2f2f2;
+}
+
+.Feature-Image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.Feature-Text {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+}
+
+.ImgFeature {
+    width: 500px;
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.Title-Feature {
+    font-weight: bold;
+    color: #fff;
+    font-size: 35px;
+}
+
+.Title-Component {
+    display: flex;
+    color: #fff;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Text-Component {
+    color: rgb(230, 230, 230);
+}

@@ -5,6 +5,7 @@ import Insurance from "../screens/Insurance";
 import App from '../../App.js';
 import Contact from "../screens/Contact";
 import AboutApp from "../screens/AboutApp.js";
+import AboutUs from "../screens/AboutUs.js";
 import Social from "../screens/Social.js";
 import PageNotFound from "../components/PageNotFound.js";
 import CallRequest from "../Insurances/CallRequest.js";
@@ -24,6 +25,9 @@ function Routes() {
                         <Social />
                     </Route>
                     <Route path="/sobre">
+                        <AboutUs />
+                    </Route>
+                    <Route path="/app">
                         <AboutApp />
                     </Route>
                     <Route path={LINKS.LINK_AUTO} >

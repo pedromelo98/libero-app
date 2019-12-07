@@ -100,7 +100,7 @@
     font-weight: bold;
 }
 
-@media(max-width:800px) {
+@media(max-width:930px) {
     .Container {
         align-items: flex-start;
         flex-direction: column-reverse;
@@ -113,7 +113,7 @@
         border-radius: 0px;
     }
     .Overlay-Button {
-        display: none;
+        border-radius: 0px;
         justify-content: space-around;
     }
     [align=right] {
