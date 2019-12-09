@@ -57,11 +57,11 @@ class AboutUs extends React.PureComponent {
                             </Label>
                             <p className="Text-Component" >
                                 Somos uma corretora de seguros comprometida com a qualidade e agilidade
-                                nos processos, alem de se consolidar a cada ano pelo atendimento consultivo
+                                nos processos, além de se consolidar a cada ano pelo atendimento consultivo
                                 atrelado a um preço justo.
-                                a Líbero seguros objetiva prestar uma assessoria personalizada de acordo com
+                                A Líbero seguros objetiva prestar uma assessoria personalizada de acordo com
                                 as necessidades daqueles que buscam custo-benefício e qualidade.
-                                a empresa foi fundada pelo sócio-proprietário Tiago Souto, que atua há 15 anos
+                                A empresa foi fundada pelo sócio-proprietário Tiago Souto, que atua há 15 anos
                                 no mercado financeiro, destacando-se em grandes instituições como Banco
                                 Bradesco, Santander e HSBC. É graduado em administração de empresas(FCETM) e
                                 pós graduado com MBA em gestão de pessoas(FGV). Possui as certificações CPA10 e
