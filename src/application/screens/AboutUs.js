@@ -59,7 +59,7 @@ class AboutUs extends React.PureComponent {
                                 Somos uma corretora de seguros comprometida com a qualidade e agilidade
                                 nos processos, além de se consolidar a cada ano pelo atendimento consultivo
                                 atrelado a um preço justo.
-                                A Líbero seguros objetiva prestar uma assessoria personalizada de acordo com
+                                A Líbero Seguros objetiva prestar uma assessoria personalizada de acordo com
                                 as necessidades daqueles que buscam custo-benefício e qualidade.
                                 A empresa foi fundada pelo sócio-proprietário Tiago Souto, que atua há 15 anos
                                 no mercado financeiro, destacando-se em grandes instituições como Banco
@@ -134,15 +134,15 @@ class AboutUs extends React.PureComponent {
                             <div className="Text-Component" >
                                 <p>
                                     Somos uma corretora de seguros comprometida com a qualidade e agilidade
-                                    nos processos, alem de se consolidar a cada ano pelo atendimento consultivo
+                                    nos processos, além de se consolidar a cada ano pelo atendimento consultivo
                                     atrelado a um preço justo.
-                                    a Líbero seguros objetiva prestar uma assessoria personalizada de acordo com
+                                    A Líbero Seguros objetiva prestar uma assessoria personalizada de acordo com
                                     as necessidades daqueles que buscam custo-benefício e qualidade.
-                                    a empresa foi fundada pelo sócio-proprietário Tiago Souto, que atua há 15 anos
+                                    A empresa foi fundada pelo sócio-proprietário Tiago Souto, que atua há 15 anos
                                     no mercado financeiro, destacando-se em grandes instituições como Banco
                                     Bradesco, Santander e HSBC. É graduado em administração de empresas(FCETM) e
                                     pós graduado com MBA em gestão de pessoas(FGV). Possui as certificações CPA10 e
-                                    CPA20(ANBIMA), alem da habilitação como corretor de seguros pleno de todos os
+                                    CPA20(ANBIMA), além da habilitação como corretor de seguros pleno de todos os
                                     ramos(SUSEP).
                                     Nesses anos de mercado, a ascensão e o sucesso da empresa se da pela eficiência
                                     de uma equipe capacitada, que atua de forma segmentada, além do trabalho
