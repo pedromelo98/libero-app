@@ -10,7 +10,7 @@ class AboutUs extends React.PureComponent {
     render() {
         return (
             <div className="About-Us" >
-                <text className="Intro-font" >Sobre a líbero:</text>
+                <text className="Intro-font" >Sobre a Líbero:</text>
                 <div className="Component" >
                     <Grid columns={2}>
                         <Grid.Column>
@@ -19,9 +19,7 @@ class AboutUs extends React.PureComponent {
                                     MISSÃO
                                 </Label>
                                 <p className="Text-Component" >
-                                    OFERECER UMA ASSESSORIA DE QUALIDADE COM AS MELHORES SOLUÇOES EM SEGUROS DE
-                                    ACORDO COM PERFIL DE CADA CLIENTE, COM OBJETIVO DE GARANTIR A TRANQUILIDADE E
-                                    CONFIANÇA.
+                                    Oferecer uma assessoria de qualidade com as melhores soluções em seguros, de acordo com o perfil de cada cliente, com o objetivo de garantir a tranquilidade e confiança.
                                 </p>
 
                             </Segment>
@@ -32,8 +30,7 @@ class AboutUs extends React.PureComponent {
                                     VISÃO
                                 </Label>
                                 <p className="Text-Component" >
-                                    SER REFERENCIA NA CORRETAGEM DE SEGUROS, CONSOLIDANDO-SE NA LIDERANÇA
-                                    REGIONAL, MANTENDO A QUALIDADE E PROXIMIDADE COM NOSSOS CLIENTES.
+                                    Ser referência na corretagem de seguros, consolidando-se na liderança regional, mantendo a qualidade e proximidade com nossos clientes.
                                 </p>
 
                             </Segment>
@@ -44,7 +41,7 @@ class AboutUs extends React.PureComponent {
                                     VALORES
                                 </Label>
                                 <p className="Text-Component" >
-                                    ÉTICA, CONFIANÇA, CREDIBILIDADE E TRANSPARENCIA.
+                                    Ética, confiança, credibilidade e transparência.
                                 </p>
                             </Segment>
                         </div>
@@ -57,21 +54,21 @@ class AboutUs extends React.PureComponent {
                             </div>
                             <div className="Text-Component" >
                                 <p>
-                                    SOMOS UMA CORRETORA DE SEGUROS COMPROMETIDA COM A QUALIDADE E AGILIDADE
-                                    NOS PROCESSOS, ALEM DE SE CONSOLIDAR A CADA ANO PELO ATENDIMENTO CONSULTIVO
-                                    ATRELADO A UM PREÇO JUSTO.
-                                    A LÍBERO SEGUROS OBJETIVA PRESTAR UMA ASSESSORIA PERSONALIZADA DE ACORDO COM
-                                    AS NECESSIDADES DAQUELES QUE BUSCAM CUSTO-BENEFÍCIO E QUALIDADE.
-                                    A EMPRESA FOI FUNDADA PELO SÓCIO-PROPRIETÁRIO TIAGO SOUTO, QUE ATUA HÁ 15 ANOS
-                                    NO MERCADO FINANCEIRO, DESTACANDO-SE EM GRANDES INSTITUIÇÕES COMO BANCO
-                                    BRADESCO, SANTANDER E HSBC. É GRADUADO EM ADMINISTRAÇÃO DE EMRPESAS(FCETM) E
-                                    PÓS GRADUADO COM MBA EM GESTÃO DE PESSOAS(FGV). POSSUI AS CERTIFICAÇÕES CPA10 E
-                                    CPA20(ANBIMA), ALEM DA HABILITAÇÃO COMO CORRETOR DE SEGUROS PLENO DE TODOS OS
-                                    RAMOS(SUSEP).
-                                    NESSES ANOS DE MERCADO, A ASCENSÃO E O SUCESSO DA EMPRESA SE DA PELA EFICIÊNCIA
-                                    DE UMA EQUIPE CAPACITADA, QUE ATUA DE FORMA SEGMENTADA, ALÉM DO TRABALHO
-                                    INCANSÁVEL DE SEU FUNDADOR, OFERECENDO, COM CONFIANÇA, AS MELHORES SOLUÇÕES
-                                    EM SEGUROS.
+                                    Somos uma corretora de seguros comprometida com a qualidade e agilidade
+                                    nos processos, alem de se consolidar a cada ano pelo atendimento consultivo
+                                    atrelado a um preço justo.
+                                    a Líbero seguros objetiva prestar uma assessoria personalizada de acordo com
+                                    as necessidades daqueles que buscam custo-benefício e qualidade.
+                                    a empresa foi fundada pelo sócio-proprietário Tiago Souto, que atua há 15 anos
+                                    no mercado financeiro, destacando-se em grandes instituições como Banco
+                                    Bradesco, Santander e HSBC. É graduado em administração de empresas(FCETM) e
+                                    pós graduado com MBA em gestão de pessoas(FGV). Possui as certificações CPA10 e
+                                    CPA20(ANBIMA), alem da habilitação como corretor de seguros pleno de todos os
+                                    ramos(SUSEP).
+                                    Nesses anos de mercado, a ascensão e o sucesso da empresa se da pela eficiência
+                                    de uma equipe capacitada, que atua de forma segmentada, além do trabalho
+                                    incansável de seu fundador, oferecendo, com confiança, as melhores soluções
+                                    em seguros.
                             </p>
                             </div>
                         </div>
