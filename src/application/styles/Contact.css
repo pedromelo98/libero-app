@@ -11,6 +11,14 @@
     justify-content: center;
 }
 
+.Container-Mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+    justify-content: space-around;
+    background-color: #182a4e;
+}
+
 .Contacts {
     display: flex;
     flex-direction: column;
@@ -18,6 +26,16 @@
     color: #fff;
     padding: 15px;
     border-radius: 50px;
+}
+
+.On-Maps {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
 .Contact-item {
@@ -119,5 +137,4 @@
     [align=right] {
         align-self: flex-end;
     }
-    
 }

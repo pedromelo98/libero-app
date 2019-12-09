@@ -22,6 +22,13 @@
     background-color: #f2f2f2;
 }
 
+.Component-Mobile {
+    display: block;
+    padding: 20px;
+    width: 100vw;
+    background-color: #f2f2f2;
+}
+
 .Feature-Image {
     display: flex;
     align-items: center;
@@ -48,6 +55,11 @@
     font-weight: bold;
     color: #fff;
     font-size: 35px;
+}
+
+.TitleFeatures {
+    display: flex;
+    align-items: center;
 }
 
 .Title-Component {
