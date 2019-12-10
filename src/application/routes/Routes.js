@@ -8,7 +8,6 @@ import AboutApp from "../screens/AboutApp.js";
 import AboutUs from "../screens/AboutUs.js";
 import Social from "../screens/Social.js";
 import PageNotFound from "../components/PageNotFound.js";
-import CallRequest from "../Insurances/CallRequest.js";
 import * as LINKS from '../constants/Links';
 import CallInsurances from "../Insurances/CallInsurances.js";
 
@@ -59,9 +58,6 @@ function Routes() {
                     </Route>
                     <Route path="/seguros">
                         <Insurance />
-                    </Route>
-                    <Route path={LINKS.LINK_LIGACAO}>
-                        <CallRequest />
                     </Route>
                     <Route path="*">
                         <PageNotFound />

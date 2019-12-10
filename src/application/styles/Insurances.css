@@ -57,3 +57,22 @@
 .Insurance-item:hover{
     color: #182a4e;
 }
+
+@media(max-width:800px) {
+    .Insurance-column{
+        flex-direction: row;
+    }
+
+    .Insurance-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .Img-component{
+        width: 15vw;
+        height: 15vw;
+    }
+    .Insurance-img {
+        width: 20vw;
+        height: 15vw;
+    }
+}

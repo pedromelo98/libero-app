@@ -15,7 +15,7 @@ class RenderIntro extends React.Component {
                 <div className="Intro-Component" >
                     <p className="Intro-font" >{this.props.title}</p>
                     <div className="Mobile-Intro" >
-                        <div id='gate' className="Image-Component" >
+                        <div id='gate' className="Mobile-Image" >
                             <img className="Mobile-Car" src={this.props.img} alt="" />
                         </div>
 

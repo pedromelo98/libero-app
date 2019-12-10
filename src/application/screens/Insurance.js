@@ -27,14 +27,14 @@ class Insurance extends React.PureComponent {
                             <LiberoSecurityCard iconName='bicycle' security='BIKE' link={LINKS.LINK_BIKE} />
                         </div>
                         <div className="Insurance-categorie" >
-                            <LiberoSecurityCard iconName='home' security='RESIDENCIAL' link={LINKS.LINK_RESIDENCIAL} />
+                            <LiberoSecurityCard iconName='home' security='RESIDENCIAL' link={LINKS.LINK_RESIDENCIAL} componentLink={true} />
                             <LiberoSecurityCard iconName='warehouse' security='EMPRESA' link={LINKS.LINK_EMPRESARIAL} componentLink={true} />
                             <LiberoSecurityCard iconName='building' security='CONDOMÍNIO' link={LINKS.LINK_CONDOMINIO} componentLink={true} />
                             <LiberoSecurityCard iconName='plane' security='VIAGEM' link={LINKS.LINK_VIAGEM} />
 
                         </div>
                         <div className="Insurance-categorie" >
-                            <LiberoSecurityCard iconName='heart' security='VIDA' link={LINKS.LINK_VIDA_INDIVIDUAL} />
+                            <LiberoSecurityCard iconName='heart' security='VIDA' link={LINKS.LINK_VIDA_INDIVIDUAL} componentLink={true} />
                             <LiberoSecurityCard iconName='leaf' security='RISCOS AGRÍCOLAS' link={LINKS.LINK_AGRICOLAS} componentLink={true} />
                             <LiberoSecurityCard iconName='doctor' security='ODONTOLÓGICO' link={LINKS.LINK_ODONTOLOGICO} />
                             <LiberoSecurityCard iconName='calculator' security='FINANCIAMENTOS' link={LINKS.LINK_FINANCIAMENTOS} componentLink={true} />

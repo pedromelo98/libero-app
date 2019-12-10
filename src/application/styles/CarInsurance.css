@@ -8,6 +8,19 @@
     justify-content: center;
 }
 
+.Mobile-Image{
+    display: flex;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 60vw;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    border: solid #182a4e;
+    animation-duration: 2s;
+    animation-name: mobileAnimation;
+}
+
 .Intro-View {
     display: flex;
     flex: 1;
@@ -42,12 +55,12 @@
 
 @keyframes mobileAnimation {
     from {
-        padding: 0px;
-        font-size: 0vw;
+        width: 0vw;
+        height: 0vw;
     }
     to {
-        padding: 10px;
-        font-size: 4vw;
+        width: 60vw;
+        height: 60vw;
     }
 }
 
@@ -65,8 +78,6 @@
     text-align: center;
     font-weight: bold;
     font-size: 4vw;
-    animation-duration: 2s;
-    animation-name: mobileAnimation;
 }
 
 .Car-Component {}
@@ -82,8 +93,8 @@
 }
 
 .Mobile-Car {
-    height: 50vw;
-    width: 100vw;
+    height: 60vw;
+    width: 118vw;
 }
 
 [image=inverted] {
