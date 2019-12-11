@@ -5,103 +5,86 @@ import '../screens/Screens.css';
 import '../styles/Insurances.css';
 import * as LINKS from '../constants/Links';
 
-export default function InsuranceBox(props) {
+export default class InsuranceBox extends React.Component {
 
-    return (
-        <Container >
-            <p className="Intro-font" >Nossos serviços</p>
-            <Card>
-                <Card.Header as='h2' >Simule online ou solicite nossa proposta:</Card.Header>
-                <Card.Body>
-                    <div className="Insurance-row" >
-                        <div className="Insurance-column" >
-                            <Link to={LINKS.LINK_AUTO} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/carro.jpg")} alt="Seguro Automobilistico" />
-                                </div>
-                                <p className="Insurance-text" >AUTO</p>
-                            </Link>
-                            <a href={LINKS.LINK_RESIDENCIAL} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/house.jpg")} alt="Seguro Residencial" />
-                                </div>
-                                <p className="Insurance-text" >RESIDENCIAL</p>
-                            </a>
-                            <a href={LINKS.LINK_VIDA_INDIVIDUAL} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/life.jpg")} alt="Seguro de Vida" />
-                                </div>
-                                <p className="Insurance-text" >VIDA</p>
-                            </a>
-                        </div>
+    constructor(props) {
+        super(props)
+    }
 
-                        <div className="Insurance-column" >
-                            <Link to={LINKS.LINK_AGRICOLAS} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/trator.jpg")} alt="Seguro Automobilistico" />
-                                </div>
-                                <p className="Insurance-text" >RISCOS AGRÍCOLAS</p>
-                            </Link>
-                            <Link to={LINKS.LINK_EMPRESARIAL} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/empresa.jpg")} alt="Seguro Empresarial" />
-                                </div>
-                                <p className="Insurance-text" >EMPRESARIAL</p>
-                            </Link>
-                            <a href={LINKS.LINK_PORTATEIS} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/portateis.jpg")} alt="Seguro de Portateis" />
-                                </div>
-                                <p className="Insurance-text" >PORTÁTEIS</p>
-                            </a>
+    /*state = {
+        insurances: [
+            { name: "AUTO", link: LINKS.LINK_AUTO, imagePath: "../images/carro.jpg", componentLink: true, alt: "Seguro Automobilistico" },
+            { name: "RESIDENCIAL", link: LINKS.LINK_RESIDENCIAL, imagePath: "../images/house.jpg", componentLink: true, alt: "Seguro Residencial" },
+            { name: "VIDA", link: LINKS.LINK_VIDA_INDIVIDUAL, imagePath: "../images/life.jpg", componentLink: true, alt: "Seguro de Vida" },
+            { name: "RISCOS AGRÍCOLAS", link: LINKS.LINK_AGRICOLAS, imagePath: "../images/trator.jpg", componentLink: true, alt: "Seguro para riscos agrícolas" },
+            { name: "EMPRESARIAL", link: LINKS.LINK_EMPRESARIAL, imagePath: "../images/empresa.jpg", componentLink: true, alt: "Seguro empresarial" },
+            { name: "PORTÁTEIS", link: LINKS.LINK_PORTATEIS, imagePath: "../images/portateis.jpg", componentLink: false, alt: "Seguro de Portáteis" },
+            { name: "CARGAS", link: LINKS.LINK_CARGAS, imagePath: "../images/truck.jpg", componentLink: true, alt: "Seguro de cargas" },
+            { name: "CONDOMÍNIO", link: LINKS.LINK_CONDOMINIO, imagePath: "../images/condominio.jpg", componentLink: true, alt: "Seguro de Condomínio" },
+            { name: "ODONTOLÓGICO", link: LINKS.LINK_ODONTOLOGICO, imagePath: "../images/odontologico.jpg", componentLink: false, alt: "Seguro Odontológico" },
+            { name: "BIKE", link: LINKS.LINK_BIKE, imagePath: "../images/bike.jpg", componentLink: false, alt: "Seguro de Bike" },
+            { name: "VIAGEM", link: LINKS.LINK_VIAGEM, imagePath: "../images/viagem.jpg", componentLink: false, alt: "Seguro de Viagem" },
+            { name: "FINANCIAMENTOS", link: LINKS.LINK_FINANCIAMENTOS, imagePath: "../images/calculadora.jpg", componentLink: true, alt: "Seguro de Financiamentos" },
+        ]
+    }*/
 
-                        </div>
-
-                        <div className="Insurance-column" >
-                            <Link to={LINKS.LINK_CARGAS} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/truck.jpg")} alt="Seguro de Cargas" />
-                                </div>
-                                <p className="Insurance-text" >CARGAS</p>
-                            </Link>
-                            <Link to={LINKS.LINK_CONDOMINIO} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/condominio.jpg")} alt="Seguro de Condomínio" />
-                                </div>
-                                <p className="Insurance-text" >CONDOMÍNIO</p>
-                            </Link>
-                            <a href={LINKS.LINK_ODONTOLOGICO} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/odontologico.jpg")} alt="Seguro Odontológico" />
-                                </div>
-                                <p className="Insurance-text" >ODONTOLÓGICO</p>
-                            </a>
-                        </div>
-
-                        <div className="Insurance-column" >
-                            <a href={LINKS.LINK_BIKE} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/bike.jpg")} alt="Seguro Automobilistico" />
-                                </div>
-                                <p className="Insurance-text" >BIKE</p>
-                            </a>
-                            <a href={LINKS.LINK_VIAGEM} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/viagem.jpg")} alt="Seguro de Viagem" />
-                                </div>
-                                <p className="Insurance-text" >VIAGEM</p>
-                            </a>
-                            <Link to={LINKS.LINK_FINANCIAMENTOS} className="Insurance-item" >
-                                <div className="Img-component" >
-                                    <img className="Insurance-img" src={require("../images/calculadora.jpg")} alt="Financiamentos" />
-                                </div>
-                                <p className="Insurance-text" >FINANCIAMENTOS</p>
-                            </Link>
-                        </div>
+    renderInsuranceBall(name, link, imagePath, componentLink, alt) {
+        if (componentLink) {
+            return (
+                <Link to={link} className="Insurance-item" >
+                    <div className="Img-component" >
+                        <img className="Insurance-img" src={imagePath} alt={alt} />
                     </div>
+                    <p className="Insurance-text" >{name}</p>
+                </Link>
+            )
+        }
+        return (
+            <a href={link} className="Insurance-item" >
+                <div className="Img-component" >
+                    <img className="Insurance-img" src={imagePath} alt={alt} />
+                </div>
+                <p className="Insurance-text" >{name}</p>
+            </a>
+        )
+    }
 
-                </Card.Body>
-            </Card>
-        </Container >
-    );
+    render() {
+        return (
+            <Container >
+                <p className="Intro-font" >Nossos serviços</p>
+                <Card>
+                    <Card.Header as='h2' >Simule online ou solicite nossa proposta:</Card.Header>
+                    <Card.Body>
+                        <div className="Insurance-row" >
+                            <div className="Insurance-column" >
+                                {this.renderInsuranceBall("AUTO", LINKS.LINK_AUTO, require("../images/carro.jpg"), true, "Seguro Automobilistico")}
+                                {this.renderInsuranceBall("RESIDENCIAL", LINKS.LINK_RESIDENCIAL, require("../images/house.jpg"), true, "Seguro Residencial")}
+                                {this.renderInsuranceBall("VIDA", LINKS.LINK_VIDA_INDIVIDUAL, require("../images/life.jpg"), true, "Seguro de Vida")}
+                            </div>
+
+                            <div className="Insurance-column" >
+                                {this.renderInsuranceBall("RISCOS AGRÍCOLAS", LINKS.LINK_AGRICOLAS, require("../images/trator.jpg"), true, "Seguro Riscos Agricolas")}
+                                {this.renderInsuranceBall("EMPRESARIAL", LINKS.LINK_EMPRESARIAL, require("../images/empresa.jpg"), true, "Seguro Empresarial")}
+                                {this.renderInsuranceBall("PORTÁTEIS", LINKS.LINK_PORTATEIS, require("../images/portateis.jpg"), false, "Seguro de Portateis")}
+                            </div>
+
+                            <div className="Insurance-column" >
+                                {this.renderInsuranceBall("CARGAS", LINKS.LINK_CARGAS, require("../images/truck.jpg"), true, "Seguro de Cargas")}
+                                {this.renderInsuranceBall("CONDOMÍNIO", LINKS.LINK_CONDOMINIO, require("../images/condominio.jpg"), true, "Seguro de Condomínio")}
+                                {this.renderInsuranceBall("ODONTOLÓGICO", LINKS.LINK_ODONTOLOGICO, require("../images/odontologico.jpg"), false, "Seguro Odontológico")}
+                            </div>
+
+                            <div className="Insurance-column" >
+                                {this.renderInsuranceBall("BIKE", LINKS.LINK_BIKE, require("../images/bike.jpg"), false, "Seguro de Bike")}
+                                {this.renderInsuranceBall("VIAGEM", LINKS.LINK_VIAGEM, require("../images/viagem.jpg"), false, "Seguro de Viagem")}
+                                {this.renderInsuranceBall("FINANCIAMENTOS", LINKS.LINK_FINANCIAMENTOS, require("../images/calculadora.jpg"), true, "Seguro de Financiamentos")}
+                            </div>
+                        </div>
+
+                    </Card.Body>
+                </Card>
+            </Container >
+        );
+    }
 }
