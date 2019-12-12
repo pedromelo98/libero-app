@@ -13,7 +13,7 @@ class Social extends React.Component {
                 <div className="Socials" >
                     <a target="_blank" href="https://wa.me/5534998896000" className="Social-item" >
                         <div social="Whats" className="Social-button">
-                            <Icon name='whatsapp' size="large" /> Whatsapp
+                            <Icon name='whatsapp' size="large" /> whatsapp
                         </div>
                     </a>
                     <a target="_blank" href="https://pt-br.facebook.com/liberoseguros/" className="Social-item" >

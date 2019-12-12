@@ -2,6 +2,7 @@ import React from 'react';
 import HomeSlider from './HomeSlider.js';
 import AboutApp from './AboutApp.js';
 import Insurance from './Insurance.js';
+import Footer from './Footer.js';
 
 export default function HomeScreen() {
 
@@ -10,6 +11,7 @@ export default function HomeScreen() {
             <HomeSlider />
             <Insurance />
             <AboutApp />
+            <Footer/>
         </>
 
     );

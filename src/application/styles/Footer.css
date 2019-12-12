@@ -1,3 +1,57 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10vh;
+    height: 350px;
+    width: 100vw;
+    background-color: #182a4e;
+    color: #fff;
+}
+
+.BackToTop {
+    display: flex;
+}
+
+.Button-Top {
+    cursor: pointer;
+}
+
+.Display-Row {
+    flex: 10;
+    display: flex;
+    align-items: center;
+}
+
+.Flex-Um {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.Component-Locdata {
+    text-align: end;
+}
+
+.Title-Footer {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Subtitle-Footer {
+    color: rgb(192, 192, 192);
+    font-size: 14px;
+}
+
+.Subtitle-Footer:hover {
+    color: rgb(238, 238, 238);
+}
+
+.Logo-Image {
+    width: 130px;
+}
+
 [conteudo=bottom] {
     display: flex;
     flex: 1;
@@ -31,7 +85,7 @@
     justify-content: center;
 }
 
-.Bottom-selected:visited{ 
+.Bottom-selected:visited {
     color: #182a4e
 }
 
@@ -48,4 +102,20 @@
 
 .Bottom-text {
     font-weight: bold;
+}
+
+@media(max-width:800px) {
+    .Footer {
+        height: 550px;
+    }
+    .Display-Row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Component-Locdata {
+        text-align: center;
+    }
+    .Flex-Um {
+        margin-top: 20px;
+    }
 }

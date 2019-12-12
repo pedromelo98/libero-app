@@ -75,4 +75,9 @@
         width: 20vw;
         height: 15vw;
     }
+
+    .Insurance-img:hover {
+        width: 21vw;
+        height: 16vw;
+    }
 }
