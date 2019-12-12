@@ -10,9 +10,9 @@
 
 .Socials {
     flex: 1;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .Social-font {
@@ -21,7 +21,7 @@
 }
 
 .Social-item {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex: 1;
     align-items: center;
@@ -29,5 +29,26 @@
 }
 
 .Social-button {
-    width: 250px;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 3.5vw;
+    overflow: hidden;
+}
+
+[social=Whats]{
+    background-color: #25D366;
+}
+
+[social=Face]{
+    background-color: #3b5998;
+}
+
+[social=Insta]{
+    background-color: #5851DB;
 }

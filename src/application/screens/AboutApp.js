@@ -15,7 +15,7 @@ class AboutApp extends React.PureComponent {
             <div className="About-App" >
                 <p className="Intro-font" >Conheça nosso aplicativo</p>
                 <div className="Component-Buttons" >
-                    <a className="App-Button" href="https://play.google.com/store/apps/details?id=br.com.libero" >
+                    <a className="App-Button" target="_blank" href="https://play.google.com/store/apps/details?id=br.com.libero" >
                         <Icon size='big' name="google play" />
                         <p>Play Store</p>
                     </a>

@@ -11,20 +11,20 @@ class Social extends React.Component {
             <div className="Social" >
                 <p className="Intro-font" >Redes sociais:</p>
                 <div className="Socials" >
-                    <a href="https://wa.me/5534998896000" className="Social-item" >
-                        <Button className="Social-button" size='big' color='green'>
-                            <Icon name='whatsapp square' /> Whatsapp
-                        </Button>
+                    <a target="_blank" href="https://wa.me/5534998896000" className="Social-item" >
+                        <div social="Whats" className="Social-button">
+                            <Icon name='whatsapp' size="large" /> Whatsapp
+                        </div>
                     </a>
-                    <a href="https://pt-br.facebook.com/liberoseguros/" className="Social-item" >
-                        <Button className="Social-button" size='big' color='facebook'>
-                            <Icon name='facebook' /> liberoseguros
-                        </Button>
+                    <a target="_blank" href="https://pt-br.facebook.com/liberoseguros/" className="Social-item" >
+                        <div social="Face" className="Social-button">
+                            <Icon name='facebook f' size="large" /> liberoseguros
+                        </div>
                     </a>
-                    <a href="https://www.instagram.com/liberoseguros/" className="Social-item" >
-                        <Button className="Social-button" size='big' color='instagram'>
-                            <Icon name='instagram' /> @liberoseguros
-                        </Button>
+                    <a target="_blank" href="https://www.instagram.com/liberoseguros/" className="Social-item" >
+                        <div social="Insta" className="Social-button">
+                            <Icon name='instagram' size="large" /> @liberoseguros
+                        </div>
                     </a>
                 </div>
             </div>
