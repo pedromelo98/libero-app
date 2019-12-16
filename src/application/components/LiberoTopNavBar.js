@@ -33,7 +33,7 @@ class LiberoTopNavBar extends React.PureComponent {
 
         return (
             <Navbar style={{ flex: 1, padding: 0 }} className="App-bar" fixed="top" expand="lg" variant="dark">
-                <Link  to="/">
+                <Link to="/">
                     <img alt='logo' href="#home" logo="top" src={require('../images/libero-header.jpg')} />
                 </Link>
                 <Navbar.Toggle style={{ margin: 8 }} aria-controls="responsive-navbar-nav" />
@@ -58,7 +58,8 @@ class LiberoTopNavBar extends React.PureComponent {
                             </NavDropdown>
                         </div>
 
-                        <Link className={'nav-link'} to="/contato">
+                        <Link className={`nav-link ${this.props.location.pathname === '/contato' && "active"}`}
+                            to="/contato">
                             <Icon name="phone square" />ENTRE EM CONTATO
                         </Link>
 
