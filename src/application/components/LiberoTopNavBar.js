@@ -34,7 +34,7 @@ class LiberoTopNavBar extends React.PureComponent {
         return (
             <Navbar style={{ flex: 1, padding: 0 }} className="App-bar" fixed="top" expand="lg" variant="dark">
                 <Link to="/">
-                    <img alt='logo' href="#home" logo="top" src={require('../images/libero-header.jpg')} />
+                    <img alt='logo' href="#home" logo="top" src={require('../images/libero-header.png')} />
                 </Link>
                 <Navbar.Toggle style={{ margin: 8 }} aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
