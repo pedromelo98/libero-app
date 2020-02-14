@@ -14,8 +14,8 @@ npm install
 ```
 * To run:
 ```
-npm run build
+npm start
 ```
-
+And it should be at http://localhost:3000
 ### You can also see it at:
 * [Líbero Corretora de Seguros](http://liberocorretora.com.br) - Website
