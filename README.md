@@ -1,6 +1,6 @@
 ### Front-end application for a brazilian insurance broker.
 
-Required to run: `Nodejs`, `React-Native`;
+Required to run: `Nodejs`
 
 ### To run it you have to execute the following commands:
 * To download the project:
