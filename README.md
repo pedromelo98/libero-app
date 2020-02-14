@@ -3,16 +3,16 @@
 Required to run: `Nodejs`, `React-Native`;
 
 ### To run it you have to execute the following commands:
-to download the project:
+* To download the project:
 ```
 git clone https://github.com/pedromelo98/libero-app.git
 ```
-to install dependencies:
+* To install dependencies:
 ```
 cd libero-app
 npm install
 ```
-to run:
+* To run:
 ```
 npm run
 ```
