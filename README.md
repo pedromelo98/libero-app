@@ -14,7 +14,7 @@ npm install
 ```
 * To run:
 ```
-npm run
+npm run build
 ```
 
 ### You can also see it at:
