@@ -7,10 +7,6 @@ import * as LINKS from '../constants/Links';
 
 export default class InsuranceBox extends React.Component {
 
-    constructor(props) {
-        super(props)
-    }
-
     /*state = {
         insurances: [
             { name: "AUTO", link: LINKS.LINK_AUTO, imagePath: "../images/carro.jpg", componentLink: true, alt: "Seguro Automobilistico" },

@@ -54,7 +54,7 @@ class AboutUs extends React.PureComponent {
 
                         <Segment color="green" className="Cards" raised>
                             <Label color='green' ribbon>
-                                <img style={{ paddingBottom: 5, paddingRight: 5 }} src={require("../images/liberoicon.png")} />
+                                <img alt='quem somos' style={{ paddingBottom: 5, paddingRight: 5 }} src={require("../images/liberoicon.png")} />
                                 QUEM SOMOS
                             </Label>
                             <p className="Text-Component" >
@@ -126,7 +126,7 @@ class AboutUs extends React.PureComponent {
                             </div>
                         </div>
                         <div className="Feature-Image" >
-                            <img src={require("../images/porta-libero.png")} className="ImgFeature" />
+                            <img alt='quem somos' src={require("../images/porta-libero.png")} className="ImgFeature" />
                         </div>
                     </div>
                 </div>

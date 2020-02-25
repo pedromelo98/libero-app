@@ -19,7 +19,7 @@ class AboutApp extends React.PureComponent {
                         <Icon size='big' name="google play" />
                         <p>Play Store</p>
                     </a>
-                    <a className="App-Button" href="#ios"  >
+                    <a className="App-Button" href="https://apps.apple.com/br/app/l%C3%ADbero-seguros/id1322021570"  >
                         <Icon size='big' name="app store ios" />
                         <p>App Store</p>
                     </a>
