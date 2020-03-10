@@ -1,8 +1,8 @@
-### Front-end application for a brazilian insurance broker.
+### Front-end application for a brazilian college work(Qualidade e testes de software).
 
 Required to run: `Nodejs`
 
-### To run it you have to execute the following commands:
+### To run you have to execute the following commands:
 * To download the project:
 ```
 git clone https://github.com/pedromelo98/libero-app.git
