@@ -60,7 +60,7 @@ class Contact extends React.Component {
                         </div>
                     </div>
 
-                    <a target="_blank" href="https://maps.google.com/?q=LÍBERO CORRETORA DE SEGUROS - Rua Padre Zeferino - Estados Unidos, Uberaba - MG" className="Img-location" >
+                    <a target="_blank" href="https://maps.google.com/?q=LÍBERO CORRETORA DE SEGUROS - Avenida Leopoldino de Oliveira - Vila Olímpica, Uberaba - MG" className="Img-location" >
                         <div className="Overlay-Button" >
                             <p className="Button-Text" >Visualizar no mapa</p>
                         </div>

@@ -31,9 +31,9 @@ class Footer extends React.Component {
                         <div className="Flex-Um" >
                             <div className="Component-Locdata" >
                                 <p className="Title-Footer" >Endereço:</p>
-                                <p className="Subtitle-Footer" > Uberaba - MG, R. Padre Zeferino, 542</p>
-                                <p className="Subtitle-Footer" >Bairro Estados Unidos</p>
-                                <p className="Subtitle-Footer" >CEP: 38015-160</p>
+                                <p className="Subtitle-Footer" > Uberaba - MG, Av Leopoldino de Oliveira, 5100, loja 130 , Praça Shopping Uberaba</p>
+                                <p className="Subtitle-Footer" >Bairro Vila Olímpica</p>
+                                <p className="Subtitle-Footer" >CEP: 38060-000</p>
                             </div>
                         </div>
                     </div>
