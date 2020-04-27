@@ -50,13 +50,16 @@ class Contact extends React.Component {
                     <div align="right" className="Contacts" >
                         <Icon name='map marker alternate' size='big' />
                         <div className="Contact-item" >
-                            <p className="Contact-font" >Uberaba - MG, R. Padre Zeferino, 542</p>
+                            <p className="Contact-font" >Uberaba - MG, Av Leopoldino de Oliveira, </p>
                         </div>
                         <div className="Contact-item" >
-                            <p className="Contact-font" >Bairro Estados Unidos</p>
+                            <p className="Contact-font" >5100, loja 130 , Praça Shopping Uberaba</p>
                         </div>
                         <div className="Contact-item" >
-                            <p className="Contact-font" >CEP: 38015-160</p>
+                            <p className="Contact-font" >Bairro Vila Olímpica</p>
+                        </div>
+                        <div className="Contact-item" >
+                            <p className="Contact-font" >CEP: 38060-000</p>
                         </div>
                     </div>
 
